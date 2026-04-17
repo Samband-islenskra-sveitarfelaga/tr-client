@@ -1,0 +1,708 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4f8_sharedcommondataserviceforapps_c12b7"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "Client-Id (tre_client-id)": {
+          "defaultValue": "A",
+          "type": "String",
+          "metadata": {
+            "schemaName": "tre_client-id",
+            "description": "Client-id sveitarfélags"
+          }
+        },
+        "API-Url (tre_APIBaseUrl)": {
+          "defaultValue": "https://endurhaefing.dev.sveitarfelog.net/RehabilitationDocument",
+          "type": "String",
+          "metadata": {
+            "schemaName": "tre_APIBaseUrl",
+            "description": "Base url fyrir API gateway"
+          }
+        },
+        "API-Key (tre_APIKey)": {
+          "defaultValue": "XX",
+          "type": "String",
+          "metadata": {
+            "schemaName": "tre_APIKey",
+            "description": "API Key sveitarfélags"
+          }
+        }
+      },
+      "triggers": {
+        "Endurhaefingaraetlun_added_or_modified": {
+          "metadata": {
+            "operationMetadataId": "e40f1058-1c0f-4f8c-aff5-5f934b826f7f"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "cr4f8_endurhaefingaraaetlun",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "cr4f8_readytosend"
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "conditions": [
+            {
+              "expression": "@equals(triggerOutputs()?['body/cr4f8_readytosend'], true)"
+            }
+          ]
+        }
+      },
+      "actions": {
+        "Stada-Vinnumarkadur": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "4f146890-640f-4862-9c2e-1fe1e30a38ea"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_stadavinnumarkadurs",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_stadavinnumarkadur_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Framvinda-Endurhaefingar": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "dc28c8a1-4c44-451a-a608-85d9f9a10ed1"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_framvindaendurhaefingars",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_framvindaendurhaefingar_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Ny-Thekking": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "a101537c-274b-41ac-8062-02a7e096f451"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_athafnirdaglegtlifs",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_nythekking_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "main": {
+          "runAfter": {
+            "serviceProvider": [
+              "Succeeded"
+            ],
+            "comprehensiveEvaluation": [
+              "Succeeded"
+            ],
+            "activityAndParticipationGoals": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "ab0eb418-c4ad-43ed-9601-5b58b73b5e6a"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "main",
+                "type": "object",
+                "value": {
+                  "referenceId": "@triggerOutputs()?['body/cr4f8_id']",
+                  "serviceProviderName": "@triggerOutputs()?['body/cr4f8_stofnun']",
+                  "serviceProviderRegno": "nn",
+                  "applicantEmploymentStatus": "@outputs('Stada-Vinnumarkadur')?['body/cr4f8_id']",
+                  "applicantEmploymentStatusName": "@outputs('Stada-Vinnumarkadur')?['body/cr4f8_heiti']",
+                  "startDate": "@triggerOutputs()?['body/cr4f8_upphafsdagur']",
+                  "plannedEndDate": "@triggerOutputs()?['body/cr4f8_lokadaguraetlun']",
+                  "rehabilitationFocusAndStrategy": "@triggerOutputs()?['body/cr4f8_stefnaendurhaefingar']",
+                  "person": "@variables('person')",
+                  "serviceProvider": "@variables('serviceProvider')",
+                  "firstEvaluation": "@variables('firstEvaluation')",
+                  "followUpEvaluation": "@variables('followUpEvaluation')",
+                  "comprehensiveEvaluation": "@variables('comprehensiveEvaluation')",
+                  "physicalHealthGoals": "@variables('physicalHealthGoals')",
+                  "mentalHealthGoals": "@variables('mentalHealthGoals')",
+                  "activityAndParticipationGoals": "@variables('activityAndParticipationGoals')"
+                }
+              }
+            ]
+          }
+        },
+        "Vidhorf-Vinna": {
+          "runAfter": {
+            "Stada-Vinnumarkadur": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "889100d4-e261-47aa-b41d-52df4e5d61b1"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_vidhorfvinnas",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_vidhorfvinna_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "firstEvaluation": {
+          "runAfter": {
+            "Vidhorf-Vinna": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "adceb73f-b81d-4148-8d1b-bc4338f9f8fa"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "firstEvaluation",
+                "type": "object",
+                "value": {
+                  "applicantStatus": "@outputs('Stada-Vinnumarkadur')?['body/cr4f8_id']",
+                  "previousMedicalOrRehab": "@triggerOutputs()?['body/cr4f8_laekningsmedferdlysing']",
+                  "attitudeTowardsWork": "@outputs('Vidhorf-Vinna')?['body/cr4f8_id']",
+                  "attitudeTowardsWorkName": "@outputs('Vidhorf-Vinna')?['body/cr4f8_heiti']"
+                }
+              }
+            ]
+          }
+        },
+        "Breyting-Enduraefing": {
+          "runAfter": {
+            "Framvinda-Endurhaefingar": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "e328e01e-debf-407d-947c-461972f92b88"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_breytingendurhaefingars",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_breytingendurhaefing_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Astundun-Endurhaefingar": {
+          "runAfter": {
+            "Breyting-Enduraefing": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "047d5681-f935-4c20-9ca4-542d08013b52"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_astundunendurhaefinars",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_astundunendurhaefingar_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Breyting-Adstaedur": {
+          "runAfter": {
+            "Astundun-Endurhaefingar": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "3235250c-fb8a-46cb-86ce-69eab2bffffa"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_breytingendurhaefingars",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_breytingadstaedur_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "person": {
+          "runAfter": {
+            "firstEvaluation": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "40a7d195-ddf2-4d8a-b5be-62ba5b886ef5"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "person",
+                "type": "object",
+                "value": {
+                  "nationalId": "@triggerOutputs()?['body/cr4f8_kennitala']",
+                  "name": "@triggerOutputs()?['body/cr4f8_nafn']",
+                  "address": "@triggerOutputs()?['body/cr4f8_heimilisfang']",
+                  "postalCode": "@triggerOutputs()?['body/cr4f8_postnumer']",
+                  "city": "@triggerOutputs()?['body/cr4f8_stadur']",
+                  "phoneNumber": "@triggerOutputs()?['body/cr4f8_simanumer']",
+                  "email": "@triggerOutputs()?['body/cr4f8_netfang']"
+                }
+              }
+            ]
+          }
+        },
+        "serviceProvider": {
+          "runAfter": {
+            "person": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "94223786-c455-4d63-8559-b36d05bda316"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "serviceProvider",
+                "type": "object",
+                "value": {
+                  "serviceProviderName": "@triggerOutputs()?['body/cr4f8_stofnun']",
+                  "coordinatorName": "@triggerOutputs()?['body/cr4f8_radgjafinafn']",
+                  "coordinatorNationalId": "@triggerOutputs()?['body/cr4f8_radgjafikennitala']",
+                  "coordinatorTitle": "@triggerOutputs()?['body/cr4f8_radgjafititill']",
+                  "workplace": "@triggerOutputs()?['body/cr4f8_radgjafivinnustadur']",
+                  "phoneNumber": "@triggerOutputs()?['body/cr4f8_radgjafisimanumer']",
+                  "email": "@triggerOutputs()?['body/cr4f8_radgjafinetfang']"
+                }
+              }
+            ]
+          }
+        },
+        "followUpEvaluation": {
+          "runAfter": {
+            "Breyting-Adstaedur": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "5089577c-0583-4601-ab52-a50f32c166a2"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "followUpEvaluation",
+                "type": "object",
+                "value": {
+                  "rehabilitationProgress": "@outputs('Framvinda-Endurhaefingar')?['body/cr4f8_id']",
+                  "rehabilitationProgressName": "@outputs('Framvinda-Endurhaefingar')?['body/cr4f8_heiti']",
+                  "rehabilitationProgressDetails": "@triggerOutputs()?['body/cr4f8_framvindaendurhaefingarlysing']",
+                  "rehabilitationMeasuresProgress": "@outputs('Astundun-Endurhaefingar')?['body/cr4f8_id']",
+                  "rehabilitationMeasuresProgressName": "@outputs('Astundun-Endurhaefingar')?['body/cr4f8_heiti']",
+                  "rehabilitationMeasuresProgressDetails": "@triggerOutputs()?['body/cr4f8_astundunendurhaefingarlysing']",
+                  "rehabilitationChanges": "@outputs('Breyting-Enduraefing')?['body/cr4f8_id']",
+                  "rehabilitationChangesName": "@outputs('Breyting-Enduraefing')?['body/cr4f8_heiti']",
+                  "rehabilitationChangesDetails": "@triggerOutputs()?['body/cr4f8_breytingendurhaefinglysing']",
+                  "applicantCircumstancesChanges": "@outputs('Breyting-Adstaedur')?['body/cr4f8_id']",
+                  "applicantCircumstancesChangesName": "@outputs('Breyting-Adstaedur')?['body/cr4f8_heiti']",
+                  "applicantCircumstancesChangesDetails": "@triggerOutputs()?['body/cr4f8_breytingadstaedurlysing']"
+                }
+              }
+            ]
+          }
+        },
+        "Daglegt-Lif": {
+          "runAfter": {
+            "Ny-Thekking": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "54a25757-807d-4f9e-9a72-d8b097ae2322"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_athafnirdaglegtlifs",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_daglegtlif_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Samskipti": {
+          "runAfter": {
+            "Daglegt-Lif": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "b6e1ef16-63e6-49f1-87ea-ec1120efba86"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_athafnirdaglegtlifs",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_samskipti_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Hreyfifaerni": {
+          "runAfter": {
+            "Samskipti": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "779e5dc1-9bde-44c2-8e48-5da705c84614"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_athafnirdaglegtlifs",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_hreyfifaerni_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Eigin-Umsja": {
+          "runAfter": {
+            "Hreyfifaerni": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "e5fb0b3c-1cc9-43f3-a4bd-3c09d2f64ba2"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_athafnirdaglegtlifs",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_eiginumsja_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Heimilishald": {
+          "runAfter": {
+            "Eigin-Umsja": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "d3569009-ffb6-4cd4-b8a5-5332526988bc"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_athafnirdaglegtlifs",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_heimilshald_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Starf-Nam": {
+          "runAfter": {
+            "Heimilishald": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "eea3cfa2-b09d-4691-9a29-dc964575527d"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_athafnirdaglegtlifs",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_starfnam_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Tomstundir": {
+          "runAfter": {
+            "Starf-Nam": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "720279e8-7b94-45a5-8fc9-555300efc9b7"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_athafnirdaglegtlifs",
+              "recordId": "@triggerOutputs()?['body/_cr4f8_tomstundir_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "comprehensiveEvaluation": {
+          "runAfter": {
+            "Tomstundir": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "81b1b421-e901-46cf-b41e-5cb578829165"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "comprehensiveEvaluation",
+                "type": "object",
+                "value": {
+                  "learningAndApplyingKnowledge": "@outputs('Ny-Thekking')?['body/cr4f8_id']",
+                  "learningAndApplyingKnowledgeName": "@outputs('Ny-Thekking')?['body/cr4f8_heiti']",
+                  "generalTasksAndDemands": "@outputs('Daglegt-Lif')?['body/cr4f8_id']",
+                  "generalTasksAndDemandsName": "@outputs('Daglegt-Lif')?['body/cr4f8_heiti']",
+                  "communicationAndRelationships": "@outputs('Samskipti')?['body/cr4f8_id']",
+                  "communicationAndRelationshipsName": "@outputs('Samskipti')?['body/cr4f8_heiti']",
+                  "mobility": "@outputs('Hreyfifaerni')?['body/cr4f8_id']",
+                  "mobilityName": "@outputs('Hreyfifaerni')?['body/cr4f8_heiti']",
+                  "selfCare": "@outputs('Eigin-Umsja')?['body/cr4f8_id']",
+                  "selfCareName": "@outputs('Eigin-Umsja')?['body/cr4f8_heiti']",
+                  "domesticLife": "@outputs('Heimilishald')?['body/cr4f8_id']",
+                  "domesticLifeName": "@outputs('Heimilishald')?['body/cr4f8_heiti']",
+                  "mainDailyLifeAreas": "@outputs('Starf-Nam')?['body/cr4f8_id']",
+                  "mainDailyLifeAreasName": "@outputs('Starf-Nam')?['body/cr4f8_heiti']",
+                  "leisureAndHobbies": "@outputs('Tomstundir')?['body/cr4f8_id']",
+                  "leisureAndHobbiesName": "@outputs('Tomstundir')?['body/cr4f8_heiti']"
+                }
+              }
+            ]
+          }
+        },
+        "mentalHealthGoals": {
+          "runAfter": {
+            "followUpEvaluation": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "e90c277f-de35-4ed1-9935-d776ecfd6075"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "mentalHealthGoals",
+                "type": "object",
+                "value": {
+                  "goalDescription": "@triggerOutputs()?['body/cr4f8_andlegheilsamarkmid']",
+                  "measures": "@triggerOutputs()?['body/cr4f8_andlegheilsaurraedi']"
+                }
+              }
+            ]
+          }
+        },
+        "physicalHealthGoals": {
+          "runAfter": {
+            "mentalHealthGoals": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "58fc118f-9b38-427f-b0a7-8ca1b8e816ac"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "physicalHealthGoals",
+                "type": "object",
+                "value": {
+                  "goalDescription": "@triggerOutputs()?['body/cr4f8_likamlegheilsamarkmid']",
+                  "measures": "@triggerOutputs()?['body/cr4f8_likamlegheilsamarkmid']"
+                }
+              }
+            ]
+          }
+        },
+        "activityAndParticipationGoals": {
+          "runAfter": {
+            "physicalHealthGoals": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "4a727345-ebfd-47de-961f-1caa2211b882"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "activityAndParticipationGoals",
+                "type": "object",
+                "value": {
+                  "goalDescription": "@triggerOutputs()?['body/cr4f8_virknithatttakamarkmid']",
+                  "measures": "@triggerOutputs()?['body/cr4f8_virknithatttakaurraedi']"
+                }
+              }
+            ]
+          }
+        },
+        "HTTP": {
+          "runAfter": {
+            "main": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "e4daf41a-5cff-47a2-a458-42e5e4b8d7c2"
+          },
+          "type": "Http",
+          "inputs": {
+            "method": "POST",
+            "uri": "@{parameters('API-Url (tre_APIBaseUrl)')}?document-id=@{triggerOutputs()?['body/cr4f8_id']}",
+            "headers": {
+              "client-id": "@parameters('Client-Id (tre_client-id)')",
+              "X-API-key": "@parameters('API-Key (tre_APIKey)')"
+            },
+            "body": "@variables('main')"
+          },
+          "runtimeConfiguration": {
+            "contentTransfer": {
+              "transferMode": "Chunked"
+            }
+          }
+        },
+        "Save_result": {
+          "runAfter": {
+            "HTTP": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "33bcbb5f-4709-45a1-b2ce-ca0389bc2749"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "UpdateOnlyRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4f8_endurhaefingaraaetluns",
+              "recordId": "@triggerOutputs()?['body/cr4f8_endurhaefingaraaetlunid']",
+              "item/tre_responsedags": "@utcNow()",
+              "item/tre_responselysing": "@if(equals(outputs('HTTP')['statusCode'], 200), 'OK', 'Unsuccessful')",
+              "item/tre_responsestatus": "@outputs('HTTP')['statusCode']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

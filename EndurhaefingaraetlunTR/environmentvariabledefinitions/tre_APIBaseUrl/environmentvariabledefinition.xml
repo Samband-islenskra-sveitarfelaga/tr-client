@@ -1,0 +1,14 @@
+<environmentvariabledefinition schemaname="tre_APIBaseUrl">
+  <defaultvalue>https://endurhaefing.dev.sveitarfelog.net/RehabilitationDocument</defaultvalue>
+  <description default="Base url fyrir API gateway">
+    <label description="Base url fyrir API gateway" languagecode="1033" />
+  </description>
+  <displayname default="API-Url">
+    <label description="API-Url" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.0.0.12</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000000</type>
+</environmentvariabledefinition>

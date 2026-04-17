@@ -1,0 +1,1 @@
+cr4f8_fjoldimanada: =DateDiff(cr4f8_upphafsdagur,cr4f8_lokadaguraetlun,TimeUnit.Months)
