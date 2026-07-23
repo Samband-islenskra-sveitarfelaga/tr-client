@@ -1,0 +1,14 @@
+<environmentvariabledefinition schemaname="tre_NafnStofnunar">
+  <defaultvalue>Samband sveitarfélaga</defaultvalue>
+  <description default="Nafn stofnunar eða sveitarfélags">
+    <label description="Nafn stofnunar eða sveitarfélags" languagecode="1033" />
+  </description>
+  <displayname default="Nafn stofnunar">
+    <label description="Nafn stofnunar" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.0.0.13</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000000</type>
+</environmentvariabledefinition>
