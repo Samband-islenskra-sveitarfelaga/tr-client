@@ -648,8 +648,8 @@
             "uri": "@{parameters('API-Url (tre_APIBaseUrl)')}/RehabilitationDocument?document-id=@{triggerOutputs()?['body/cr4f8_id']}",
             "method": "POST",
             "headers": {
-              "client-id": "@parameters('Client-Id (tre_client-id)')",
-              "X-API-key": "@parameters('API-Key (tre_APIKey)')"
+              "client-id": "@{parameters('Client-Id (tre_client-id)')}",
+              "X-API-key": "@{parameters('API-Key (tre_APIKey)')}"
             },
             "body": "@variables('main')"
           },

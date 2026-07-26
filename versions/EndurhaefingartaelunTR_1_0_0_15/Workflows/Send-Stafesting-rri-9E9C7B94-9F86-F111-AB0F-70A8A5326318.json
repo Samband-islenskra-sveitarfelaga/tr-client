@@ -1,0 +1,276 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4f8_sharedcommondataserviceforapps_c12b7"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "Client-Id (tre_client-id)": {
+          "defaultValue": "test_client",
+          "type": "String",
+          "metadata": {
+            "schemaName": "tre_client-id",
+            "description": "Client-id sveitarfélags"
+          }
+        },
+        "Nafn stofnunar (tre_NafnStofnunar)": {
+          "defaultValue": "Samband sveitarfélaga",
+          "type": "String",
+          "metadata": {
+            "schemaName": "tre_NafnStofnunar",
+            "description": "Nafn stofnunar eða sveitarfélags"
+          }
+        },
+        "API-Url (tre_APIBaseUrl)": {
+          "defaultValue": "https://endurhaefing.dev.sveitarfelog.net",
+          "type": "String",
+          "metadata": {
+            "schemaName": "tre_APIBaseUrl",
+            "description": "Base url fyrir API gateway"
+          }
+        },
+        "API-Key (tre_APIKey)": {
+          "defaultValue": "8Iaf7MqSusQlxUM1cmqIg3BY2XkU1Q3g",
+          "type": "String",
+          "metadata": {
+            "schemaName": "tre_APIKey",
+            "description": "API Key sveitarfélags"
+          }
+        }
+      },
+      "triggers": {
+        "Staðfesting_Atvinnuleit": {
+          "metadata": {
+            "operationMetadataId": "0414cded-e1a4-4819-a50f-9c5e326fdacb"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "tre_stadfestingatvinnuleit",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "tre_senttiltr"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        }
+      },
+      "actions": {
+        "Einstaklingur": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "e7f917fb-2ea6-4c83-9202-f0b8695250bd"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "tre_einstaklingurs",
+              "recordId": "@triggerOutputs()?['body/_tre_einstaklingur_value']"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        },
+        "individual": {
+          "runAfter": {
+            "Einstaklingur": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "0f4278b5-92fa-46d0-852c-d4687572e5a3"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "individual",
+                "type": "object",
+                "value": {
+                  "name": "@outputs('Einstaklingur')?['body/tre_name']",
+                  "nationalId": "@outputs('Einstaklingur')?['body/tre_kennitala']",
+                  "address": "@outputs('Einstaklingur')?['body/tre_heimilisfang']",
+                  "postalCode": "@string(outputs('Einstaklingur')?['body/tre_postnumer'])",
+                  "city": "@outputs('Einstaklingur')?['body/tre_staur']",
+                  "phoneNumber": "@outputs('Einstaklingur')?['body/tre_simanumer']",
+                  "email": "@outputs('Einstaklingur')?['body/tre_tolvupostfang']"
+                }
+              }
+            ]
+          }
+        },
+        "Ráðgjafi": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "28685981-3b4b-495d-b707-fb8666c68c77"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "tre_radgjafis",
+              "recordId": "@triggerOutputs()?['body/_tre_ragjafi_value']"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        },
+        "serviceProvider": {
+          "runAfter": {
+            "Ráðgjafi": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "73e3fa9a-9daf-45bc-8509-831c87b07c1a"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "serviceProvider",
+                "type": "object",
+                "value": {
+                  "serviceProviderName": "",
+                  "coordinatorName": "@outputs('Ráðgjafi')?['body/tre_name']",
+                  "coordinatorNationalId": "@outputs('Ráðgjafi')?['body/tre_kennitala']",
+                  "coordinatorTitle": "@outputs('Ráðgjafi')?['body/tre_titill']",
+                  "workplace": "@outputs('Ráðgjafi')?['body/tre_vinnustadur']",
+                  "phoneNumber": "@outputs('Ráðgjafi')?['body/tre_simanumer']",
+                  "email": "@outputs('Ráðgjafi')?['body/tre_tolvupostfang']"
+                }
+              }
+            ]
+          }
+        },
+        "requestedPeriod": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "9c82a64d-ac3b-4957-a438-91328a819608"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "requestedPeriod",
+                "type": "object",
+                "value": {
+                  "startDate": "@triggerOutputs()?['body/tre_upphafsdagur']",
+                  "endDate": "@triggerOutputs()?['body/tre_lokadagur']"
+                }
+              }
+            ]
+          }
+        },
+        "body": {
+          "runAfter": {
+            "serviceProvider": [
+              "Succeeded"
+            ],
+            "individual": [
+              "Succeeded"
+            ],
+            "requestedPeriod": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "5a488bbb-2a4c-49a1-a09b-fe570c283189"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "body",
+                "type": "object",
+                "value": {
+                  "referenceId": "@triggerOutputs()?['body/tre_stadfestingatvinnuleitid']",
+                  "serviceProviderRegno": "",
+                  "serviceProviderName": "@parameters('Nafn stofnunar (tre_NafnStofnunar)')",
+                  "created": "@triggerOutputs()?['body/createdon']",
+                  "documentId": "@triggerOutputs()?['body/tre_stadfestingatvinnuleitid']",
+                  "individual": "@variables('individual')",
+                  "serviceProvider": "@variables('serviceProvider')",
+                  "requestedPeriod": "@variables('requestedPeriod')"
+                }
+              }
+            ]
+          }
+        },
+        "HTTP": {
+          "runAfter": {
+            "body": [
+              "Succeeded"
+            ]
+          },
+          "type": "Http",
+          "inputs": {
+            "uri": "@{parameters('API-Url (tre_APIBaseUrl)')}/JobSearchConfirmation",
+            "method": "POST",
+            "headers": {
+              "client-id": "@{parameters('Client-Id (tre_client-id)')}",
+              "X-Api-Key": "@{parameters('API-Key (tre_APIKey)')}"
+            },
+            "body": "@variables('body')"
+          },
+          "runtimeConfiguration": {
+            "contentTransfer": {
+              "transferMode": "Chunked"
+            }
+          }
+        },
+        "Skrá_status": {
+          "runAfter": {
+            "HTTP": [
+              "Succeeded"
+            ]
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "tre_stadfestingatvinnuleits",
+              "recordId": "@triggerOutputs()?['body/tre_stadfestingatvinnuleitid']",
+              "item/tre_responsestatus": "@outputs('HTTP')?['statusCode']",
+              "item/tre_responsetext": "@if(equals(outputs('HTTP')?['statusCode'], '200'), 'OK', 'Sending mistókst')",
+              "item/tre_responsetime": "@if(equals(outputs('HTTP')?['statusCode'], '200'), utcNow(), null)"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "UpdateRecord",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}
