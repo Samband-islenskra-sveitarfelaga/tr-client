@@ -1,11 +1,11 @@
-<ImportExportXml version="9.2.26064.166" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26064.166" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26064.00166">
+<ImportExportXml version="9.2.26065.168" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26065.168" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26065.00168">
   <SolutionManifest>
     <UniqueName>EndurhaefingartaelunTR</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Endurhæfingaráætlun-TR" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.14</Version>
+    <Version>1.0.0.15</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>Samband</UniqueName>
@@ -91,6 +91,7 @@
       <RootComponent type="1" schemaName="tre_stadfestingheilsubrestur" behavior="0" />
       <RootComponent type="1" schemaName="tre_stadfestingvidurkenndmedferd" behavior="0" />
       <RootComponent type="1" schemaName="tre_tegund_medferdar" behavior="0" />
+      <RootComponent type="29" id="{9e9c7b94-9f86-f111-ab0f-70a8a5326318}" behavior="0" />
       <RootComponent type="29" id="{bc5ff24b-28a1-f011-bbd2-7ced8d13fee1}" behavior="0" />
       <RootComponent type="29" id="{d938e045-8186-f111-ab0f-70a8a5326318}" behavior="0" />
       <RootComponent type="62" schemaName="cr4f8_ETest" behavior="0" />
@@ -104,8 +105,8 @@
         <Dependent type="80" schemaName="cr4f8_ETest" displayName="Þjónustugátt TR" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2606.4011)">
-          <package appName="Base Custom Controls" version="9.0.2606.4011">BaseCustomControlsCore (9.0.2606.4011)</package>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2606.5012)">
+          <package appName="Base Custom Controls" version="9.0.2606.5012">BaseCustomControlsCore (9.0.2606.5012)</package>
         </Required>
         <Dependent type="60" displayName="Information" parentDisplayName="Endurhaefingaraaetlun" id="{f2bf18cd-7460-49cf-80d8-d9becc27875e}" />
       </MissingDependency>
