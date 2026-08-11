@@ -5,7 +5,7 @@
       <LocalizedName description="Endurhæfingaráætlun-TR" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.15</Version>
+    <Version>1.0.0.16</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>Samband</UniqueName>
@@ -90,7 +90,8 @@
       <RootComponent type="1" schemaName="tre_stadfestingbidmedferd" behavior="0" />
       <RootComponent type="1" schemaName="tre_stadfestingheilsubrestur" behavior="0" />
       <RootComponent type="1" schemaName="tre_stadfestingvidurkenndmedferd" behavior="0" />
-      <RootComponent type="1" schemaName="tre_tegund_medferdar" behavior="0" />
+      <RootComponent type="9" schemaName="tre_tegundmeferar" behavior="0" />
+      <RootComponent type="29" id="{6a94764c-a689-f111-ab0f-7ced8d0b6045}" behavior="0" />
       <RootComponent type="29" id="{9e9c7b94-9f86-f111-ab0f-70a8a5326318}" behavior="0" />
       <RootComponent type="29" id="{bc5ff24b-28a1-f011-bbd2-7ced8d13fee1}" behavior="0" />
       <RootComponent type="29" id="{d938e045-8186-f111-ab0f-70a8a5326318}" behavior="0" />
@@ -108,7 +109,7 @@
         <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2606.5012)">
           <package appName="Base Custom Controls" version="9.0.2606.5012">BaseCustomControlsCore (9.0.2606.5012)</package>
         </Required>
-        <Dependent type="60" displayName="Information" parentDisplayName="Endurhaefingaraaetlun" id="{f2bf18cd-7460-49cf-80d8-d9becc27875e}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Endurhæfingaráætlun" id="{f2bf18cd-7460-49cf-80d8-d9becc27875e}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.18)" id.uniquename="AppChannel">

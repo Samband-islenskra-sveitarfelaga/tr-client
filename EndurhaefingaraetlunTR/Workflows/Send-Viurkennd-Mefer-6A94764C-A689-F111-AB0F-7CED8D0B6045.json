@@ -1,0 +1,352 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4f8_sharedcommondataserviceforapps_c12b7"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "Client-Id (tre_client-id)": {
+          "defaultValue": "test_client",
+          "type": "String",
+          "metadata": {
+            "schemaName": "tre_client-id",
+            "description": "Client-id sveitarfélags"
+          }
+        },
+        "Nafn stofnunar (tre_NafnStofnunar)": {
+          "defaultValue": "Samband sveitarfélaga",
+          "type": "String",
+          "metadata": {
+            "schemaName": "tre_NafnStofnunar",
+            "description": "Nafn stofnunar eða sveitarfélags"
+          }
+        },
+        "API-Url (tre_APIBaseUrl)": {
+          "defaultValue": "https://endurhaefing.dev.sveitarfelog.net",
+          "type": "String",
+          "metadata": {
+            "schemaName": "tre_APIBaseUrl",
+            "description": "Base url fyrir API gateway"
+          }
+        },
+        "API-Key (tre_APIKey)": {
+          "defaultValue": "8Iaf7MqSusQlxUM1cmqIg3BY2XkU1Q3g",
+          "type": "String",
+          "metadata": {
+            "schemaName": "tre_APIKey",
+            "description": "API Key sveitarfélags"
+          }
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "c28e0892-4331-43f8-b0a8-89e57b5b83f2"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "tre_stadfestingvidurkenndmedferd",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "tre_senttiltr"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        }
+      },
+      "actions": {
+        "Einstaklingur": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "05292a97-bd24-476d-b551-6204eab179f6"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "tre_einstaklingurs",
+              "recordId": "@triggerOutputs()?['body/_tre_einstaklingur_value']"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        },
+        "Ráðgjafi": {
+          "runAfter": {},
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "tre_radgjafis",
+              "recordId": "@triggerOutputs()?['body/_tre_ragjafi_value']"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        },
+        "individual": {
+          "runAfter": {
+            "Einstaklingur": [
+              "Succeeded"
+            ]
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "individual",
+                "type": "object",
+                "value": {
+                  "name": "@outputs('Einstaklingur')?['body/tre_name']",
+                  "nationalId": "@outputs('Einstaklingur')?['body/tre_kennitala']",
+                  "address": "@outputs('Einstaklingur')?['body/tre_heimilisfang']",
+                  "postalCode": "@outputs('Einstaklingur')?['body/tre_postnumer']",
+                  "city": "@outputs('Einstaklingur')?['body/tre_staur']",
+                  "phoneNumber": "@outputs('Einstaklingur')?['body/tre_simanumer']",
+                  "email": "@outputs('Einstaklingur')?['body/tre_tolvupostfang']"
+                }
+              }
+            ]
+          }
+        },
+        "serviceProvider": {
+          "runAfter": {
+            "Ráðgjafi": [
+              "Succeeded"
+            ]
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "serviceProvider",
+                "type": "object",
+                "value": {
+                  "serviceProviderName": "@parameters('Nafn stofnunar (tre_NafnStofnunar)')",
+                  "coordinatorName": "@outputs('Ráðgjafi')?['body/tre_name']",
+                  "coordinatorNationalId": "@outputs('Ráðgjafi')?['body/tre_kennitala']",
+                  "coordinatorTitle": "@outputs('Ráðgjafi')?['body/tre_titill']",
+                  "workplace": "@outputs('Ráðgjafi')?['body/tre_vinnustadur']",
+                  "phoneNumber": "@outputs('Ráðgjafi')?['body/tre_simanumer']",
+                  "email": "@outputs('Ráðgjafi')?['body/tre_tolvupostfang']"
+                }
+              }
+            ]
+          }
+        },
+        "requestedTreatment": {
+          "runAfter": {
+            "Apply_to_each": [
+              "Succeeded"
+            ]
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "requestedTreatment",
+                "type": "object",
+                "value": {
+                  "treatmentTypes": "@variables('treatmentTypesInt')",
+                  "otherTreatmentDescription": "@triggerOutputs()?['body/tre_skyringmefera']"
+                }
+              }
+            ]
+          }
+        },
+        "treatmentTypesInt": {
+          "runAfter": {},
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "treatmentTypesInt",
+                "type": "array"
+              }
+            ]
+          }
+        },
+        "treatmentTypesStr": {
+          "runAfter": {
+            "treatmentTypesInt": [
+              "Succeeded"
+            ]
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "treatmentTypesStr",
+                "type": "array",
+                "value": "@split(triggerOutputs()?['body/tre_tegundmeferar'],',')"
+              }
+            ]
+          }
+        },
+        "Apply_to_each": {
+          "foreach": "@variables('treatmentTypesStr')",
+          "actions": {
+            "Append_to_array_variable": {
+              "type": "AppendToArrayVariable",
+              "inputs": {
+                "name": "treatmentTypesInt",
+                "value": "@int(items('Apply_to_each'))"
+              }
+            }
+          },
+          "runAfter": {
+            "treatmentTypesStr": [
+              "Succeeded"
+            ]
+          },
+          "type": "Foreach"
+        },
+        "previousApplication": {
+          "runAfter": {},
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "previousApplication",
+                "type": "object",
+                "value": {
+                  "hasPreviousApproval": "@triggerOutputs()?['body/tre_fyrrisamykktmedferd']",
+                  "additionalDetails": "@triggerOutputs()?['body/tre_fyrrimeferskyringar']"
+                }
+              }
+            ]
+          }
+        },
+        "requestedPeriod": {
+          "runAfter": {},
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "requestedPeriod",
+                "type": "object",
+                "value": {
+                  "startDate": "@triggerOutputs()?['body/tre_upphafsdagur']",
+                  "endDate": "@triggerOutputs()?['body/tre_lokadagur']"
+                }
+              }
+            ]
+          }
+        },
+        "body": {
+          "runAfter": {
+            "requestedTreatment": [
+              "Succeeded"
+            ],
+            "individual": [
+              "Succeeded"
+            ],
+            "serviceProvider": [
+              "Succeeded"
+            ],
+            "previousApplication": [
+              "Succeeded"
+            ],
+            "requestedPeriod": [
+              "Succeeded"
+            ]
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "body",
+                "type": "object",
+                "value": {
+                  "referenceId": "@triggerOutputs()?['body/tre_stadfestingvidurkenndmedferdid']",
+                  "serviceProviderName": "@parameters('Nafn stofnunar (tre_NafnStofnunar)')",
+                  "serviceProviderRegno": "",
+                  "created": "@triggerOutputs()?['body/createdon']",
+                  "documentId": "@triggerOutputs()?['body/tre_stadfestingvidurkenndmedferdid']",
+                  "individual": "@variables('individual')",
+                  "serviceProvider": "@variables('serviceProvider')",
+                  "requestedTreatment": "@variables('requestedTreatment')",
+                  "previousApplication": "@variables('previousApplication')",
+                  "requestedPeriod": "@variables('requestedPeriod')"
+                }
+              }
+            ]
+          }
+        },
+        "HTTP": {
+          "runAfter": {
+            "body": [
+              "Succeeded"
+            ]
+          },
+          "type": "Http",
+          "inputs": {
+            "uri": "@{parameters('API-Url (tre_APIBaseUrl)')}/ConfirmationApprovedTreatment",
+            "method": "POST",
+            "headers": {
+              "client-id": "@{parameters('Client-Id (tre_client-id)')}",
+              "X-API-key": "@{parameters('API-Key (tre_APIKey)')}"
+            },
+            "body": "@variables('body')"
+          },
+          "runtimeConfiguration": {
+            "contentTransfer": {
+              "transferMode": "Chunked"
+            }
+          }
+        },
+        "Upsert_a_row": {
+          "runAfter": {
+            "HTTP": [
+              "Succeeded"
+            ]
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "tre_stadfestingvidurkenndmedferds",
+              "recordId": "@triggerOutputs()?['body/tre_stadfestingvidurkenndmedferdid']",
+              "item/tre_responsestatus": "@outputs('HTTP')?['statusCode']",
+              "item/tre_responsetexti": "@if(equals(outputs('HTTP')?['statusCode'], '200'), 'OK', 'Villa við sendingu')",
+              "item/tre_timisendingar": "@utcNow()"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "UpdateRecord",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

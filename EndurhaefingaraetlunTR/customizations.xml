@@ -4036,17 +4036,17 @@
       </RibbonDiffXml>
     </Entity>
     <Entity>
-      <Name LocalizedName="Endurhaefingaraaetlun" OriginalName="Endurhaefingaraaetlun">cr4f8_Endurhaefingaraaetlun</Name>
+      <Name LocalizedName="Endurhæfingaráætlun" OriginalName="Endurhaefingaraaetlun">cr4f8_Endurhaefingaraaetlun</Name>
       <EntityInfo>
         <entity Name="cr4f8_Endurhaefingaraaetlun">
           <LocalizedNames>
-            <LocalizedName description="Endurhaefingaraaetlun" languagecode="1033" />
+            <LocalizedName description="Endurhæfingaráætlun" languagecode="1033" />
           </LocalizedNames>
           <LocalizedCollectionNames>
-            <LocalizedCollectionName description="Endurhaefingaraaetlanir" languagecode="1033" />
+            <LocalizedCollectionName description="Endurhæfingaráætlanir" languagecode="1033" />
           </LocalizedCollectionNames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Endurhæfingaráætlanir" languagecode="1033" />
           </Descriptions>
           <attributes>
             <attribute PhysicalName="cr4f8_AndlegHeilsaMarkmid">
@@ -6544,6 +6544,82 @@
                 <Description description="For internal use only." languagecode="1033" />
               </Descriptions>
             </attribute>
+            <attribute PhysicalName="tre_Einstaklingur">
+              <Type>lookup</Type>
+              <Name>tre_einstaklingur</Name>
+              <LogicalName>tre_einstaklingur</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.15</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Einstaklingur" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Einstaklingur sem endurhæfingaráætlun  er fyrir" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="tre_Ragjafi">
+              <Type>lookup</Type>
+              <Name>tre_ragjafi</Name>
+              <LogicalName>tre_ragjafi</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.15</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Ráðgjafi" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Ráðgjafi sem gerir endurhæfingaráætlun" languagecode="1033" />
+              </Descriptions>
+            </attribute>
             <attribute PhysicalName="tre_ResponseDags">
               <Type>datetime</Type>
               <Name>tre_responsedags</Name>
@@ -6712,6 +6788,7 @@
           <IsCollaboration>0</IsCollaboration>
           <AutoRouteToOwnerQueue>0</AutoRouteToOwnerQueue>
           <IsConnectionsEnabled>0</IsConnectionsEnabled>
+          <EntityColor></EntityColor>
           <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
           <AutoCreateAccessTeams>0</AutoCreateAccessTeams>
           <IsOneNoteIntegrationEnabled>0</IsOneNoteIntegrationEnabled>
@@ -6758,9 +6835,11 @@
           <CanCreateViews>1</CanCreateViews>
           <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
           <CanEnableSyncToExternalSearchIndex>1</CanEnableSyncToExternalSearchIndex>
+          <IconVectorName></IconVectorName>
           <EnforceStateTransitions>0</EnforceStateTransitions>
           <CanChangeHierarchicalRelationship>1</CanChangeHierarchicalRelationship>
           <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
+          <EntityHelpUrl></EntityHelpUrl>
           <ChangeTrackingEnabled>1</ChangeTrackingEnabled>
           <CanChangeTrackingBeEnabled>1</CanChangeTrackingBeEnabled>
           <IsEnabledForExternalChannels>0</IsEnabledForExternalChannels>
@@ -7887,14 +7966,6 @@
                   <cell name="cr4f8_likamlegheilsamarkmid" width="191" />
                   <cell name="cr4f8_likamlegheilsaurraedi" width="182" />
                   <cell name="cr4f8_andlegheilsamarkmid" width="179" />
-                  <cell name="cr4f8_radgjafinafn" width="121" />
-                  <cell name="cr4f8_radgjafikennitala" width="148" />
-                  <cell name="cr4f8_radgjafititill" width="121" />
-                  <cell name="cr4f8_radgjafivinnustadur" width="162" />
-                  <cell name="cr4f8_radgjafisimanumer" width="158" />
-                  <cell name="cr4f8_radgjafinetfang" width="138" />
-                  <cell name="cr4f8_stadur" width="100" />
-                  <cell name="cr4f8_readytosend" width="128" />
                 </row>
               </grid>
             </layoutxml>
@@ -7943,15 +8014,7 @@
                   <attribute name="cr4f8_likamlegheilsamarkmid" />
                   <attribute name="cr4f8_likamlegheilsaurraedi" />
                   <attribute name="cr4f8_andlegheilsamarkmid" />
-                  <attribute name="cr4f8_radgjafinafn" />
-                  <attribute name="cr4f8_radgjafikennitala" />
-                  <attribute name="cr4f8_radgjafititill" />
-                  <attribute name="cr4f8_radgjafivinnustadur" />
-                  <attribute name="cr4f8_radgjafisimanumer" />
-                  <attribute name="cr4f8_radgjafinetfang" />
                   <order attribute="cr4f8_id" descending="true" />
-                  <attribute name="cr4f8_stadur" />
-                  <attribute name="cr4f8_readytosend" />
                 </entity>
               </fetch>
             </fetchxml>
@@ -17168,14 +17231,14 @@
                 </tab>
                 <tab name="tab_2" id="6a362f3b-a80d-4591-adde-507ddf006735" IsUserDefined="0" locklevel="0" showlabel="true">
                   <labels>
-                    <label description="Annað" languagecode="1033" />
+                    <label description="Eigindi" languagecode="1033" />
                   </labels>
                   <columns>
                     <column width="100%">
                       <sections>
                         <section name="tab_2_section_1" id="d231eb79-7ffe-44ee-812f-b8ccf9143c17" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                           <labels>
-                            <label description="Skráningarupplýsingar" languagecode="1033" />
+                            <label description="Eigandi" languagecode="1033" />
                           </labels>
                           <rows>
                             <row />
@@ -17187,6 +17250,14 @@
                                 <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                               </cell>
                             </row>
+                          </rows>
+                        </section>
+                        <section name="tab_2_section_3" id="135564be-ca83-408e-acee-329a276c3749" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Búið til" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row />
                             <row>
                               <cell id="{29ab05e3-a2c7-4002-b1a2-e6d9d6b747cf}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
@@ -17196,11 +17267,51 @@
                               </cell>
                             </row>
                             <row>
+                              <cell id="{d2f44d76-27fc-4239-b393-4aaa255c05a3}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Created By" languagecode="1033" />
+                                </labels>
+                                <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{df4c55f0-00a3-4c26-9c80-eca5d99e1aef}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Created By (Delegate)" languagecode="1033" />
+                                </labels>
+                                <control id="createdonbehalfby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdonbehalfby" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="tab_2_section_4" id="ae41e511-d69c-4e18-9a16-5808c685520b" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Breytt" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row />
+                            <row>
                               <cell id="{5f8efb45-fe95-4e5c-8aa1-3a3e7666a541}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
                                   <label description="Síðast breytt" languagecode="1033" />
                                 </labels>
                                 <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{0d894a0f-477b-40e6-a483-ccc5829848df}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Modified By" languagecode="1033" />
+                                </labels>
+                                <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{e689435b-f7e4-4a3d-8631-484f6b2600a5}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Modified By (Delegate)" languagecode="1033" />
+                                </labels>
+                                <control id="modifiedonbehalfby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedonbehalfby" disabled="false" />
                               </cell>
                             </row>
                           </rows>
@@ -17571,14 +17682,14 @@
       </RibbonDiffXml>
     </Entity>
     <Entity>
-      <Name LocalizedName="StadfestingBidMedferd" OriginalName="StadfestingBidMedferd">tre_StadfestingBidMedferd</Name>
+      <Name LocalizedName="Staðfesting á bið eftir úrræði" OriginalName="StadfestingBidMedferd">tre_StadfestingBidMedferd</Name>
       <EntityInfo>
         <entity Name="tre_StadfestingBidMedferd">
           <LocalizedNames>
-            <LocalizedName description="StadfestingBidMedferd" languagecode="1033" />
+            <LocalizedName description="Staðfesting á bið eftir úrræði" languagecode="1033" />
           </LocalizedNames>
           <LocalizedCollectionNames>
-            <LocalizedCollectionName description="StadfestingBidMedferds" languagecode="1033" />
+            <LocalizedCollectionName description="Staðfestingar á bið eftir úrræðum" languagecode="1033" />
           </LocalizedCollectionNames>
           <Descriptions>
             <Description description="This table contains records of Stadfesting-Bid-Medferd details" languagecode="1033" />
@@ -19061,9 +19172,11 @@
           <CanCreateViews>1</CanCreateViews>
           <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
           <CanEnableSyncToExternalSearchIndex>1</CanEnableSyncToExternalSearchIndex>
+          <IconVectorName></IconVectorName>
           <EnforceStateTransitions>0</EnforceStateTransitions>
           <CanChangeHierarchicalRelationship>1</CanChangeHierarchicalRelationship>
           <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
+          <EntityHelpUrl></EntityHelpUrl>
           <ChangeTrackingEnabled>1</ChangeTrackingEnabled>
           <CanChangeTrackingBeEnabled>1</CanChangeTrackingBeEnabled>
           <IsEnabledForExternalChannels>0</IsEnabledForExternalChannels>
@@ -19344,14 +19457,14 @@
                 </tab>
                 <tab name="tab_2" id="1f109d24-1b5a-4c6b-aaaf-de891c276571" IsUserDefined="0" locklevel="0" showlabel="true">
                   <labels>
-                    <label description="Annað" languagecode="1033" />
+                    <label description="Eigindi" languagecode="1033" />
                   </labels>
                   <columns>
                     <column width="100%">
                       <sections>
                         <section name="tab_2_section_1" id="48a2b5be-520f-489e-980d-eba9fb09f54b" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                           <labels>
-                            <label description="Annað" languagecode="1033" />
+                            <label description="Eigandi" languagecode="1033" />
                           </labels>
                           <rows>
                             <row />
@@ -19361,6 +19474,78 @@
                                   <label description="Eigandi" languagecode="1033" />
                                 </labels>
                                 <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{ec18106a-f48b-4979-ba79-603149152f2d}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Owning Business Unit" languagecode="1033" />
+                                </labels>
+                                <control id="owningbusinessunit" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="owningbusinessunit" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="tab_2_section_3" id="1701974f-268b-4fd6-964e-f9249b96e603" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Búið til" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row />
+                            <row>
+                              <cell id="{5c7aaa00-b872-4903-82fc-30542fd8b2c5}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Created On" languagecode="1033" />
+                                </labels>
+                                <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{01199ac3-0929-4994-9cd9-6105dc4bc3d7}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Created By" languagecode="1033" />
+                                </labels>
+                                <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{ab2dd952-dd72-4f92-8c6a-29e093f7017e}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Created By (Delegate)" languagecode="1033" />
+                                </labels>
+                                <control id="createdonbehalfby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdonbehalfby" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="tab_2_section_4" id="a377a0a5-29c8-40f2-a1f0-e9051132fd0c" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Breytt" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row />
+                            <row>
+                              <cell id="{fd146dac-9e39-41f4-9b71-07159c5789f7}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Modified On" languagecode="1033" />
+                                </labels>
+                                <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{8cf6b71c-0352-4668-853c-4661b3f89af5}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Modified By" languagecode="1033" />
+                                </labels>
+                                <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{5d764bc6-9413-4fe2-9662-2a39f4a987b9}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Modified By (Delegate)" languagecode="1033" />
+                                </labels>
+                                <control id="modifiedonbehalfby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedonbehalfby" disabled="false" />
                               </cell>
                             </row>
                           </rows>
@@ -21648,17 +21833,17 @@
       </RibbonDiffXml>
     </Entity>
     <Entity>
-      <Name LocalizedName="Stadfesting-Vidurkennd-Medferd" OriginalName="Stadfesting-Vidurkennd-Medferd">tre_StadfestingVidurkenndMedferd</Name>
+      <Name LocalizedName="Staðfesting á viðurkenndri meðferð" OriginalName="Stadfesting-Vidurkennd-Medferd">tre_StadfestingVidurkenndMedferd</Name>
       <EntityInfo>
         <entity Name="tre_StadfestingVidurkenndMedferd">
           <LocalizedNames>
-            <LocalizedName description="Stadfesting-Vidurkennd-Medferd" languagecode="1033" />
+            <LocalizedName description="Staðfesting á viðurkenndri meðferð" languagecode="1033" />
           </LocalizedNames>
           <LocalizedCollectionNames>
-            <LocalizedCollectionName description="Stadfesting-Vidurkennd-Medferds" languagecode="1033" />
+            <LocalizedCollectionName description="Staðfestingar á viðurkenndri meðferð" languagecode="1033" />
           </LocalizedCollectionNames>
           <Descriptions>
-            <Description description="This table contains records similar to Stadfesting-Heilsubrestur" languagecode="1033" />
+            <Description description="Skráningar vegna staðfestingar á viðurkenndri meðferð einstaklings" languagecode="1033" />
           </Descriptions>
           <attributes>
             <attribute PhysicalName="CreatedBy">
@@ -22295,10 +22480,48 @@
                 <Description description="For internal use only." languagecode="1033" />
               </Descriptions>
             </attribute>
-            <attribute PhysicalName="tre_FyrriMedferd">
-              <Type>bit</Type>
-              <Name>tre_fyrrimedferd</Name>
-              <LogicalName>tre_fyrrimedferd</LogicalName>
+            <attribute PhysicalName="tre_Einstaklingur">
+              <Type>lookup</Type>
+              <Name>tre_einstaklingur</Name>
+              <LogicalName>tre_einstaklingur</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.15</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Einstaklingur" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Einstaklingur sem staðfesting um meðferð á við um." languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="tre_Fyrrimeferskyringar">
+              <Type>ntext</Type>
+              <Name>tre_fyrrimeferskyringar</Name>
+              <LogicalName>tre_fyrrimeferskyringar</LogicalName>
               <RequiredLevel>none</RequiredLevel>
               <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
@@ -22325,14 +22548,53 @@
               <IsFilterable>0</IsFilterable>
               <IsRetrievable>0</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
+              <Format>text</Format>
+              <MaxLength>2000</MaxLength>
+              <displaynames>
+                <displayname description="Fyrri meðferð skýringar" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Skýringar vegna fyrri samþykktrar meðferðar" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="tre_Fyrrisamykktmedferd">
+              <Type>bit</Type>
+              <Name>tre_fyrrisamykktmedferd</Name>
+              <LogicalName>tre_fyrrisamykktmedferd</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.15</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
               <AppDefaultValue>0</AppDefaultValue>
-              <optionset Name="tre_stadfestingvidurkenndmedferd_tre_fyrrimedferd">
+              <optionset Name="tre_stadfestingvidurkenndmedferd_tre_fyrrisamykktmedferd">
                 <OptionSetType>bit</OptionSetType>
-                <IntroducedVersion>1.0</IntroducedVersion>
+                <IntroducedVersion>1.0.0.15</IntroducedVersion>
                 <IsCustomizable>1</IsCustomizable>
                 <ExternalTypeName></ExternalTypeName>
                 <displaynames>
-                  <displayname description="Fyrri-Medferd" languagecode="1033" />
+                  <displayname description="Fyrri samþykkt meðferð" languagecode="1033" />
                 </displaynames>
                 <Descriptions>
                   <Description description="" languagecode="1033" />
@@ -22340,101 +22602,21 @@
                 <options>
                   <option value="1" ExternalValue="" IsHidden="0">
                     <labels>
-                      <label description="True" languagecode="1033" />
+                      <label description="Já" languagecode="1033" />
                     </labels>
                   </option>
                   <option value="0" ExternalValue="" IsHidden="0">
                     <labels>
-                      <label description="False" languagecode="1033" />
+                      <label description="Nei" languagecode="1033" />
                     </labels>
                   </option>
                 </options>
               </optionset>
               <displaynames>
-                <displayname description="Fyrri-Medferd" languagecode="1033" />
+                <displayname description="Fyrri samþykkt meðferð" languagecode="1033" />
               </displaynames>
               <Descriptions>
-                <Description description="" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="tre_FyrriMedferdLysing">
-              <Type>nvarchar</Type>
-              <Name>tre_fyrrimedferdlysing</Name>
-              <LogicalName>tre_fyrrimedferdlysing</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Fyrri-Medferd-Lysing" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="tre_Kennitala">
-              <Type>nvarchar</Type>
-              <Name>tre_kennitala</Name>
-              <LogicalName>tre_kennitala</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Kennitala" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="" languagecode="1033" />
+                <Description description="Hefur fengið samþykkta meðferð áður" languagecode="1033" />
               </Descriptions>
             </attribute>
             <attribute PhysicalName="tre_Lokadagur">
@@ -22472,46 +22654,6 @@
               <Behavior>1</Behavior>
               <displaynames>
                 <displayname description="Lokadagur" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="tre_Nafn">
-              <Type>nvarchar</Type>
-              <Name>tre_nafn</Name>
-              <LogicalName>tre_nafn</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Nafn" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="" languagecode="1033" />
@@ -22557,20 +22699,19 @@
                 <Description description="" languagecode="1033" />
               </Descriptions>
             </attribute>
-            <attribute PhysicalName="tre_Netfang">
-              <Type>nvarchar</Type>
-              <Name>tre_netfang</Name>
-              <LogicalName>tre_netfang</LogicalName>
+            <attribute PhysicalName="tre_Ragjafi">
+              <Type>lookup</Type>
+              <Name>tre_ragjafi</Name>
+              <LogicalName>tre_ragjafi</LogicalName>
               <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ValidForUpdateApi>1</ValidForUpdateApi>
               <ValidForReadApi>1</ValidForReadApi>
               <ValidForCreateApi>1</ValidForCreateApi>
               <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsAuditEnabled>0</IsAuditEnabled>
               <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
+              <IntroducedVersion>1.0.0.15</IntroducedVersion>
               <IsCustomizable>1</IsCustomizable>
               <IsRenameable>1</IsRenameable>
               <CanModifySearchSettings>1</CanModifySearchSettings>
@@ -22587,20 +22728,19 @@
               <IsFilterable>0</IsFilterable>
               <IsRetrievable>0</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
-              <Format>email</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
               <displaynames>
-                <displayname description="Netfang" languagecode="1033" />
+                <displayname description="Ráðgjafi" languagecode="1033" />
               </displaynames>
               <Descriptions>
-                <Description description="" languagecode="1033" />
+                <Description description="Ráðgjafi sem gefur út staðfestingu" languagecode="1033" />
               </Descriptions>
             </attribute>
-            <attribute PhysicalName="tre_Postnumer">
+            <attribute PhysicalName="tre_Responsestatus">
               <Type>int</Type>
-              <Name>tre_postnumer</Name>
-              <LogicalName>tre_postnumer</LogicalName>
+              <Name>tre_responsestatus</Name>
+              <LogicalName>tre_responsestatus</LogicalName>
               <RequiredLevel>none</RequiredLevel>
               <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>disabled</ImeMode>
@@ -22628,21 +22768,21 @@
               <IsRetrievable>0</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
               <Format>none</Format>
-              <MinValue>-2147483648</MinValue>
-              <MaxValue>2147483647</MaxValue>
+              <MinValue>0</MinValue>
+              <MaxValue>1000</MaxValue>
               <displaynames>
-                <displayname description="Postnumer" languagecode="1033" />
+                <displayname description="Response status" languagecode="1033" />
               </displaynames>
               <Descriptions>
-                <Description description="" languagecode="1033" />
+                <Description description="Staða á sendingu " languagecode="1033" />
               </Descriptions>
             </attribute>
-            <attribute PhysicalName="tre_Radgjafi">
+            <attribute PhysicalName="tre_ResponseTexti">
               <Type>nvarchar</Type>
-              <Name>tre_radgjafi</Name>
-              <LogicalName>tre_radgjafi</LogicalName>
+              <Name>tre_responsetexti</Name>
+              <LogicalName>tre_responsetexti</LogicalName>
               <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
               <ValidForReadApi>1</ValidForReadApi>
@@ -22668,21 +22808,83 @@
               <IsRetrievable>0</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
               <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
+              <MaxLength>255</MaxLength>
+              <Length>510</Length>
               <displaynames>
-                <displayname description="Radgjafi-" languagecode="1033" />
+                <displayname description="Response Texti" languagecode="1033" />
               </displaynames>
               <Descriptions>
-                <Description description="" languagecode="1033" />
+                <Description description="Lýsing á stöðu sendingar" languagecode="1033" />
               </Descriptions>
             </attribute>
-            <attribute PhysicalName="tre_Simanumer">
-              <Type>nvarchar</Type>
-              <Name>tre_simanumer</Name>
-              <LogicalName>tre_simanumer</LogicalName>
+            <attribute PhysicalName="tre_SenttilTR">
+              <Type>bit</Type>
+              <Name>tre_senttiltr</Name>
+              <LogicalName>tre_senttiltr</LogicalName>
               <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.15</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <AppDefaultValue>0</AppDefaultValue>
+              <optionset Name="tre_stadfestingvidurkenndmedferd_tre_senttiltr">
+                <OptionSetType>bit</OptionSetType>
+                <IntroducedVersion>1.0.0.15</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <ExternalTypeName></ExternalTypeName>
+                <displaynames>
+                  <displayname description="Sent til TR" languagecode="1033" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="" languagecode="1033" />
+                </Descriptions>
+                <options>
+                  <option value="1" ExternalValue="" IsHidden="0">
+                    <labels>
+                      <label description="Já" languagecode="1033" />
+                    </labels>
+                  </option>
+                  <option value="0" ExternalValue="" IsHidden="0">
+                    <labels>
+                      <label description="Nei" languagecode="1033" />
+                    </labels>
+                  </option>
+                </options>
+              </optionset>
+              <displaynames>
+                <displayname description="Sent til TR" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Hefur staðfesting verið send til TR" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="tre_Skyringmefera">
+              <Type>ntext</Type>
+              <Name>tre_skyringmefera</Name>
+              <LogicalName>tre_skyringmefera</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
               <ValidForReadApi>1</ValidForReadApi>
@@ -22707,14 +22909,13 @@
               <IsFilterable>0</IsFilterable>
               <IsRetrievable>0</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
-              <Format>phone</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
+              <Format>text</Format>
+              <MaxLength>2000</MaxLength>
               <displaynames>
-                <displayname description="Simanumer" languagecode="1033" />
+                <displayname description="Skýring meðferða" languagecode="1033" />
               </displaynames>
               <Descriptions>
-                <Description description="" languagecode="1033" />
+                <Description description="Skýringar vegna meðferðar" languagecode="1033" />
               </Descriptions>
             </attribute>
             <attribute PhysicalName="tre_StadfestingVidurkenndMedferdId">
@@ -22754,12 +22955,12 @@
                 <Description description="Unique identifier for entity instances" languagecode="1033" />
               </Descriptions>
             </attribute>
-            <attribute PhysicalName="tre_stofnun">
-              <Type>nvarchar</Type>
-              <Name>tre_stofnun</Name>
-              <LogicalName>tre_stofnun</LogicalName>
+            <attribute PhysicalName="tre_Tegundmeferar">
+              <Type>multiselectpicklist</Type>
+              <Name>tre_tegundmeferar</Name>
+              <LogicalName>tre_tegundmeferar</LogicalName>
               <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
               <ValidForReadApi>1</ValidForReadApi>
@@ -22767,7 +22968,7 @@
               <IsCustomField>1</IsCustomField>
               <IsAuditEnabled>1</IsAuditEnabled>
               <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
+              <IntroducedVersion>1.0.0.15</IntroducedVersion>
               <IsCustomizable>1</IsCustomizable>
               <IsRenameable>1</IsRenameable>
               <CanModifySearchSettings>1</CanModifySearchSettings>
@@ -22784,22 +22985,20 @@
               <IsFilterable>0</IsFilterable>
               <IsRetrievable>0</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
+              <OptionSetName>tre_tegundmeferar</OptionSetName>
               <displaynames>
-                <displayname description="stofnun" languagecode="1033" />
+                <displayname description="Tegund meðferðar" languagecode="1033" />
               </displaynames>
               <Descriptions>
-                <Description description="" languagecode="1033" />
+                <Description description="Tegundir samþykktra meðferða eins og TR skilgreinir " languagecode="1033" />
               </Descriptions>
             </attribute>
-            <attribute PhysicalName="tre_TegundMedferdar">
-              <Type>nvarchar</Type>
-              <Name>tre_tegundmedferdar</Name>
-              <LogicalName>tre_tegundmedferdar</LogicalName>
+            <attribute PhysicalName="tre_Timisendingar">
+              <Type>datetime</Type>
+              <Name>tre_timisendingar</Name>
+              <LogicalName>tre_timisendingar</LogicalName>
               <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
               <ValidForReadApi>1</ValidForReadApi>
@@ -22824,14 +23023,13 @@
               <IsFilterable>0</IsFilterable>
               <IsRetrievable>0</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
+              <Format>datetime</Format>
+              <Behavior>1</Behavior>
               <displaynames>
-                <displayname description="Tegund-Medferdar" languagecode="1033" />
+                <displayname description="Tími sendingar" languagecode="1033" />
               </displaynames>
               <Descriptions>
-                <Description description="" languagecode="1033" />
+                <Description description="Dagur og tími sem staðfesting var síðast send til TR" languagecode="1033" />
               </Descriptions>
             </attribute>
             <attribute PhysicalName="tre_Upphafsdagur">
@@ -22969,9 +23167,11 @@
           <CanCreateViews>1</CanCreateViews>
           <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
           <CanEnableSyncToExternalSearchIndex>1</CanEnableSyncToExternalSearchIndex>
+          <IconVectorName></IconVectorName>
           <EnforceStateTransitions>0</EnforceStateTransitions>
           <CanChangeHierarchicalRelationship>1</CanChangeHierarchicalRelationship>
           <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
+          <EntityHelpUrl></EntityHelpUrl>
           <ChangeTrackingEnabled>1</ChangeTrackingEnabled>
           <CanChangeTrackingBeEnabled>1</CanChangeTrackingBeEnabled>
           <IsEnabledForExternalChannels>0</IsEnabledForExternalChannels>
@@ -23097,7 +23297,7 @@
             <IntroducedVersion>1.0</IntroducedVersion>
             <FormPresentation>1</FormPresentation>
             <FormActivationState>1</FormActivationState>
-            <form>
+            <form headerdensity="HighWithControls">
               <tabs>
                 <tab verticallayout="true" id="{D5268C96-D629-4EEA-9193-E3AC7794B9C7}" IsUserDefined="1">
                   <labels>
@@ -23120,91 +23320,51 @@
                               </cell>
                             </row>
                             <row>
-                              <cell id="{827A08E5-CE69-462C-9D73-C474BE52C80A}">
+                              <cell id="{c71b8a7b-646a-45d2-9a73-dfefe98220ec}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Owner" languagecode="1033" />
+                                  <label description="Ráðgjafi" languagecode="1033" />
                                 </labels>
-                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                                <control id="tre_ragjafi" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tre_ragjafi" disabled="false" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{2ef92fd2-8765-41aa-81d8-6c79a94b3b83}">
+                              <cell id="{cf856ecc-4c9f-4846-ba24-be947c84857b}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Kennitala" languagecode="1033" />
+                                  <label description="Einstaklingur" languagecode="1033" />
                                 </labels>
-                                <control id="tre_kennitala" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tre_kennitala" />
+                                <control id="tre_einstaklingur" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tre_einstaklingur" disabled="false" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{7ac9ba41-f188-4b95-a532-52f50bfb7a9f}">
+                              <cell id="{397bc393-9456-481e-94bb-754469e5146d}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Nafn" languagecode="1033" />
+                                  <label description="Tegund meðferðar" languagecode="1033" />
                                 </labels>
-                                <control id="tre_nafn" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tre_nafn" />
+                                <control id="tre_tegundmeferar" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="tre_tegundmeferar" disabled="false" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{c1fbf366-9c08-4117-bd46-cf88d9d0b0bc}">
+                              <cell id="{d4db6b15-11a7-4aa4-b9a4-bdc9d24250f3}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Netfang" languagecode="1033" />
+                                  <label description="Skýring meðferða" languagecode="1033" />
                                 </labels>
-                                <control id="tre_netfang" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tre_netfang" />
+                                <control id="tre_skyringmefera" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="tre_skyringmefera" disabled="false" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{954c0665-0cdd-4824-8070-dfb9d711a7dc}">
+                              <cell id="{137c63f0-92b0-4fc1-8500-53fe1bace13c}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Postnumer" languagecode="1033" />
+                                  <label description="Fyrri samþykkt meðferð" languagecode="1033" />
                                 </labels>
-                                <control id="tre_postnumer" classid="{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}" datafieldname="tre_postnumer" />
+                                <control id="tre_fyrrisamykktmedferd" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tre_fyrrisamykktmedferd" disabled="false" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{7364027d-36df-42af-b89c-8ded57a60dfc}">
+                              <cell id="{3b3652e5-3160-4314-ac28-5d600b80eaaa}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Radgjafi-" languagecode="1033" />
+                                  <label description="Fyrri meðferð skýringar" languagecode="1033" />
                                 </labels>
-                                <control id="tre_radgjafi" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tre_radgjafi" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{db558703-8f91-436d-b3fc-c4f9d6662d39}">
-                                <labels>
-                                  <label description="stofnun" languagecode="1033" />
-                                </labels>
-                                <control id="tre_stofnun" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tre_stofnun" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{421d9c76-4565-4db4-8722-bbb3b4c8fe06}">
-                                <labels>
-                                  <label description="Simanumer" languagecode="1033" />
-                                </labels>
-                                <control id="tre_simanumer" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tre_simanumer" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{8b99c091-93d9-40e9-9abc-0c3e9d144433}">
-                                <labels>
-                                  <label description="Tegund-Medferdar" languagecode="1033" />
-                                </labels>
-                                <control id="tre_tegundmedferdar" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tre_tegundmedferdar" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{e40cb03b-aef8-4e91-a0a0-cd300be381bd}">
-                                <labels>
-                                  <label description="Fyrri-Medferd" languagecode="1033" />
-                                </labels>
-                                <control id="tre_fyrrimedferd" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="tre_fyrrimedferd" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{7ed0e1bc-e3e0-4523-9114-2b4797d8e220}">
-                                <labels>
-                                  <label description="Fyrri-Medferd-Lysing" languagecode="1033" />
-                                </labels>
-                                <control id="tre_fyrrimedferdlysing" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tre_fyrrimedferdlysing" />
+                                <control id="tre_fyrrimeferskyringar" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="tre_fyrrimeferskyringar" disabled="false" />
                               </cell>
                             </row>
                             <row>
@@ -23225,11 +23385,191 @@
                             </row>
                           </rows>
                         </section>
+                        <section name="null_section_3" id="dada6a7a-73d6-4a97-80d1-52fb63e19beb" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                          <labels>
+                            <label description="Sending til TR" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row />
+                            <row>
+                              <cell id="{550a8b5f-e9e8-4340-8d9a-66bc9d279c29}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Sent til TR" languagecode="1033" />
+                                </labels>
+                                <control id="tre_senttiltr" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tre_senttiltr" disabled="false" />
+                              </cell>
+                              <cell id="{61121889-9100-48b0-9a70-9ef098114198}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Staða sendingar" languagecode="1033" />
+                                </labels>
+                                <control id="tre_responsestatus" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="tre_responsestatus" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{dec7fb59-bed0-4424-8239-1d4e96c7450d}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Tími sendingar" languagecode="1033" />
+                                </labels>
+                                <control id="tre_timisendingar" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="tre_timisendingar" disabled="false" />
+                              </cell>
+                              <cell id="{104a75e6-8ac0-45cf-a384-8f43fbaf4a2b}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Lýsing sendingar" languagecode="1033" />
+                                </labels>
+                                <control id="tre_responsetexti" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tre_responsetexti" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                      </sections>
+                    </column>
+                  </columns>
+                </tab>
+                <tab name="tab_2" id="d7adc591-f300-4e8f-8b49-bb0684d40b7b" IsUserDefined="0" locklevel="0" showlabel="true">
+                  <labels>
+                    <label description="Eigindi" languagecode="1033" />
+                  </labels>
+                  <columns>
+                    <column width="100%">
+                      <sections>
+                        <section name="tab_2_section_1" id="8e2c9b4d-6ac5-4b45-8a8a-9e735c4b2737" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Eigandi" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row />
+                            <row>
+                              <cell id="{827A08E5-CE69-462C-9D73-C474BE52C80A}" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Owner" languagecode="1033" />
+                                </labels>
+                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{c7cf8048-41f3-469a-939b-fe8f9ffd26ab}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Owning Business Unit" languagecode="1033" />
+                                </labels>
+                                <control id="owningbusinessunit" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="owningbusinessunit" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="tab_2_section_3" id="30d64156-da10-4a20-8219-1fd72bb82a32" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Búið til" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row />
+                            <row>
+                              <cell id="{fc6eb3db-8bc3-41f5-96cf-ec352c9bba02}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Created On" languagecode="1033" />
+                                </labels>
+                                <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{4829f122-4281-40aa-8ced-c250ef2db0d8}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Created By" languagecode="1033" />
+                                </labels>
+                                <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{3946e4ea-324b-4fe6-b3c1-2b400cc0c55d}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Created By (Delegate)" languagecode="1033" />
+                                </labels>
+                                <control id="createdonbehalfby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdonbehalfby" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="tab_2_section_4" id="fa6d3aab-617a-4c89-865e-b1869ae7cf63" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Breytt" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row />
+                            <row>
+                              <cell id="{09797511-c1ec-460f-b188-00e731e48378}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Modified On" languagecode="1033" />
+                                </labels>
+                                <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{140f731b-d6d1-48cb-96b1-9551c3442bd4}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Modified By" languagecode="1033" />
+                                </labels>
+                                <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{c63bcd45-4215-4c19-80e2-ca1aa5bf9b2f}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Modified By (Delegate)" languagecode="1033" />
+                                </labels>
+                                <control id="modifiedonbehalfby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedonbehalfby" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
                       </sections>
                     </column>
                   </columns>
                 </tab>
               </tabs>
+              <header id="{f9da3287-18e1-47e0-8478-b7231d63a3ae}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+                <rows>
+                  <row>
+                    <cell id="{bcd6db85-015f-412e-85ec-9537514710f7}" showlabel="false">
+                      <labels>
+                        <label description="" languagecode="1033" />
+                      </labels>
+                    </cell>
+                    <cell id="{cf29b04f-1f96-44de-b2ed-c3c548f590da}" showlabel="false">
+                      <labels>
+                        <label description="" languagecode="1033" />
+                      </labels>
+                    </cell>
+                    <cell id="{59d89b6b-d7d1-48d0-b2c6-488b862b9784}" showlabel="false">
+                      <labels>
+                        <label description="" languagecode="1033" />
+                      </labels>
+                    </cell>
+                  </row>
+                </rows>
+              </header>
+              <footer id="{8a453185-583e-4b5b-915c-c65250598d88}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+                <rows>
+                  <row>
+                    <cell id="{c8db68f6-db36-4603-a1d6-415bc97d686c}" showlabel="false">
+                      <labels>
+                        <label description="" languagecode="1033" />
+                      </labels>
+                    </cell>
+                    <cell id="{3fbdd4b7-d95e-4c20-bcd9-36ac7dbec395}" showlabel="false">
+                      <labels>
+                        <label description="" languagecode="1033" />
+                      </labels>
+                    </cell>
+                    <cell id="{47d062c3-1d4b-4fe1-8323-9fc1365523de}" showlabel="false">
+                      <labels>
+                        <label description="" languagecode="1033" />
+                      </labels>
+                    </cell>
+                  </row>
+                </rows>
+              </footer>
+              <DisplayConditions Order="0" FallbackForm="true">
+                <Everyone />
+              </DisplayConditions>
             </form>
             <IsCustomizable>1</IsCustomizable>
             <CanBeDeleted>1</CanBeDeleted>
@@ -23305,17 +23645,8 @@
             <layoutxml>
               <grid name="resultset" jump="tre_name" select="1" icon="1" preview="1">
                 <row name="result" id="tre_stadfestingvidurkenndmedferdid">
-                  <cell name="tre_name" width="300" />
-                  <cell name="tre_kennitala" width="150" />
-                  <cell name="tre_nafn" width="150" />
-                  <cell name="tre_netfang" width="150" />
-                  <cell name="tre_postnumer" width="150" />
-                  <cell name="tre_radgjafi" width="150" />
-                  <cell name="tre_stofnun" width="150" />
-                  <cell name="tre_simanumer" width="150" />
-                  <cell name="tre_tegundmedferdar" width="150" />
-                  <cell name="tre_fyrrimedferd" width="150" />
-                  <cell name="tre_fyrrimedferdlysing" width="150" />
+                  <cell name="tre_einstaklingur" width="116" />
+                  <cell name="tre_ragjafi" width="100" />
                   <cell name="tre_upphafsdagur" width="150" />
                   <cell name="tre_lokadagur" width="150" />
                 </row>
@@ -23326,30 +23657,20 @@
               <fetch version="1.0" mapping="logical">
                 <entity name="tre_stadfestingvidurkenndmedferd">
                   <attribute name="tre_stadfestingvidurkenndmedferdid" />
-                  <attribute name="tre_name" />
                   <attribute name="createdon" />
-                  <order attribute="tre_name" descending="false" />
                   <filter type="and">
                     <condition attribute="statecode" operator="eq" value="0" />
                   </filter>
-                  <attribute name="tre_kennitala" />
-                  <attribute name="tre_nafn" />
-                  <attribute name="tre_netfang" />
-                  <attribute name="tre_postnumer" />
-                  <attribute name="tre_radgjafi" />
-                  <attribute name="tre_stofnun" />
-                  <attribute name="tre_simanumer" />
-                  <attribute name="tre_tegundmedferdar" />
-                  <attribute name="tre_fyrrimedferd" />
-                  <attribute name="tre_fyrrimedferdlysing" />
                   <attribute name="tre_upphafsdagur" />
                   <attribute name="tre_lokadagur" />
+                  <attribute name="tre_einstaklingur" />
+                  <attribute name="tre_ragjafi" />
                 </entity>
               </fetch>
             </fetchxml>
             <IntroducedVersion>1.0</IntroducedVersion>
             <LocalizedNames>
-              <LocalizedName description="Active Stadfesting-Vidurkennd-Medferds" languagecode="1033" />
+              <LocalizedName description="Active Stadfesting-viðurkennd-meðferð" languagecode="1033" />
             </LocalizedNames>
           </savedquery>
           <savedquery>
@@ -23564,1476 +23885,9 @@
         <LocLabels />
       </RibbonDiffXml>
     </Entity>
-    <Entity>
-      <Name LocalizedName="Tegund meðferðar" OriginalName="Tegund meðferðar">tre_Tegund_medferdar</Name>
-      <EntityInfo>
-        <entity Name="tre_Tegund_medferdar">
-          <LocalizedNames>
-            <LocalizedName description="Tegund meðferðar" languagecode="1033" />
-          </LocalizedNames>
-          <LocalizedCollectionNames>
-            <LocalizedCollectionName description="Tegundir meðferða" languagecode="1033" />
-          </LocalizedCollectionNames>
-          <Descriptions>
-            <Description description="Tegundir meðferða sem TR býður upp á." languagecode="1033" />
-          </Descriptions>
-          <attributes>
-            <attribute PhysicalName="CreatedBy">
-              <Type>lookup</Type>
-              <Name>createdby</Name>
-              <LogicalName>createdby</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>0</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>0</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>0</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <LookupStyle>single</LookupStyle>
-              <LookupTypes />
-              <displaynames>
-                <displayname description="Created By" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Unique identifier of the user who created the record." languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="CreatedOn">
-              <Type>datetime</Type>
-              <Name>createdon</Name>
-              <LogicalName>createdon</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>inactive</ImeMode>
-              <ValidForUpdateApi>0</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>0</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>0</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>1</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>datetime</Format>
-              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
-              <Behavior>1</Behavior>
-              <displaynames>
-                <displayname description="Created On" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Date and time when the record was created." languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="CreatedOnBehalfBy">
-              <Type>lookup</Type>
-              <Name>createdonbehalfby</Name>
-              <LogicalName>createdonbehalfby</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>0</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>0</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>0</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <LookupStyle>single</LookupStyle>
-              <LookupTypes />
-              <displaynames>
-                <displayname description="Created By (Delegate)" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Unique identifier of the delegate user who created the record." languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="ImportSequenceNumber">
-              <Type>int</Type>
-              <Name>importsequencenumber</Name>
-              <LogicalName>importsequencenumber</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind</DisplayMask>
-              <ImeMode>disabled</ImeMode>
-              <ValidForUpdateApi>0</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format></Format>
-              <MinValue>-2147483648</MinValue>
-              <MaxValue>2147483647</MaxValue>
-              <displaynames>
-                <displayname description="Import Sequence Number" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Sequence number of the import that created this record." languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="ModifiedBy">
-              <Type>lookup</Type>
-              <Name>modifiedby</Name>
-              <LogicalName>modifiedby</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>0</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>0</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>0</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <LookupStyle>single</LookupStyle>
-              <LookupTypes />
-              <displaynames>
-                <displayname description="Modified By" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Unique identifier of the user who modified the record." languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="ModifiedOn">
-              <Type>datetime</Type>
-              <Name>modifiedon</Name>
-              <LogicalName>modifiedon</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>inactive</ImeMode>
-              <ValidForUpdateApi>0</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>0</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>0</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>1</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>datetime</Format>
-              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
-              <Behavior>1</Behavior>
-              <displaynames>
-                <displayname description="Modified On" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Date and time when the record was modified." languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="ModifiedOnBehalfBy">
-              <Type>lookup</Type>
-              <Name>modifiedonbehalfby</Name>
-              <LogicalName>modifiedonbehalfby</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>0</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>0</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>0</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <LookupStyle>single</LookupStyle>
-              <LookupTypes />
-              <displaynames>
-                <displayname description="Modified By (Delegate)" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Unique identifier of the delegate user who modified the record." languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="OverriddenCreatedOn">
-              <Type>datetime</Type>
-              <Name>overriddencreatedon</Name>
-              <LogicalName>overriddencreatedon</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForGrid</DisplayMask>
-              <ImeMode>inactive</ImeMode>
-              <ValidForUpdateApi>0</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>date</Format>
-              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
-              <Behavior>1</Behavior>
-              <displaynames>
-                <displayname description="Record Created On" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Date and time that the record was migrated." languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="OwnerId">
-              <Type>owner</Type>
-              <Name>ownerid</Name>
-              <LogicalName>ownerid</LogicalName>
-              <RequiredLevel>systemrequired</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>1</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <LookupStyle>single</LookupStyle>
-              <LookupTypes>
-                <LookupType id="00000000-0000-0000-0000-000000000000">8</LookupType>
-                <LookupType id="00000000-0000-0000-0000-000000000000">9</LookupType>
-              </LookupTypes>
-              <displaynames>
-                <displayname description="Owner" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Owner Id" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="OwningBusinessUnit">
-              <Type>lookup</Type>
-              <Name>owningbusinessunit</Name>
-              <LogicalName>owningbusinessunit</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>0</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>0</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>1</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <LookupStyle>single</LookupStyle>
-              <LookupTypes />
-              <displaynames>
-                <displayname description="Owning Business Unit" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="OwningTeam">
-              <Type>lookup</Type>
-              <Name>owningteam</Name>
-              <LogicalName>owningteam</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>0</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>0</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>0</IsAuditEnabled>
-              <IsLogical>1</IsLogical>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <LookupStyle>single</LookupStyle>
-              <LookupTypes />
-              <displaynames>
-                <displayname description="Owning Team" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Unique identifier for the team that owns the record." languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="OwningUser">
-              <Type>lookup</Type>
-              <Name>owninguser</Name>
-              <LogicalName>owninguser</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>0</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>0</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>0</IsAuditEnabled>
-              <IsLogical>1</IsLogical>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <LookupStyle>single</LookupStyle>
-              <LookupTypes />
-              <displaynames>
-                <displayname description="Owning User" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Unique identifier for the user that owns the record." languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="statecode">
-              <Type>state</Type>
-              <Name>statecode</Name>
-              <LogicalName>statecode</LogicalName>
-              <RequiredLevel>systemrequired</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>0</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>1</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <optionset Name="tre_tegund_medferdar_statecode">
-                <OptionSetType>state</OptionSetType>
-                <IntroducedVersion>1.0</IntroducedVersion>
-                <IsCustomizable>1</IsCustomizable>
-                <displaynames>
-                  <displayname description="Status" languagecode="1033" />
-                </displaynames>
-                <Descriptions>
-                  <Description description="Status of the Tegund meðferðar" languagecode="1033" />
-                </Descriptions>
-                <states>
-                  <state value="0" defaultstatus="1" invariantname="Active" IsHidden="0">
-                    <labels>
-                      <label description="Active" languagecode="1033" />
-                    </labels>
-                  </state>
-                  <state value="1" defaultstatus="2" invariantname="Inactive" IsHidden="0">
-                    <labels>
-                      <label description="Inactive" languagecode="1033" />
-                    </labels>
-                  </state>
-                </states>
-              </optionset>
-              <displaynames>
-                <displayname description="Status" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Status of the Tegund meðferðar" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="statuscode">
-              <Type>status</Type>
-              <Name>statuscode</Name>
-              <LogicalName>statuscode</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <optionset Name="tre_tegund_medferdar_statuscode">
-                <OptionSetType>status</OptionSetType>
-                <IntroducedVersion>1.0</IntroducedVersion>
-                <IsCustomizable>1</IsCustomizable>
-                <displaynames>
-                  <displayname description="Status Reason" languagecode="1033" />
-                </displaynames>
-                <Descriptions>
-                  <Description description="Reason for the status of the Tegund meðferðar" languagecode="1033" />
-                </Descriptions>
-                <statuses>
-                  <status value="1" state="0" IsHidden="0">
-                    <labels>
-                      <label description="Active" languagecode="1033" />
-                    </labels>
-                  </status>
-                  <status value="2" state="1" IsHidden="0">
-                    <labels>
-                      <label description="Inactive" languagecode="1033" />
-                    </labels>
-                  </status>
-                </statuses>
-              </optionset>
-              <displaynames>
-                <displayname description="Status Reason" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Reason for the status of the Tegund meðferðar" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="TimeZoneRuleVersionNumber">
-              <Type>int</Type>
-              <Name>timezoneruleversionnumber</Name>
-              <LogicalName>timezoneruleversionnumber</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>0</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format></Format>
-              <MinValue>-1</MinValue>
-              <MaxValue>2147483647</MaxValue>
-              <displaynames>
-                <displayname description="Time Zone Rule Version Number" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="For internal use only." languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="tre_Lysing">
-              <Type>nvarchar</Type>
-              <Name>tre_lysing</Name>
-              <LogicalName>tre_lysing</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>255</MaxLength>
-              <Length>510</Length>
-              <displaynames>
-                <displayname description="Lýsing" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Lýsing tegundar" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="tre_Name">
-              <Type>nvarchar</Type>
-              <Name>tre_name</Name>
-              <LogicalName>tre_name</LogicalName>
-              <RequiredLevel>required</RequiredLevel>
-              <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>1</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>850</MaxLength>
-              <Length>1700</Length>
-              <displaynames>
-                <displayname description="Name" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="tre_Skammstofun">
-              <Type>nvarchar</Type>
-              <Name>tre_skammstofun</Name>
-              <LogicalName>tre_skammstofun</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>32</MaxLength>
-              <Length>64</Length>
-              <displaynames>
-                <displayname description="Skammstöfun" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Skammstöfun tegundar eins og TR skilgreinir hana" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="tre_Tegund_medferdarId">
-              <Type>primarykey</Type>
-              <Name>tre_tegund_medferdarid</Name>
-              <LogicalName>tre_tegund_medferdarid</LogicalName>
-              <RequiredLevel>systemrequired</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|RequiredForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>0</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>0</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>0</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>1</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <displaynames>
-                <displayname description="Tegund meðferðar" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Unique identifier for entity instances" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="tre_TegundId">
-              <Type>int</Type>
-              <Name>tre_tegundid</Name>
-              <LogicalName>tre_tegundid</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>disabled</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>none</Format>
-              <MinValue>-2147483648</MinValue>
-              <MaxValue>2147483647</MaxValue>
-              <displaynames>
-                <displayname description="Tegund Id" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Auðkenni tegundar" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="UTCConversionTimeZoneCode">
-              <Type>int</Type>
-              <Name>utcconversiontimezonecode</Name>
-              <LogicalName>utcconversiontimezonecode</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>0</IsCustomField>
-              <IsAuditEnabled>0</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format></Format>
-              <MinValue>-1</MinValue>
-              <MaxValue>2147483647</MaxValue>
-              <displaynames>
-                <displayname description="UTC Conversion Time Zone Code" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Time zone code that was in use when the record was created." languagecode="1033" />
-              </Descriptions>
-            </attribute>
-          </attributes>
-          <EntitySetName>tre_tegund_medferdars</EntitySetName>
-          <IsDuplicateCheckSupported>1</IsDuplicateCheckSupported>
-          <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>
-          <IsRequiredOffline>0</IsRequiredOffline>
-          <IsInteractionCentricEnabled>0</IsInteractionCentricEnabled>
-          <IsCollaboration>0</IsCollaboration>
-          <AutoRouteToOwnerQueue>0</AutoRouteToOwnerQueue>
-          <IsConnectionsEnabled>0</IsConnectionsEnabled>
-          <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
-          <AutoCreateAccessTeams>0</AutoCreateAccessTeams>
-          <IsOneNoteIntegrationEnabled>0</IsOneNoteIntegrationEnabled>
-          <IsKnowledgeManagementEnabled>0</IsKnowledgeManagementEnabled>
-          <IsSLAEnabled>0</IsSLAEnabled>
-          <IsDocumentRecommendationsEnabled>0</IsDocumentRecommendationsEnabled>
-          <IsBPFEntity>0</IsBPFEntity>
-          <OwnershipTypeMask>UserOwned</OwnershipTypeMask>
-          <IsAuditEnabled>0</IsAuditEnabled>
-          <IsRetrieveAuditEnabled>0</IsRetrieveAuditEnabled>
-          <IsRetrieveMultipleAuditEnabled>0</IsRetrieveMultipleAuditEnabled>
-          <IsActivity>0</IsActivity>
-          <ActivityTypeMask></ActivityTypeMask>
-          <IsActivityParty>0</IsActivityParty>
-          <IsReplicated>0</IsReplicated>
-          <IsReplicationUserFiltered>0</IsReplicationUserFiltered>
-          <IsMailMergeEnabled>1</IsMailMergeEnabled>
-          <IsVisibleInMobile>0</IsVisibleInMobile>
-          <IsVisibleInMobileClient>0</IsVisibleInMobileClient>
-          <IsReadOnlyInMobileClient>0</IsReadOnlyInMobileClient>
-          <IsOfflineInMobileClient>0</IsOfflineInMobileClient>
-          <DaysSinceRecordLastModified>0</DaysSinceRecordLastModified>
-          <MobileOfflineFilters></MobileOfflineFilters>
-          <IsMapiGridEnabled>1</IsMapiGridEnabled>
-          <IsReadingPaneEnabled>1</IsReadingPaneEnabled>
-          <IsQuickCreateEnabled>0</IsQuickCreateEnabled>
-          <SyncToExternalSearchIndex>0</SyncToExternalSearchIndex>
-          <IntroducedVersion>1.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <IsMappable>1</IsMappable>
-          <CanModifyAuditSettings>1</CanModifyAuditSettings>
-          <CanModifyMobileVisibility>1</CanModifyMobileVisibility>
-          <CanModifyMobileClientVisibility>1</CanModifyMobileClientVisibility>
-          <CanModifyMobileClientReadOnly>1</CanModifyMobileClientReadOnly>
-          <CanModifyMobileClientOffline>1</CanModifyMobileClientOffline>
-          <CanModifyConnectionSettings>1</CanModifyConnectionSettings>
-          <CanModifyDuplicateDetectionSettings>1</CanModifyDuplicateDetectionSettings>
-          <CanModifyMailMergeSettings>1</CanModifyMailMergeSettings>
-          <CanModifyQueueSettings>1</CanModifyQueueSettings>
-          <CanCreateAttributes>1</CanCreateAttributes>
-          <CanCreateForms>1</CanCreateForms>
-          <CanCreateCharts>1</CanCreateCharts>
-          <CanCreateViews>1</CanCreateViews>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <CanEnableSyncToExternalSearchIndex>1</CanEnableSyncToExternalSearchIndex>
-          <EnforceStateTransitions>0</EnforceStateTransitions>
-          <CanChangeHierarchicalRelationship>1</CanChangeHierarchicalRelationship>
-          <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
-          <ChangeTrackingEnabled>0</ChangeTrackingEnabled>
-          <CanChangeTrackingBeEnabled>1</CanChangeTrackingBeEnabled>
-          <IsEnabledForExternalChannels>0</IsEnabledForExternalChannels>
-          <IsMSTeamsIntegrationEnabled>0</IsMSTeamsIntegrationEnabled>
-          <IsSolutionAware>0</IsSolutionAware>
-        </entity>
-      </EntityInfo>
-      <FormXml>
-        <forms type="card">
-          <systemform>
-            <formid>{ec83157a-5bee-4222-ac3f-f7b266f7f794}</formid>
-            <IntroducedVersion>1.0</IntroducedVersion>
-            <FormPresentation>1</FormPresentation>
-            <FormActivationState>1</FormActivationState>
-            <form>
-              <tabs>
-                <tab name="general" verticallayout="true" id="{64017bdb-e075-4b58-892c-a66073506307}" IsUserDefined="0">
-                  <labels>
-                    <label description="" languagecode="1033" />
-                  </labels>
-                  <columns>
-                    <column width="25%">
-                      <sections>
-                        <section name="ColorStrip" showlabel="false" showbar="false" columns="1" IsUserDefined="0" id="{8d309167-3612-421f-abe0-9dbb2d5a174f}">
-                          <labels>
-                            <label description="ColorStrip" languagecode="1033" />
-                          </labels>
-                        </section>
-                      </sections>
-                    </column>
-                    <column width="75%">
-                      <sections>
-                        <section name="CardHeader" showlabel="false" showbar="false" columns="111" id="{ad4799a0-985e-4404-9ce4-7b44fc0efc1e}" IsUserDefined="0">
-                          <labels>
-                            <label description="Header" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell id="{9cf78a19-e089-4a8b-93fe-a068491caa9e}" showlabel="true" locklevel="0">
-                                <labels>
-                                  <label description="Status Reason" languagecode="1033" />
-                                </labels>
-                                <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
-                              </cell>
-                              <cell id="{db8c54e8-47e4-437e-9adf-b26bfa538884}" showlabel="true" locklevel="0">
-                                <labels>
-                                  <label description="" languagecode="1033" />
-                                </labels>
-                              </cell>
-                              <cell id="{12393c8b-b1cc-4001-ad46-1cf9732240d2}" showlabel="true" locklevel="0">
-                                <labels>
-                                  <label description="" languagecode="1033" />
-                                </labels>
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
-                        <section name="CardDetails" showlabel="false" showbar="false" columns="1" id="{9f08e148-6e36-4549-ad18-704026166a1b}" IsUserDefined="0">
-                          <labels>
-                            <label description="Details" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell id="{768b8a2c-d40e-4b33-b6cd-a106c20d0343}" showlabel="true" locklevel="0">
-                                <labels>
-                                  <label description="Name" languagecode="1033" />
-                                </labels>
-                                <control id="tre_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tre_name" disabled="false" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
-                        <section name="CardFooter" showlabel="false" columns="1111" showbar="false" id="{377fd23b-dfc9-4c3d-82c3-7a72b513be28}" IsUserDefined="0">
-                          <labels>
-                            <label description="Footer" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell id="{efa27a6e-32fe-469d-8a6a-6fb45654f3e1}" showlabel="true" locklevel="0">
-                                <labels>
-                                  <label description="Owner" languagecode="1033" />
-                                </labels>
-                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
-                              </cell>
-                              <cell id="{7be78655-8c91-4bd6-8672-5e0b38445f0c}" showlabel="true" locklevel="0">
-                                <labels>
-                                  <label description="Created On" languagecode="1033" />
-                                </labels>
-                                <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
-                              </cell>
-                              <cell id="{11aed000-2eac-41aa-a22d-3c826626c44c}" showlabel="true" locklevel="0">
-                                <labels>
-                                  <label description="" languagecode="1033" />
-                                </labels>
-                              </cell>
-                              <cell id="{3807c03c-f9a8-4bc8-a37b-345279d40b21}" showlabel="true" locklevel="0">
-                                <labels>
-                                  <label description="" languagecode="1033" />
-                                </labels>
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
-                      </sections>
-                    </column>
-                  </columns>
-                </tab>
-              </tabs>
-            </form>
-            <IsCustomizable>1</IsCustomizable>
-            <CanBeDeleted>1</CanBeDeleted>
-            <LocalizedNames>
-              <LocalizedName description="Information" languagecode="1033" />
-            </LocalizedNames>
-            <Descriptions>
-              <Description description="A card form for this entity." languagecode="1033" />
-            </Descriptions>
-          </systemform>
-        </forms>
-        <forms type="main">
-          <systemform>
-            <formid>{4b51102b-07a7-4ee4-94a3-b1c4d3c1df24}</formid>
-            <IntroducedVersion>1.0</IntroducedVersion>
-            <FormPresentation>1</FormPresentation>
-            <FormActivationState>1</FormActivationState>
-            <form>
-              <tabs>
-                <tab verticallayout="true" id="{4dc5fe32-f44a-4d51-89b4-927e5b697723}" IsUserDefined="1">
-                  <labels>
-                    <label description="General" languagecode="1033" />
-                  </labels>
-                  <columns>
-                    <column width="100%">
-                      <sections>
-                        <section showlabel="false" showbar="false" IsUserDefined="0" id="{b0cf3ee0-30c9-43a0-8817-b9b42a5b3d4c}">
-                          <labels>
-                            <label description="General" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell id="{0834bb74-cd30-41bd-ad89-c9aad27694b4}">
-                                <labels>
-                                  <label description="Name" languagecode="1033" />
-                                </labels>
-                                <control id="tre_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tre_name" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{bbe999d1-bd63-4272-94f8-84d2c9491bbc}">
-                                <labels>
-                                  <label description="Owner" languagecode="1033" />
-                                </labels>
-                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
-                      </sections>
-                    </column>
-                  </columns>
-                </tab>
-              </tabs>
-            </form>
-            <IsCustomizable>1</IsCustomizable>
-            <CanBeDeleted>1</CanBeDeleted>
-            <LocalizedNames>
-              <LocalizedName description="Information" languagecode="1033" />
-            </LocalizedNames>
-            <Descriptions>
-              <Description description="A form for this entity." languagecode="1033" />
-            </Descriptions>
-          </systemform>
-        </forms>
-        <forms type="quick">
-          <systemform>
-            <formid>{f1d70a05-94f5-4c35-92bc-22b2166594df}</formid>
-            <IntroducedVersion>1.0</IntroducedVersion>
-            <FormPresentation>1</FormPresentation>
-            <FormActivationState>1</FormActivationState>
-            <form>
-              <tabs>
-                <tab verticallayout="true" id="{b2ccfe31-bdc2-4aed-87c4-a94dd6796981}" IsUserDefined="1">
-                  <labels>
-                    <label description="" languagecode="1033" />
-                  </labels>
-                  <columns>
-                    <column width="100%">
-                      <sections>
-                        <section showlabel="false" showbar="false" IsUserDefined="0" id="{4b6b11d3-2d3e-4374-b4cd-c465e381e64d}">
-                          <labels>
-                            <label description="GENERAL" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell id="{252ee333-62da-431b-871c-bea2dee47555}">
-                                <labels>
-                                  <label description="Name" languagecode="1033" />
-                                </labels>
-                                <control id="tre_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tre_name" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{c27e261e-d669-495f-b0cb-089a89d0e712}">
-                                <labels>
-                                  <label description="Owner" languagecode="1033" />
-                                </labels>
-                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
-                      </sections>
-                    </column>
-                  </columns>
-                </tab>
-              </tabs>
-            </form>
-            <IsCustomizable>1</IsCustomizable>
-            <CanBeDeleted>1</CanBeDeleted>
-            <LocalizedNames>
-              <LocalizedName description="Information" languagecode="1033" />
-            </LocalizedNames>
-          </systemform>
-        </forms>
-      </FormXml>
-      <SavedQueries>
-        <savedqueries>
-          <savedquery>
-            <IsCustomizable>1</IsCustomizable>
-            <CanBeDeleted>0</CanBeDeleted>
-            <isquickfindquery>0</isquickfindquery>
-            <isprivate>0</isprivate>
-            <isdefault>1</isdefault>
-            <savedqueryid>{a94d8ea2-e978-430e-a990-0d1bc9025d28}</savedqueryid>
-            <layoutxml>
-              <grid name="resultset" jump="tre_name" select="1" icon="1" preview="1">
-                <row name="result" id="tre_tegund_medferdarid">
-                  <cell name="tre_name" width="300" />
-                  <cell name="createdon" width="125" />
-                </row>
-              </grid>
-            </layoutxml>
-            <querytype>0</querytype>
-            <fetchxml>
-              <fetch version="1.0" mapping="logical">
-                <entity name="tre_tegund_medferdar">
-                  <attribute name="tre_tegund_medferdarid" />
-                  <attribute name="tre_name" />
-                  <attribute name="createdon" />
-                  <order attribute="tre_name" descending="false" />
-                  <filter type="and">
-                    <condition attribute="statecode" operator="eq" value="0" />
-                  </filter>
-                </entity>
-              </fetch>
-            </fetchxml>
-            <IntroducedVersion>1.0</IntroducedVersion>
-            <LocalizedNames>
-              <LocalizedName description="Active Tegundir meðferða" languagecode="1033" />
-            </LocalizedNames>
-          </savedquery>
-          <savedquery>
-            <IsCustomizable>1</IsCustomizable>
-            <CanBeDeleted>0</CanBeDeleted>
-            <isquickfindquery>0</isquickfindquery>
-            <isprivate>0</isprivate>
-            <isdefault>0</isdefault>
-            <savedqueryid>{59d52ec5-d200-4135-af12-d9e012f7f3e4}</savedqueryid>
-            <layoutxml>
-              <grid name="resultset" jump="tre_name" select="1" icon="1" preview="1">
-                <row name="result" id="tre_tegund_medferdarid">
-                  <cell name="tre_name" width="300" />
-                  <cell name="createdon" width="125" />
-                </row>
-              </grid>
-            </layoutxml>
-            <querytype>0</querytype>
-            <fetchxml>
-              <fetch version="1.0" mapping="logical">
-                <entity name="tre_tegund_medferdar">
-                  <attribute name="tre_tegund_medferdarid" />
-                  <attribute name="tre_name" />
-                  <attribute name="createdon" />
-                  <order attribute="tre_name" descending="false" />
-                  <filter type="and">
-                    <condition attribute="statecode" operator="eq" value="1" />
-                  </filter>
-                </entity>
-              </fetch>
-            </fetchxml>
-            <IntroducedVersion>1.0</IntroducedVersion>
-            <LocalizedNames>
-              <LocalizedName description="Inactive Tegundir meðferða" languagecode="1033" />
-            </LocalizedNames>
-          </savedquery>
-          <savedquery>
-            <IsCustomizable>1</IsCustomizable>
-            <CanBeDeleted>1</CanBeDeleted>
-            <isquickfindquery>0</isquickfindquery>
-            <isprivate>0</isprivate>
-            <isdefault>1</isdefault>
-            <savedqueryid>{0b95eec9-dc85-f111-ab0e-002248858053}</savedqueryid>
-            <querytype>8192</querytype>
-            <fetchxml>
-              <fetch version="1.0" mapping="logical" output-format="xml-platform">
-                <entity name="tre_tegund_medferdar">
-                  <attribute name="tre_tegund_medferdarid" />
-                  <filter type="and">
-                    <condition attribute="statecode" operator="eq" value="0" />
-                    <condition attribute="ownerid" operator="eq-userid" />
-                  </filter>
-                </entity>
-              </fetch>
-            </fetchxml>
-            <IntroducedVersion>1.0</IntroducedVersion>
-            <LocalizedNames>
-              <LocalizedName description="My Tegundir meðferða" languagecode="1033" />
-            </LocalizedNames>
-            <Descriptions>
-              <Description description="Active Tegundir meðferða owned by me" languagecode="1033" />
-            </Descriptions>
-          </savedquery>
-          <savedquery>
-            <IsCustomizable>1</IsCustomizable>
-            <CanBeDeleted>0</CanBeDeleted>
-            <isquickfindquery>1</isquickfindquery>
-            <isprivate>0</isprivate>
-            <isdefault>1</isdefault>
-            <savedqueryid>{6de47707-46dc-4534-9481-a89991763299}</savedqueryid>
-            <layoutxml>
-              <grid name="resultset" jump="tre_name" select="1" icon="1" preview="1">
-                <row name="result" id="tre_tegund_medferdarid">
-                  <cell name="tre_name" width="300" />
-                  <cell name="createdon" width="125" />
-                </row>
-              </grid>
-            </layoutxml>
-            <querytype>4</querytype>
-            <fetchxml>
-              <fetch version="1.0" mapping="logical">
-                <entity name="tre_tegund_medferdar">
-                  <attribute name="tre_tegund_medferdarid" />
-                  <attribute name="tre_name" />
-                  <attribute name="createdon" />
-                  <order attribute="tre_name" descending="false" />
-                  <filter type="and">
-                    <condition attribute="statecode" operator="eq" value="0" />
-                  </filter>
-                  <filter type="or" isquickfindfields="1">
-                    <condition attribute="tre_name" operator="like" value="{0}" />
-                  </filter>
-                </entity>
-              </fetch>
-            </fetchxml>
-            <IntroducedVersion>1.0</IntroducedVersion>
-            <LocalizedNames>
-              <LocalizedName description="Quick Find Active Tegundir meðferða" languagecode="1033" />
-            </LocalizedNames>
-          </savedquery>
-          <savedquery>
-            <IsCustomizable>1</IsCustomizable>
-            <CanBeDeleted>0</CanBeDeleted>
-            <isquickfindquery>0</isquickfindquery>
-            <isprivate>0</isprivate>
-            <isdefault>1</isdefault>
-            <savedqueryid>{2c4d1b11-b563-4027-9e57-59e3f1cddbc2}</savedqueryid>
-            <layoutxml>
-              <grid name="resultset" jump="tre_name" select="1" icon="1" preview="1">
-                <row name="result" id="tre_tegund_medferdarid">
-                  <cell name="tre_name" width="300" />
-                  <cell name="createdon" width="125" />
-                </row>
-              </grid>
-            </layoutxml>
-            <querytype>1</querytype>
-            <fetchxml>
-              <fetch version="1.0" mapping="logical">
-                <entity name="tre_tegund_medferdar">
-                  <attribute name="tre_tegund_medferdarid" />
-                  <attribute name="tre_name" />
-                  <attribute name="createdon" />
-                  <order attribute="tre_name" descending="false" />
-                </entity>
-              </fetch>
-            </fetchxml>
-            <IntroducedVersion>1.0</IntroducedVersion>
-            <LocalizedNames>
-              <LocalizedName description="Tegund meðferðar Advanced Find View" languagecode="1033" />
-            </LocalizedNames>
-          </savedquery>
-          <savedquery>
-            <IsCustomizable>1</IsCustomizable>
-            <CanBeDeleted>0</CanBeDeleted>
-            <isquickfindquery>0</isquickfindquery>
-            <isprivate>0</isprivate>
-            <isdefault>1</isdefault>
-            <savedqueryid>{14d6291a-f863-4b85-b56f-21563bbe759c}</savedqueryid>
-            <layoutxml>
-              <grid name="tre_tegund_medferdars" jump="tre_name" select="1" icon="1" preview="1">
-                <row name="tre_tegund_medferdar" id="tre_tegund_medferdarid">
-                  <cell name="tre_name" width="300" />
-                  <cell name="createdon" width="125" />
-                </row>
-              </grid>
-            </layoutxml>
-            <querytype>2</querytype>
-            <fetchxml>
-              <fetch version="1.0" mapping="logical">
-                <entity name="tre_tegund_medferdar">
-                  <attribute name="tre_tegund_medferdarid" />
-                  <attribute name="tre_name" />
-                  <attribute name="createdon" />
-                  <order attribute="tre_name" descending="false" />
-                  <filter type="and">
-                    <condition attribute="statecode" operator="eq" value="0" />
-                  </filter>
-                </entity>
-              </fetch>
-            </fetchxml>
-            <IntroducedVersion>1.0</IntroducedVersion>
-            <LocalizedNames>
-              <LocalizedName description="Tegund meðferðar Associated View" languagecode="1033" />
-            </LocalizedNames>
-          </savedquery>
-          <savedquery>
-            <IsCustomizable>1</IsCustomizable>
-            <CanBeDeleted>0</CanBeDeleted>
-            <isquickfindquery>0</isquickfindquery>
-            <isprivate>0</isprivate>
-            <isdefault>1</isdefault>
-            <savedqueryid>{7b606176-1238-4eef-9ef1-c69947dd33de}</savedqueryid>
-            <layoutxml>
-              <grid name="tre_tegund_medferdars" jump="tre_name" select="1" icon="1" preview="0">
-                <row name="tre_tegund_medferdar" id="tre_tegund_medferdarid">
-                  <cell name="tre_name" width="300" />
-                  <cell name="createdon" width="125" />
-                </row>
-              </grid>
-            </layoutxml>
-            <querytype>64</querytype>
-            <fetchxml>
-              <fetch version="1.0" mapping="logical">
-                <entity name="tre_tegund_medferdar">
-                  <attribute name="tre_tegund_medferdarid" />
-                  <attribute name="tre_name" />
-                  <attribute name="createdon" />
-                  <filter type="and">
-                    <condition attribute="statecode" operator="eq" value="0" />
-                  </filter>
-                </entity>
-              </fetch>
-            </fetchxml>
-            <IntroducedVersion>1.0</IntroducedVersion>
-            <LocalizedNames>
-              <LocalizedName description="Tegund meðferðar Lookup View" languagecode="1033" />
-            </LocalizedNames>
-          </savedquery>
-        </savedqueries>
-      </SavedQueries>
-      <RibbonDiffXml>
-        <CustomActions />
-        <Templates>
-          <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
-        </Templates>
-        <CommandDefinitions />
-        <RuleDefinitions>
-          <TabDisplayRules />
-          <DisplayRules />
-          <EnableRules />
-        </RuleDefinitions>
-        <LocLabels />
-      </RibbonDiffXml>
-    </Entity>
   </Entities>
   <Roles></Roles>
   <Workflows>
-    <Workflow WorkflowId="{bc5ff24b-28a1-f011-bbd2-7ced8d13fee1}" Name="Send-aetlun">
-      <JsonFileName>/Workflows/Send-aetlun-BC5FF24B-28A1-F011-BBD2-7CED8D13FEE1.json</JsonFileName>
-      <Type>1</Type>
-      <Subprocess>0</Subprocess>
-      <Category>5</Category>
-      <Mode>0</Mode>
-      <Scope>4</Scope>
-      <OnDemand>0</OnDemand>
-      <TriggerOnCreate>0</TriggerOnCreate>
-      <TriggerOnDelete>0</TriggerOnDelete>
-      <AsyncAutodelete>0</AsyncAutodelete>
-      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-      <StateCode>1</StateCode>
-      <StatusCode>2</StatusCode>
-      <RunAs>1</RunAs>
-      <IsTransacted>1</IsTransacted>
-      <IntroducedVersion>1.0.0.0</IntroducedVersion>
-      <IsCustomizable>1</IsCustomizable>
-      <BusinessProcessType>0</BusinessProcessType>
-      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
-      <ModernFlowType>0</ModernFlowType>
-      <PrimaryEntity>none</PrimaryEntity>
-      <LocalizedNames>
-        <LocalizedName languagecode="1033" description="Send-aetlun" />
-      </LocalizedNames>
-    </Workflow>
-    <Workflow WorkflowId="{9e9c7b94-9f86-f111-ab0f-70a8a5326318}" Name="Send-Staðfesting-úrræði">
-      <JsonFileName>/Workflows/Send-Stafesting-rri-9E9C7B94-9F86-F111-AB0F-70A8A5326318.json</JsonFileName>
-      <Type>1</Type>
-      <Subprocess>0</Subprocess>
-      <Category>5</Category>
-      <Mode>0</Mode>
-      <Scope>4</Scope>
-      <OnDemand>0</OnDemand>
-      <TriggerOnCreate>0</TriggerOnCreate>
-      <TriggerOnDelete>0</TriggerOnDelete>
-      <AsyncAutodelete>0</AsyncAutodelete>
-      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-      <StateCode>1</StateCode>
-      <StatusCode>2</StatusCode>
-      <RunAs>1</RunAs>
-      <IsTransacted>1</IsTransacted>
-      <IntroducedVersion>1.0.0.14</IntroducedVersion>
-      <IsCustomizable>1</IsCustomizable>
-      <BusinessProcessType>0</BusinessProcessType>
-      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
-      <ModernFlowType>0</ModernFlowType>
-      <PrimaryEntity>none</PrimaryEntity>
-      <LocalizedNames>
-        <LocalizedName languagecode="1033" description="Send-Staðfesting-úrræði" />
-      </LocalizedNames>
-    </Workflow>
     <Workflow WorkflowId="{d938e045-8186-f111-ab0f-70a8a5326318}" Name="Send-stadfesting-bid-urraedi">
       <JsonFileName>/Workflows/Send-stadfesting-bid-urraedi-D938E045-8186-F111-AB0F-70A8A5326318.json</JsonFileName>
       <Type>1</Type>
@@ -25058,6 +23912,84 @@
       <PrimaryEntity>none</PrimaryEntity>
       <LocalizedNames>
         <LocalizedName languagecode="1033" description="Send-stadfesting-bid-urraedi" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{9e9c7b94-9f86-f111-ab0f-70a8a5326318}" Name="Send-Staðfesting-atvinnuleit">
+      <JsonFileName>/Workflows/Send-Stafesting-atvinnuleit-9E9C7B94-9F86-F111-AB0F-70A8A5326318.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.14</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Send-Staðfesting-atvinnuleit" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{6a94764c-a689-f111-ab0f-7ced8d0b6045}" Name="Send-Viðurkennd-Meðferð">
+      <JsonFileName>/Workflows/Send-Viurkennd-Mefer-6A94764C-A689-F111-AB0F-7CED8D0B6045.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.15</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Send-Viðurkennd-Meðferð" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{bc5ff24b-28a1-f011-bbd2-7ced8d13fee1}" Name="Send-aetlun">
+      <JsonFileName>/Workflows/Send-aetlun-BC5FF24B-28A1-F011-BBD2-7CED8D13FEE1.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Send-aetlun" />
       </LocalizedNames>
     </Workflow>
   </Workflows>
@@ -25311,26 +24243,6 @@
       <IntroducedVersion>1.0</IntroducedVersion>
       <IsHierarchical>0</IsHierarchical>
       <ReferencingEntityName>tre_StadfestingVidurkenndMedferd</ReferencingEntityName>
-      <ReferencedEntityName>BusinessUnit</ReferencedEntityName>
-      <CascadeAssign>NoCascade</CascadeAssign>
-      <CascadeDelete>Restrict</CascadeDelete>
-      <CascadeArchive>Restrict</CascadeArchive>
-      <CascadeReparent>NoCascade</CascadeReparent>
-      <CascadeShare>NoCascade</CascadeShare>
-      <CascadeUnshare>NoCascade</CascadeUnshare>
-      <ReferencingAttributeName>OwningBusinessUnit</ReferencingAttributeName>
-      <RelationshipDescription>
-        <Descriptions>
-          <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
-        </Descriptions>
-      </RelationshipDescription>
-    </EntityRelationship>
-    <EntityRelationship Name="business_unit_tre_tegund_medferdar">
-      <EntityRelationshipType>OneToMany</EntityRelationshipType>
-      <IsCustomizable>1</IsCustomizable>
-      <IntroducedVersion>1.0</IntroducedVersion>
-      <IsHierarchical>0</IsHierarchical>
-      <ReferencingEntityName>tre_Tegund_medferdar</ReferencingEntityName>
       <ReferencedEntityName>BusinessUnit</ReferencedEntityName>
       <CascadeAssign>NoCascade</CascadeAssign>
       <CascadeDelete>Restrict</CascadeDelete>
@@ -26355,46 +25267,6 @@
         </Descriptions>
       </RelationshipDescription>
     </EntityRelationship>
-    <EntityRelationship Name="lk_tre_tegund_medferdar_createdby">
-      <EntityRelationshipType>OneToMany</EntityRelationshipType>
-      <IsCustomizable>1</IsCustomizable>
-      <IntroducedVersion>1.0</IntroducedVersion>
-      <IsHierarchical>0</IsHierarchical>
-      <ReferencingEntityName>tre_Tegund_medferdar</ReferencingEntityName>
-      <ReferencedEntityName>SystemUser</ReferencedEntityName>
-      <CascadeAssign>NoCascade</CascadeAssign>
-      <CascadeDelete>NoCascade</CascadeDelete>
-      <CascadeArchive>NoCascade</CascadeArchive>
-      <CascadeReparent>NoCascade</CascadeReparent>
-      <CascadeShare>NoCascade</CascadeShare>
-      <CascadeUnshare>NoCascade</CascadeUnshare>
-      <ReferencingAttributeName>CreatedBy</ReferencingAttributeName>
-      <RelationshipDescription>
-        <Descriptions>
-          <Description description="Unique identifier of the user who created the record." languagecode="1033" />
-        </Descriptions>
-      </RelationshipDescription>
-    </EntityRelationship>
-    <EntityRelationship Name="lk_tre_tegund_medferdar_modifiedby">
-      <EntityRelationshipType>OneToMany</EntityRelationshipType>
-      <IsCustomizable>1</IsCustomizable>
-      <IntroducedVersion>1.0</IntroducedVersion>
-      <IsHierarchical>0</IsHierarchical>
-      <ReferencingEntityName>tre_Tegund_medferdar</ReferencingEntityName>
-      <ReferencedEntityName>SystemUser</ReferencedEntityName>
-      <CascadeAssign>NoCascade</CascadeAssign>
-      <CascadeDelete>NoCascade</CascadeDelete>
-      <CascadeArchive>NoCascade</CascadeArchive>
-      <CascadeReparent>NoCascade</CascadeReparent>
-      <CascadeShare>NoCascade</CascadeShare>
-      <CascadeUnshare>NoCascade</CascadeUnshare>
-      <ReferencingAttributeName>ModifiedBy</ReferencingAttributeName>
-      <RelationshipDescription>
-        <Descriptions>
-          <Description description="Unique identifier of the user who modified the record." languagecode="1033" />
-        </Descriptions>
-      </RelationshipDescription>
-    </EntityRelationship>
     <EntityRelationship Name="owner_cr4f8_astundunendurhaefinar">
       <EntityRelationshipType>OneToMany</EntityRelationshipType>
       <IsCustomizable>1</IsCustomizable>
@@ -26641,26 +25513,6 @@
       <IntroducedVersion>1.0</IntroducedVersion>
       <IsHierarchical>0</IsHierarchical>
       <ReferencingEntityName>tre_StadfestingVidurkenndMedferd</ReferencingEntityName>
-      <ReferencedEntityName>Owner</ReferencedEntityName>
-      <CascadeAssign>NoCascade</CascadeAssign>
-      <CascadeDelete>NoCascade</CascadeDelete>
-      <CascadeArchive>NoCascade</CascadeArchive>
-      <CascadeReparent>NoCascade</CascadeReparent>
-      <CascadeShare>NoCascade</CascadeShare>
-      <CascadeUnshare>NoCascade</CascadeUnshare>
-      <ReferencingAttributeName>OwnerId</ReferencingAttributeName>
-      <RelationshipDescription>
-        <Descriptions>
-          <Description description="Owner Id" languagecode="1033" />
-        </Descriptions>
-      </RelationshipDescription>
-    </EntityRelationship>
-    <EntityRelationship Name="owner_tre_tegund_medferdar">
-      <EntityRelationshipType>OneToMany</EntityRelationshipType>
-      <IsCustomizable>1</IsCustomizable>
-      <IntroducedVersion>1.0</IntroducedVersion>
-      <IsHierarchical>0</IsHierarchical>
-      <ReferencingEntityName>tre_Tegund_medferdar</ReferencingEntityName>
       <ReferencedEntityName>Owner</ReferencedEntityName>
       <CascadeAssign>NoCascade</CascadeAssign>
       <CascadeDelete>NoCascade</CascadeDelete>
@@ -26935,25 +25787,75 @@
         </Descriptions>
       </RelationshipDescription>
     </EntityRelationship>
-    <EntityRelationship Name="team_tre_tegund_medferdar">
+    <EntityRelationship Name="tre_cr4f8_endurhaefingaraaetlun_Einstaklingur_tre_einstaklingur">
       <EntityRelationshipType>OneToMany</EntityRelationshipType>
       <IsCustomizable>1</IsCustomizable>
-      <IntroducedVersion>1.0</IntroducedVersion>
+      <IntroducedVersion>1.0.0.15</IntroducedVersion>
       <IsHierarchical>0</IsHierarchical>
-      <ReferencingEntityName>tre_Tegund_medferdar</ReferencingEntityName>
-      <ReferencedEntityName>Team</ReferencedEntityName>
+      <ReferencingEntityName>cr4f8_Endurhaefingaraaetlun</ReferencingEntityName>
+      <ReferencedEntityName>tre_Einstaklingur</ReferencedEntityName>
       <CascadeAssign>NoCascade</CascadeAssign>
-      <CascadeDelete>NoCascade</CascadeDelete>
-      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeArchive>RemoveLink</CascadeArchive>
       <CascadeReparent>NoCascade</CascadeReparent>
       <CascadeShare>NoCascade</CascadeShare>
       <CascadeUnshare>NoCascade</CascadeUnshare>
-      <ReferencingAttributeName>OwningTeam</ReferencingAttributeName>
+      <CascadeRollupView>NoCascade</CascadeRollupView>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <ReferencingAttributeName>tre_Einstaklingur</ReferencingAttributeName>
       <RelationshipDescription>
         <Descriptions>
-          <Description description="Unique identifier for the team that owns the record." languagecode="1033" />
+          <Description description="Einstaklingur sem endurhæfingaráætlun  er fyrir" languagecode="1033" />
         </Descriptions>
       </RelationshipDescription>
+      <EntityRelationshipRoles>
+        <EntityRelationshipRole>
+          <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+          <NavPaneArea>Details</NavPaneArea>
+          <NavPaneOrder>10000</NavPaneOrder>
+          <NavigationPropertyName>tre_Einstaklingur</NavigationPropertyName>
+          <RelationshipRoleType>1</RelationshipRoleType>
+        </EntityRelationshipRole>
+        <EntityRelationshipRole>
+          <NavigationPropertyName>tre_cr4f8_endurhaefingaraaetlun_Einstaklingur_tre_einstaklingur</NavigationPropertyName>
+          <RelationshipRoleType>0</RelationshipRoleType>
+        </EntityRelationshipRole>
+      </EntityRelationshipRoles>
+    </EntityRelationship>
+    <EntityRelationship Name="tre_cr4f8_endurhaefingaraaetlun_Ragjafi_tre_radgjafi">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.15</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>cr4f8_Endurhaefingaraaetlun</ReferencingEntityName>
+      <ReferencedEntityName>tre_Radgjafi</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeArchive>RemoveLink</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <CascadeRollupView>NoCascade</CascadeRollupView>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <ReferencingAttributeName>tre_Ragjafi</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Ráðgjafi sem gerir endurhæfingaráætlun" languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+      <EntityRelationshipRoles>
+        <EntityRelationshipRole>
+          <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+          <NavPaneArea>Details</NavPaneArea>
+          <NavPaneOrder>10000</NavPaneOrder>
+          <NavigationPropertyName>tre_Ragjafi</NavigationPropertyName>
+          <RelationshipRoleType>1</RelationshipRoleType>
+        </EntityRelationshipRole>
+        <EntityRelationshipRole>
+          <NavigationPropertyName>tre_cr4f8_endurhaefingaraaetlun_Ragjafi_tre_radgjafi</NavigationPropertyName>
+          <RelationshipRoleType>0</RelationshipRoleType>
+        </EntityRelationshipRole>
+      </EntityRelationshipRoles>
     </EntityRelationship>
     <EntityRelationship Name="tre_stadfestingatvinnuleit_Einstaklingur_tre_einstaklingur">
       <EntityRelationshipType>OneToMany</EntityRelationshipType>
@@ -27091,6 +25993,76 @@
         </EntityRelationshipRole>
         <EntityRelationshipRole>
           <NavigationPropertyName>tre_stadfestingbidmedferd_RadgjafiL_tre_radgjafi</NavigationPropertyName>
+          <RelationshipRoleType>0</RelationshipRoleType>
+        </EntityRelationshipRole>
+      </EntityRelationshipRoles>
+    </EntityRelationship>
+    <EntityRelationship Name="tre_stadfestingvidurkenndmedferd_Einstaklingur_tre_einstaklingur">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.15</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>tre_StadfestingVidurkenndMedferd</ReferencingEntityName>
+      <ReferencedEntityName>tre_Einstaklingur</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeArchive>RemoveLink</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <CascadeRollupView>NoCascade</CascadeRollupView>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <ReferencingAttributeName>tre_Einstaklingur</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Einstaklingur sem staðfesting um meðferð á við um." languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+      <EntityRelationshipRoles>
+        <EntityRelationshipRole>
+          <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+          <NavPaneArea>Details</NavPaneArea>
+          <NavPaneOrder>10000</NavPaneOrder>
+          <NavigationPropertyName>tre_Einstaklingur</NavigationPropertyName>
+          <RelationshipRoleType>1</RelationshipRoleType>
+        </EntityRelationshipRole>
+        <EntityRelationshipRole>
+          <NavigationPropertyName>tre_stadfestingvidurkenndmedferd_Einstaklingur_tre_einstaklingur</NavigationPropertyName>
+          <RelationshipRoleType>0</RelationshipRoleType>
+        </EntityRelationshipRole>
+      </EntityRelationshipRoles>
+    </EntityRelationship>
+    <EntityRelationship Name="tre_stadfestingvidurkenndmedferd_Ragjafi_tre_radgjafi">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.15</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>tre_StadfestingVidurkenndMedferd</ReferencingEntityName>
+      <ReferencedEntityName>tre_Radgjafi</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeArchive>RemoveLink</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <CascadeRollupView>NoCascade</CascadeRollupView>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <ReferencingAttributeName>tre_Ragjafi</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Ráðgjafi sem gefur út staðfestingu" languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+      <EntityRelationshipRoles>
+        <EntityRelationshipRole>
+          <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+          <NavPaneArea>Details</NavPaneArea>
+          <NavPaneOrder>10000</NavPaneOrder>
+          <NavigationPropertyName>tre_Ragjafi</NavigationPropertyName>
+          <RelationshipRoleType>1</RelationshipRoleType>
+        </EntityRelationshipRole>
+        <EntityRelationshipRole>
+          <NavigationPropertyName>tre_stadfestingvidurkenndmedferd_Ragjafi_tre_radgjafi</NavigationPropertyName>
           <RelationshipRoleType>0</RelationshipRoleType>
         </EntityRelationshipRole>
       </EntityRelationshipRoles>
@@ -27355,29 +26327,449 @@
         </Descriptions>
       </RelationshipDescription>
     </EntityRelationship>
-    <EntityRelationship Name="user_tre_tegund_medferdar">
-      <EntityRelationshipType>OneToMany</EntityRelationshipType>
-      <IsCustomizable>1</IsCustomizable>
-      <IntroducedVersion>1.0</IntroducedVersion>
-      <IsHierarchical>0</IsHierarchical>
-      <ReferencingEntityName>tre_Tegund_medferdar</ReferencingEntityName>
-      <ReferencedEntityName>SystemUser</ReferencedEntityName>
-      <CascadeAssign>NoCascade</CascadeAssign>
-      <CascadeDelete>NoCascade</CascadeDelete>
-      <CascadeArchive>NoCascade</CascadeArchive>
-      <CascadeReparent>NoCascade</CascadeReparent>
-      <CascadeShare>NoCascade</CascadeShare>
-      <CascadeUnshare>NoCascade</CascadeUnshare>
-      <ReferencingAttributeName>OwningUser</ReferencingAttributeName>
-      <RelationshipDescription>
-        <Descriptions>
-          <Description description="Unique identifier for the user that owns the record." languagecode="1033" />
-        </Descriptions>
-      </RelationshipDescription>
-    </EntityRelationship>
   </EntityRelationships>
   <OrganizationSettings />
-  <optionsets />
+  <optionsets>
+    <optionset Name="tre_tegundmeferar" localizedName="Tegund meðferðar">
+      <OptionSetType>picklist</OptionSetType>
+      <IsGlobal>1</IsGlobal>
+      <IntroducedVersion>1.0.0.15</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <ExternalTypeName></ExternalTypeName>
+      <displaynames>
+        <displayname description="Tegund meðferðar" languagecode="1033" />
+      </displaynames>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+      <options>
+        <option value="61" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Viðtöl við sálfræðing" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="62" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Viðtöl við iðjuþjálfa" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="63" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Streituþolnám" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="64" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Viðtöl við félagsráðgjafa" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="65" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Viðtöl við heimilislækni" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="66" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Núvitundarnámskeið" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="67" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Sjálfsþjálfun" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="68" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="ADHD námskeið" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="69" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Viðtöl við broskáþjálfa" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="70" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Viðtöl við fíkniráðgjafa" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="71" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Viðtöl við geðlækni" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="72" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="EMDR meðferð" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="73" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Sjálfstyrkingarnámskeið" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="74" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Viðtöl við fjölskylduráðgjafa" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="75" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Viðtöl við geðhjúkrunarfræðing" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="76" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="HAM meðferð" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="77" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="DAM meðferð" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="78" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Námskeið undir handleiðslu" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="79" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Næringaráðgjöf" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="80" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Verkefnateymi LSH" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="81" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Talþjálfun" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="82" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Sjúkraþjálfun" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="83" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Þjálfun undir handleiðslu" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="84" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Heilsunudd" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="85" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Kírópraktor" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="86" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Sundleikfimi undir handleiðslu" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="87" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Viðtöl við hjúkrunarfræðing" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="88" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Fjarsjúkraþjálfun" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="89" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Námskeið á vegum VMST" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="90" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Vinnuprófun" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="91" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Markþjálfun" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="92" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Lífstílsráðgjöf" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="93" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="IPS atvinnuráðgjöf" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="94" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Atvinna með stuðningi" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="95" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Viðtöl við atvinnulífsráðgjafa" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="96" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Atvinnu- og virkniúrvinnsla" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="97" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Náms- og atvinnutengd námskeið" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="98" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Næringaráðgjöf" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="99" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Háþrýstiklefi" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="100" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Lyfjameðferð við þunglyndi" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="101" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="TMS meðferð" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="102" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Áfengis- og vímuefnameðferð" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="103" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="SSRI lyfjameðferð" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="104" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Krabbameinsmeðferð" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="105" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Meðferð hjá bæklunarlækni" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="106" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Lyfjameðferð vegna ME" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="107" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Líftæknilyfjameðferð" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="108" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Forðalyfjagjöf" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="109" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Lyfjameðferð vegna POTS" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="110" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Blóðskilun" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="111" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Geislameðferð" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="112" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Meðferð á hjartadeild" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+        <option value="113" ExternalValue="" IsHidden="0">
+          <labels>
+            <label description="Lyfjameðferð við kvíða" languagecode="1033" />
+          </labels>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </option>
+      </options>
+    </optionset>
+  </optionsets>
   <CustomControls />
   <AppModuleSiteMaps>
     <AppModuleSiteMap>
@@ -27417,7 +26809,7 @@
             </SubArea>
             <SubArea Id="subarea_a3711802" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="tre_stadfestingvidurkenndmedferd" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
               <Titles>
-                <Title LCID="1033" Title="Staðfesting á bið eftir meðferð" />
+                <Title LCID="1033" Title="Viðurkennd meðferð - Staðfesting" />
               </Titles>
             </SubArea>
             <SubArea Id="subarea_069ebb71" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="tre_einstaklingur" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
