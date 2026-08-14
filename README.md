@@ -15,3 +15,6 @@ Mappa með zip-skrám sem eru export úr þróunarumhverfi. Inniheldur þær út
 ### data
 Mappa með gögnum til að lesa inn í stoðtöflur kerfis.
 Listar yfir valmöguleika og annað þess háttar.
+
+### templates
+Í möppunni eru Microsoft Word sniðmát fyrir hvert og eitt eyðublað. Hægt er að hlaða upp sniðmátunum í appið og þá geta ráðgjafar tekið út Word skjal með hverju og einu eyðublaði. 
