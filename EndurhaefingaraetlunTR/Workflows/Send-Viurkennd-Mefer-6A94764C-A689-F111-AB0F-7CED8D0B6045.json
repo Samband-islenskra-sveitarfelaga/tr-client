@@ -24,7 +24,7 @@
           "type": "Object"
         },
         "Client-Id (tre_client-id)": {
-          "defaultValue": "test_client",
+          "defaultValue": "43d0c5d2-3743-4453-935d-3e3a29ce7fab",
           "type": "String",
           "metadata": {
             "schemaName": "tre_client-id",
@@ -127,7 +127,7 @@
                   "name": "@outputs('Einstaklingur')?['body/tre_name']",
                   "nationalId": "@outputs('Einstaklingur')?['body/tre_kennitala']",
                   "address": "@outputs('Einstaklingur')?['body/tre_heimilisfang']",
-                  "postalCode": "@outputs('Einstaklingur')?['body/tre_postnumer']",
+                  "postalCode": "@string(outputs('Einstaklingur')?['body/tre_postnumer'])",
                   "city": "@outputs('Einstaklingur')?['body/tre_staur']",
                   "phoneNumber": "@outputs('Einstaklingur')?['body/tre_simanumer']",
                   "email": "@outputs('Einstaklingur')?['body/tre_tolvupostfang']"
@@ -312,7 +312,8 @@
             "method": "POST",
             "headers": {
               "client-id": "@{parameters('Client-Id (tre_client-id)')}",
-              "X-API-key": "@{parameters('API-Key (tre_APIKey)')}"
+              "X-API-key": "@{parameters('API-Key (tre_APIKey)')}",
+              "Content-Type": "application/json"
             },
             "body": "@variables('body')"
           },
@@ -325,7 +326,9 @@
         "Upsert_a_row": {
           "runAfter": {
             "HTTP": [
-              "Succeeded"
+              "Succeeded",
+              "Failed",
+              "TimedOut"
             ]
           },
           "type": "OpenApiConnection",

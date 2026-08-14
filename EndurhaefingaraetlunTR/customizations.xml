@@ -1,4 +1,4 @@
-<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26065.168" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26065.00168">
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26072.144" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26073.00154">
   <Entities>
     <Entity>
       <Name LocalizedName="Astundun-Endurhaefinar" OriginalName="Astundun-Endurhaefinar">cr4f8_AstundunEndurhaefinar</Name>
@@ -4589,84 +4589,6 @@
                 <Description description="Nánari útskýring fyrir framvindu fyrri endurhæfingartímabils" languagecode="1033" />
               </Descriptions>
             </attribute>
-            <attribute PhysicalName="cr4f8_Heimilisfang">
-              <Type>nvarchar</Type>
-              <Name>cr4f8_heimilisfang</Name>
-              <LogicalName>cr4f8_heimilisfang</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Heimilisfang" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="cr4f8_Heimilshald">
-              <Type>lookup</Type>
-              <Name>cr4f8_heimilshald</Name>
-              <LogicalName>cr4f8_heimilshald</LogicalName>
-              <RequiredLevel>required</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>0</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0.0.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <LookupStyle>single</LookupStyle>
-              <LookupTypes />
-              <displaynames>
-                <displayname description="Heimilshald" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Hvernig gengur umsækjanda að sinna heimilislífi t.d. að elda mat og þrífa húsnæði?" languagecode="1033" />
-              </Descriptions>
-            </attribute>
             <attribute PhysicalName="cr4f8_Hreyfifaerni">
               <Type>lookup</Type>
               <Name>cr4f8_hreyfifaerni</Name>
@@ -4740,46 +4662,6 @@
               <Length>1700</Length>
               <displaynames>
                 <displayname description="Id" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="cr4f8_Kennitala">
-              <Type>nvarchar</Type>
-              <Name>cr4f8_kennitala</Name>
-              <LogicalName>cr4f8_kennitala</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Kennitala" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="" languagecode="1033" />
@@ -4943,86 +4825,6 @@
                 <Description description="Áætluð lok" languagecode="1033" />
               </Descriptions>
             </attribute>
-            <attribute PhysicalName="cr4f8_Nafn">
-              <Type>nvarchar</Type>
-              <Name>cr4f8_nafn</Name>
-              <LogicalName>cr4f8_nafn</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Nafn" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="cr4f8_Netfang">
-              <Type>nvarchar</Type>
-              <Name>cr4f8_netfang</Name>
-              <LogicalName>cr4f8_netfang</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>email</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Netfang" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="" languagecode="1033" />
-              </Descriptions>
-            </attribute>
             <attribute PhysicalName="cr4f8_NyThekking">
               <Type>lookup</Type>
               <Name>cr4f8_nythekking</Name>
@@ -5059,286 +4861,6 @@
               </displaynames>
               <Descriptions>
                 <Description description="Hvernig gengur umsækjanda að tileinka sér nýja hluti, muna upplýsingar og nota þekkingu til að leysa verkefni í daglegu lífi?" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="cr4f8_Postnumer">
-              <Type>nvarchar</Type>
-              <Name>cr4f8_postnumer</Name>
-              <LogicalName>cr4f8_postnumer</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Póstnumer" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="cr4f8_RadgjafiKennitala">
-              <Type>nvarchar</Type>
-              <Name>cr4f8_radgjafikennitala</Name>
-              <LogicalName>cr4f8_radgjafikennitala</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Radgjafi-Kennitala" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Kennitala ráðgjafa" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="cr4f8_RadgjafiNafn">
-              <Type>nvarchar</Type>
-              <Name>cr4f8_radgjafinafn</Name>
-              <LogicalName>cr4f8_radgjafinafn</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Radgjafi-Nafn" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Nafn ráðgjafa" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="cr4f8_RadgjafiNetfang">
-              <Type>nvarchar</Type>
-              <Name>cr4f8_radgjafinetfang</Name>
-              <LogicalName>cr4f8_radgjafinetfang</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Radgjafi-Netfang" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Nefang ráðgjafa" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="cr4f8_RadgjafiSimanumer">
-              <Type>nvarchar</Type>
-              <Name>cr4f8_radgjafisimanumer</Name>
-              <LogicalName>cr4f8_radgjafisimanumer</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Radgjafi-Simanumer" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Símanúmer ráðgjafa" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="cr4f8_RadgjafiTitill">
-              <Type>nvarchar</Type>
-              <Name>cr4f8_radgjafititill</Name>
-              <LogicalName>cr4f8_radgjafititill</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Radgjafi-Titill" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Starfsheiti ráðgjafa" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="cr4f8_RadgjafiVinnustadur">
-              <Type>nvarchar</Type>
-              <Name>cr4f8_radgjafivinnustadur</Name>
-              <LogicalName>cr4f8_radgjafivinnustadur</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Radgjafi-Vinnustadur" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Vinnustaður ráðgjafa" languagecode="1033" />
               </Descriptions>
             </attribute>
             <attribute PhysicalName="cr4f8_ReadyToSend">
@@ -5386,21 +4908,21 @@
                 <options>
                   <option value="1" ExternalValue="" IsHidden="0">
                     <labels>
-                      <label description="Yes" languagecode="1033" />
+                      <label description="Já" languagecode="1033" />
                     </labels>
                   </option>
                   <option value="0" ExternalValue="" IsHidden="0">
                     <labels>
-                      <label description="No" languagecode="1033" />
+                      <label description="Nei" languagecode="1033" />
                     </labels>
                   </option>
                 </options>
               </optionset>
               <displaynames>
-                <displayname description="Ready-To-Send" languagecode="1033" />
+                <displayname description="Sent til TR" languagecode="1033" />
               </displaynames>
               <Descriptions>
-                <Description description="" languagecode="1033" />
+                <Description description="Segir til um hvort búið sé að reyna að senda til TR. Ef þarf að senda aftur, er færslan vistuð sem Nei og aftur sem Já." languagecode="1033" />
               </Descriptions>
             </attribute>
             <attribute PhysicalName="cr4f8_Samskipti">
@@ -5439,46 +4961,6 @@
               </displaynames>
               <Descriptions>
                 <Description description="Hvernig gengur umsækjanda að eiga í samskiptum, byggja upp tengsl og viðhalda þeim, við fjölskyldu, vini, samstarfsfélaga eða aðra?" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="cr4f8_Simanumer">
-              <Type>nvarchar</Type>
-              <Name>cr4f8_simanumer</Name>
-              <LogicalName>cr4f8_simanumer</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Símanúmer" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="Símanúmer skjólstæðings" languagecode="1033" />
               </Descriptions>
             </attribute>
             <attribute PhysicalName="cr4f8_StadaVinnumarkadur">
@@ -5674,46 +5156,6 @@
               </displaynames>
               <Descriptions>
                 <Description description="Áhersla og stefna endurhæfingar" languagecode="1033" />
-              </Descriptions>
-            </attribute>
-            <attribute PhysicalName="cr4f8_Stofnun">
-              <Type>nvarchar</Type>
-              <Name>cr4f8_stofnun</Name>
-              <LogicalName>cr4f8_stofnun</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
-              <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
-              <ImeMode>auto</ImeMode>
-              <ValidForUpdateApi>1</ValidForUpdateApi>
-              <ValidForReadApi>1</ValidForReadApi>
-              <ValidForCreateApi>1</ValidForCreateApi>
-              <IsCustomField>1</IsCustomField>
-              <IsAuditEnabled>1</IsAuditEnabled>
-              <IsSecured>0</IsSecured>
-              <IntroducedVersion>1.0</IntroducedVersion>
-              <IsCustomizable>1</IsCustomizable>
-              <IsRenameable>1</IsRenameable>
-              <CanModifySearchSettings>1</CanModifySearchSettings>
-              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-              <SourceType>0</SourceType>
-              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-              <IsSortableEnabled>0</IsSortableEnabled>
-              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-              <IsDataSourceSecret>0</IsDataSourceSecret>
-              <AutoNumberFormat></AutoNumberFormat>
-              <IsSearchable>0</IsSearchable>
-              <IsFilterable>0</IsFilterable>
-              <IsRetrievable>1</IsRetrievable>
-              <IsLocalizable>0</IsLocalizable>
-              <Format>text</Format>
-              <MaxLength>100</MaxLength>
-              <Length>200</Length>
-              <displaynames>
-                <displayname description="Stofnun" languagecode="1033" />
-              </displaynames>
-              <Descriptions>
-                <Description description="" languagecode="1033" />
               </Descriptions>
             </attribute>
             <attribute PhysicalName="cr4f8_Tomstundir">
@@ -5983,10 +5425,10 @@
               <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
               <Behavior>1</Behavior>
               <displaynames>
-                <displayname description="Created On" languagecode="1033" />
+                <displayname description="Stofnað" languagecode="1033" />
               </displaynames>
               <Descriptions>
-                <Description description="Date and time when the record was created." languagecode="1033" />
+                <Description description="Dagsetning og tími sem færsla var stofnuð." languagecode="1033" />
               </Descriptions>
             </attribute>
             <attribute PhysicalName="CreatedOnBehalfBy">
@@ -6571,7 +6013,7 @@
               <AutoNumberFormat></AutoNumberFormat>
               <IsSearchable>0</IsSearchable>
               <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
+              <IsRetrievable>1</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
               <LookupStyle>single</LookupStyle>
               <LookupTypes />
@@ -6580,6 +6022,44 @@
               </displaynames>
               <Descriptions>
                 <Description description="Einstaklingur sem endurhæfingaráætlun  er fyrir" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="tre_Heimilishald">
+              <Type>lookup</Type>
+              <Name>tre_heimilishald</Name>
+              <LogicalName>tre_heimilishald</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.16</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Heimilishald" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
               </Descriptions>
             </attribute>
             <attribute PhysicalName="tre_Ragjafi">
@@ -6609,7 +6089,7 @@
               <AutoNumberFormat></AutoNumberFormat>
               <IsSearchable>0</IsSearchable>
               <IsFilterable>0</IsFilterable>
-              <IsRetrievable>0</IsRetrievable>
+              <IsRetrievable>1</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
               <LookupStyle>single</LookupStyle>
               <LookupTypes />
@@ -6694,7 +6174,7 @@
               <MaxLength>100</MaxLength>
               <Length>200</Length>
               <displaynames>
-                <displayname description="Response-Lysing" languagecode="1033" />
+                <displayname description="Lýsing sendingar" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="Texti með svari frá sendingu" languagecode="1033" />
@@ -6926,7 +6406,7 @@
                               </cell>
                               <cell id="{04f5472e-d5b1-4ae2-b507-12940c738e12}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="Created On" languagecode="1033" />
+                                  <label description="Stofnað" languagecode="1033" />
                                 </labels>
                                 <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
                               </cell>
@@ -6969,14 +6449,14 @@
               <tabs>
                 <tab verticallayout="true" id="{d1404470-b5aa-497b-a011-2ecce66c38d1}" IsUserDefined="1" name="Endurhæfingaráætlun-tab">
                   <labels>
-                    <label description="General" languagecode="1033" />
+                    <label description="Endurhæfingaráætlun" languagecode="1033" />
                   </labels>
                   <columns>
-                    <column width="30%">
+                    <column width="100%">
                       <sections>
                         <section showlabel="true" showbar="false" IsUserDefined="0" id="{6dc853ae-0bdd-46b6-8002-0753a4df599d}" columns="1" celllabelposition="Left" name="Endurhafingaraetlun-frm">
                           <labels>
-                            <label description="Almennar upplýsingar" languagecode="1033" />
+                            <label description="Almennt" languagecode="1033" />
                           </labels>
                           <rows>
                             <row>
@@ -6988,133 +6468,21 @@
                               </cell>
                             </row>
                             <row>
-                              <cell id="{4a0552d0-9e12-4d9e-a67c-5fc47203016d}" colspan="1" rowspan="1">
+                              <cell id="{d4bfc710-0d55-4132-b155-8fb14bbc31fb}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Nafn" languagecode="1033" />
+                                  <label description="Ráðgjafi" languagecode="1033" />
                                 </labels>
-                                <control id="cr4f8_nafn" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr4f8_nafn" />
+                                <control id="tre_ragjafi" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tre_ragjafi" disabled="false" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{8f0892d4-08f5-4c60-870d-eeb58864fd54}" locklevel="0" colspan="1" rowspan="1">
+                              <cell id="{72bd37bb-5316-4f35-8af0-279e2f9d179d}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Kennitala" languagecode="1033" />
+                                  <label description="Einstaklingur" languagecode="1033" />
                                 </labels>
-                                <control id="cr4f8_kennitala" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_kennitala" disabled="false" />
+                                <control id="tre_einstaklingur" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tre_einstaklingur" disabled="false" />
                               </cell>
                             </row>
-                            <row>
-                              <cell id="{2652f05b-3edb-45ed-8c92-f6c892a296db}" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Heimilisfang" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_heimilisfang" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr4f8_heimilisfang" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{0d6943e6-951b-4094-a089-313bc8190aaa}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Póstnumer" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_postnumer" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_postnumer" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{b1c6f556-3825-4f3e-b048-9ebb8cab0a64}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Staður" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_stadur" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_stadur" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{7128150d-5f2d-4518-8e38-1ec82ebd3e27}" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Símanúmer" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_simanumer" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr4f8_simanumer" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{5f08649b-84a7-4c38-bab6-ead8b8a6a1c4}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Netfang" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_netfang" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cr4f8_netfang" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{2dd6f4f3-7a42-402a-9e2a-9cacfa99b4d7}" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Stofnun" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_stofnun" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr4f8_stofnun" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
-                        <section name="Endurhæfingaráætlun-tab_section_5" id="06d01286-75f0-47be-a983-4540855c309a" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
-                          <labels>
-                            <label description="Upplýsingar um ráðgjafa" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row />
-                            <row>
-                              <cell id="{da60e59c-e0c6-45ff-b015-16c4cbc667f8}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Nafn ráðgjafa" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_radgjafinafn" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_radgjafinafn" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{f0f5403b-621f-4ae6-ac02-c157d24d5c1b}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Kennitala ráðgjafa" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_radgjafikennitala" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_radgjafikennitala" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{8d9f28d2-dae7-4168-bd8a-cb57e0b488b2}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Símanúmer ráðgjafa" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_radgjafisimanumer" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_radgjafisimanumer" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{6485121a-34d2-45cf-8968-406dbee93822}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Netfang ráðgjafa" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_radgjafinetfang" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_radgjafinetfang" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{55c88dff-4163-4915-b99f-53a9dfd0e7e1}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Titill ráðgjafa" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_radgjafititill" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_radgjafititill" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{d2088f47-2614-464a-80ce-21ac01a28029}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Vinnustadur ráðgjafa" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_radgjafivinnustadur" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_radgjafivinnustadur" disabled="false" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
-                        <section name="Endurhæfingaráætlun-tab_section_8" id="7c2aa229-c57f-4512-b23a-3ea635d166af" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
-                          <labels>
-                            <label description="Tímabil endurhæfingar" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row />
                             <row>
                               <cell id="{588a96d5-6019-48e5-a7f3-6086e057dc18}" locklevel="0" rowspan="1" colspan="1">
                                 <labels>
@@ -7131,6 +6499,286 @@
                                 <control id="cr4f8_lokadaguraetlun" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr4f8_lokadaguraetlun" disabled="false" />
                               </cell>
                             </row>
+                          </rows>
+                        </section>
+                        <section name="Endurhæfingaráætlun-tab_section_4" id="b35ac283-0e6e-4627-9e8b-e56b32f5c356" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Staða á vinnumarkaði" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row />
+                            <row>
+                              <cell id="{e096d264-2a05-47c0-86d4-29052ccd4925}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Staða á vinnumarkaði" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_stadavinnumarkadur" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_stadavinnumarkadur" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{10e5463a-7266-42a4-86cb-8413ac7eec70}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Viðhorf til vinnu" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_vidhorfvinna" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_vidhorfvinna" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{e798e864-b0ce-41c8-a6f5-6717e78c6313}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Nánari lýsing" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_stadavinnumarkadurlysing" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_stadavinnumarkadurlysing" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                          </rows>
+                        </section>
+                        <section name="Endurhæfingaráætlun-tab_section_5" id="030fbf36-abbe-4c9e-9552-7eada5edc1bf" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Framvinda endurhæfingar" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row />
+                            <row>
+                              <cell id="{e03310f3-2c40-4b38-891c-dcd08c4dbf51}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Framvinda endurhæfingar" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_framvindaendurhaefingar" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_framvindaendurhaefingar" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{3d07c1d7-8cfd-48e2-a7e9-57e22f634071}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Lýsing framvindu" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_framvindaendurhaefingarlysing" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_framvindaendurhaefingarlysing" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{e2d87f0e-b70d-45d0-8b1d-29061b2a7937}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Ástundum endurhæfingar" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_astundunendurhaefingar" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_astundunendurhaefingar" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{ab05f9d1-e770-49b8-97d3-e87159f6b8e5}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Lýsing ástundunar" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_astundunendurhaefingarlysing" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_astundunendurhaefingarlysing" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{1e638ac4-cbdf-4254-89c6-a9f5303ca9b0}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Breytingar á endurhæfingu" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_breytingendurhaefing" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_breytingendurhaefing" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{004d75b8-6fc3-4b21-aa12-d05a2cd3006c}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Lýsing breytinga" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_breytingendurhaefinglysing" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_breytingendurhaefinglysing" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{9f358c21-3a2b-43a1-b7e7-0eefd457b77c}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Breytingar á aðstæðum" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_breytingadstaedur" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_breytingadstaedur" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{bbd1cba9-b29d-4941-9d7d-f5886cfa451e}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Lýsing á breyttum aðstæðum" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_breytingadstaedurlysing" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_breytingadstaedurlysing" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{e43a3bab-ea46-497b-9c26-f2bca200ddb8}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Stefna og áherslur endurhæfingar" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_stefnaendurhaefingar" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_stefnaendurhaefingar" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                          </rows>
+                        </section>
+                        <section name="Endurhæfingaráætlun-tab_section_6" id="2067df6c-054d-4472-9895-c09b4d4b8cfe" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Top" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Færni" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row />
+                            <row>
+                              <cell id="{695442cd-ec5b-49c7-ac79-a14388826b8b}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Hvernig gengur að sinna eigin umsjá - hreinlæti, klæða sig?" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_eiginumsja" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_eiginumsja" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{15006538-9225-4961-9501-bd825ad3a862}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Hvernig gengur að framkvæma daglegar athafnir?" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_daglegtlif" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_daglegtlif" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{1872a272-1df3-44e0-b6df-dd0b4fe9734e}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Hvernig gengur að fara milli staða - Ganga, halda jafnvægi, færa sig til?" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_hreyfifaerni" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_hreyfifaerni" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{67b89cda-21c0-4e98-9954-a980379f2039}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Hvernig gengur að eiga í samskiptum, byggja tengsl og viðhalda þeim?" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_samskipti" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_samskipti" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{07658942-0b39-46f8-91e0-a8a73a728eef}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Hvernig gengur að tileinka sér nýja þekkingu, muna og nota þekkingu?" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_nythekking" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_nythekking" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{7144bc0d-0903-4877-9481-b2c85c2b7fd5}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Hvernig gengur að sinna heimilsstörfum?" languagecode="1033" />
+                                </labels>
+                                <control id="tre_heimilishald" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tre_heimilishald" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{1b30fd4c-e112-4bba-a92e-541881091dde}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Hvernig gengur að taka þátt í starfi og námi?" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_starfnam" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_starfnam" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{c02d4192-4977-4532-91f5-d74bb1d18793}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Hvernig gengur að taka þátt í félagslífi og tómstundum?" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_tomstundir" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_tomstundir" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="Endurhæfingaráætlun-tab_section_7" id="78c3c9ac-b0aa-464e-a656-bc91f01ac5a6" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Markmið og úrræði" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row />
+                            <row>
+                              <cell id="{e8d828ed-9d1b-4191-9df2-de0ec4812ddd}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Markmið - andleg heilsa" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_andlegheilsamarkmid" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_andlegheilsamarkmid" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{e2644801-8ce9-4c7f-8496-0499c9969a5a}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Úttæði - andleg heilsa" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_andlegheilsaurraedi" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_andlegheilsaurraedi" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{c4f50913-eb8c-4fa7-94ba-8498e538f4e8}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Markmið - líkamleg heilsa" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_likamlegheilsamarkmid" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_likamlegheilsamarkmid" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{5beb47d7-74d7-4c87-bf83-4bf645d9050f}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Úrræði - líkamleg heilsa" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_likamlegheilsaurraedi" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_likamlegheilsaurraedi" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{5503004a-8c82-44aa-8262-eb038318e1f9}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Markmið - virkni og þátttaka" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_virknithatttakamarkmid" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_virknithatttakamarkmid" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{2cd282cc-bebe-470f-b08f-9a9208fd308f}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Úrræði - virkni og þátttaka" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_virknithatttakaurraedi" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_virknithatttakaurraedi" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{19d6496a-b675-4614-bebe-e518154ee255}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Lýsing læknismeðferðar" languagecode="1033" />
+                                </labels>
+                                <control id="cr4f8_laekningsmedferdlysing" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_laekningsmedferdlysing" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="Endurhæfingaráætlun-tab_section_8" id="7c2aa229-c57f-4512-b23a-3ea635d166af" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="TR" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row />
                             <row>
                               <cell id="{4ff94ebd-e4a4-498b-9d7b-516f8ad657de}" locklevel="0" rowspan="1" colspan="1">
                                 <labels>
@@ -7167,271 +6815,101 @@
                         </section>
                       </sections>
                     </column>
-                    <column width="70%">
+                  </columns>
+                </tab>
+                <tab name="tab_2" id="3e1d50df-98bc-4b0c-9895-4e379bcbe679" IsUserDefined="0" locklevel="0" showlabel="true">
+                  <labels>
+                    <label description="Eigindi" languagecode="1033" />
+                  </labels>
+                  <columns>
+                    <column width="100%">
                       <sections>
-                        <section name="_section_538" id="961b47a6-51bd-4792-a5cd-a9a6c7ab3c80" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Top" columns="11" labelwidth="115">
+                        <section name="tab_2_section_1" id="d1cd7fbf-5f54-4207-858e-b3054fdff7f2" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                           <labels>
-                            <label description="Staða á vinnumarkaði" languagecode="1033" />
+                            <label description="Eigandi" languagecode="1033" />
                           </labels>
                           <rows>
+                            <row />
                             <row>
-                              <cell locklevel="0" id="{a4b42b2b-1879-471a-b917-2799ee1381c2}">
+                              <cell id="{362a59a7-3929-4a78-a7ee-76bb85f81479}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Eigandi" languagecode="1033" />
                                 </labels>
-                              </cell>
-                              <cell locklevel="0" id="{3448e4d1-4e3a-4769-a512-3ab3d0cec569}">
-                                <labels>
-                                  <label description="" languagecode="1033" />
-                                </labels>
+                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{ed489fb2-fcb4-48d2-b8c8-c655d393d4db}" locklevel="0" colspan="1" rowspan="1">
+                              <cell id="{cf840c9a-a56f-436f-9e45-52f2d6116bb8}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Staða á vinnumarkaði" languagecode="1033" />
+                                  <label description="Eigandi (Deilld)" languagecode="1033" />
                                 </labels>
-                                <control id="cr4f8_stadavinnumarkadur" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_stadavinnumarkadur" disabled="false" />
-                              </cell>
-                              <cell id="{7cf8eb3b-38d2-45ed-98d4-6e817f88ca33}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Staða á vinnumarkaði nánari lýsing" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_stadavinnumarkadurlysing" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_stadavinnumarkadurlysing" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{79e259a8-714f-422a-b025-975094c20015}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Viðhorf til vinnu" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_vidhorfvinna" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_vidhorfvinna" disabled="false" />
+                                <control id="owningbusinessunit" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="owningbusinessunit" disabled="false" />
                               </cell>
                             </row>
                           </rows>
                         </section>
-                        <section name="Endurhæfingaráætlun-tab_section_4" id="cff97f67-d4c9-4105-aa78-bad8d4b30c10" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Top" columns="11" labelwidth="115">
+                        <section name="tab_2_section_3" id="58ef8b3d-f29b-4f97-9537-cec71a1b05b9" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                           <labels>
-                            <label description="Framvinda endurhæfingar" languagecode="1033" />
+                            <label description="Búið til" languagecode="1033" />
                           </labels>
                           <rows>
                             <row />
                             <row>
-                              <cell id="{1a4a78ca-d12c-40b3-9588-3dfb44c7e331}" locklevel="0" rowspan="1" colspan="1">
+                              <cell id="{ad4ffc2e-c1c3-43d0-994f-399fcc28fc21}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Framvinda endurhæfingar" languagecode="1033" />
+                                  <label description="Stofnað" languagecode="1033" />
                                 </labels>
-                                <control id="cr4f8_framvindaendurhaefingar" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_framvindaendurhaefingar" disabled="false" />
-                              </cell>
-                              <cell id="{1041b726-6c05-4021-bfe5-ae45f07c7f6b}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Framvinda endurhæfingar - Nánari lýsing" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_framvindaendurhaefingarlysing" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_framvindaendurhaefingarlysing" disabled="false" />
+                                <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{214f442f-510c-4176-8f25-ceda203994e9}" locklevel="0" rowspan="1" colspan="1">
+                              <cell id="{b79e0297-60b4-4a73-aefe-72bb3f497ad2}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Voru gerðar breyting á endurhæfingu?" languagecode="1033" />
+                                  <label description="Stofnað af" languagecode="1033" />
                                 </labels>
-                                <control id="cr4f8_breytingendurhaefing" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_breytingendurhaefing" disabled="false" />
-                              </cell>
-                              <cell id="{bb0e7731-c3ab-4436-a4b7-aecbb1edeff2}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Breytingar á endurhæfingu - Nánari lýsing" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_breytingendurhaefinglysing" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_breytingendurhaefinglysing" disabled="false" />
+                                <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{5b618032-eece-469e-962c-de785aec4d21}" locklevel="0" rowspan="1" colspan="1">
+                              <cell id="{25e7b82a-2062-4037-8803-8d5440d00d3f}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Voru breytingar á aðstæðum?" languagecode="1033" />
+                                  <label description="Stofnað af (Delegate)" languagecode="1033" />
                                 </labels>
-                                <control id="cr4f8_breytingadstaedur" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_breytingadstaedur" disabled="false" />
-                              </cell>
-                              <cell id="{26e68f95-729d-468d-87d1-847eadd65575}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Breytingar á aðstæðum - Nánari lýsing" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_breytingadstaedurlysing" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_breytingadstaedurlysing" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{b62abc75-8de8-4993-9a76-6e5e4d41557b}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Ástundun endurhæfingar" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_astundunendurhaefingar" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_astundunendurhaefingar" disabled="false" />
-                              </cell>
-                              <cell id="{d709552c-b224-48e5-9d50-6e85ce1edf1f}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Ástundun endurhæfingar - Nánari lýsing" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_astundunendurhaefingarlysing" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_astundunendurhaefingarlysing" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{a1fcbd20-4d9f-4dbe-809a-075151925722}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Stefna og áherslur endurhæfingar" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_stefnaendurhaefingar" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_stefnaendurhaefingar" disabled="false" />
-                              </cell>
-                              <cell locklevel="0" id="{c8c6550a-7edc-4578-b825-6aa9240ca8dd}">
-                                <labels>
-                                  <label description="" languagecode="1033" />
-                                </labels>
+                                <control id="createdonbehalfby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdonbehalfby" disabled="false" />
                               </cell>
                             </row>
                           </rows>
                         </section>
-                        <section name="Endurhæfingaráætlun-tab_section_6" id="19aadd93-3806-4b8d-a731-067e721eee10" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Top" columns="11" labelwidth="115">
+                        <section name="tab_2_section_4" id="8c0d415d-ae45-44c2-b149-5b7f75747cc2" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                           <labels>
-                            <label description="Færni" languagecode="1033" />
+                            <label description="Breytt" languagecode="1033" />
                           </labels>
                           <rows>
-                            <row>
-                              <cell locklevel="0" id="{f082a3ab-36fd-48d5-af6f-236dc6e7660b}">
-                                <labels>
-                                  <label description="" languagecode="1033" />
-                                </labels>
-                              </cell>
-                              <cell locklevel="0" id="{b16c81a3-8277-4655-8a03-9e16a9062845}">
-                                <labels>
-                                  <label description="" languagecode="1033" />
-                                </labels>
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{69383904-53a0-40a8-abfe-ed73de1221b3}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Hvernig gengur að tileinka sér nýja, muna og nota þekkingu?" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_nythekking" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_nythekking" disabled="false" />
-                              </cell>
-                              <cell id="{25f56f1f-71db-4db2-afdd-88a91aed234b}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Hvernig genur að framkvæma daglegar athafnir" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_daglegtlif" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_daglegtlif" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{ccaa8dc6-293b-4158-a8fd-11da3034f13b}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Hvernig gengur að eiga í samskiptum, byggja tengsl og viðhalda þeim?" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_samskipti" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_samskipti" disabled="false" />
-                              </cell>
-                              <cell id="{111e8160-0966-4e32-94e9-aedb37999eeb}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Hvernig gengur að fara á milli staða - Ganga, halda jafnvægi og færa sig til?" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_hreyfifaerni" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_hreyfifaerni" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{fec9422e-4b6d-4bac-b728-76fffd18ddb4}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Hvernig gengur að sinna eigin umsjá - Hreinlæti og klæða sig?" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_eiginumsja" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_eiginumsja" disabled="false" />
-                              </cell>
-                              <cell id="{80b6a453-25c6-4c5a-b0b5-344d0e25438b}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Hvernig gengur að sinna heimilislífi? - Elda og þrífa" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_heimilshald" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_heimilshald" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{47763ce7-2f81-426b-aab2-9616bb5bee26}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Hvernig gengur að taka þátt í námi, starfi?" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_starfnam" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_starfnam" disabled="false" />
-                              </cell>
-                              <cell id="{438440c9-2b56-4835-8da3-3dbdd77f17c7}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Hvernig gengur að taka þátt í félagslífi og tómstundum?" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_tomstundir" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_tomstundir" disabled="false" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
-                        <section name="Endurhæfingaráætlun-tab_section_7" id="23097b36-ca34-41d8-8fe5-52edee8f0ba4" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Top" columns="11" labelwidth="115">
-                          <labels>
-                            <label description="Markmið og úrræði" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell locklevel="0" id="{19ab4eab-39a1-4d6f-9e65-0caeb049472d}">
-                                <labels>
-                                  <label description="" languagecode="1033" />
-                                </labels>
-                              </cell>
-                              <cell locklevel="0" id="{9388af92-a2bb-44ba-a863-9e320e02dd27}">
-                                <labels>
-                                  <label description="" languagecode="1033" />
-                                </labels>
-                              </cell>
-                            </row>
-                            <row>
-                              <cell locklevel="0" id="{653cb2a7-bec9-42d1-8fe6-c72b8ec25b16}">
-                                <labels>
-                                  <label description="" languagecode="1033" />
-                                </labels>
-                              </cell>
-                              <cell id="{2864b2c5-c5a8-4bc6-a5c3-4c09e5a72e86}" locklevel="0" colspan="1" rowspan="2">
-                                <labels>
-                                  <label description="Líkamleg heilsa - Úrræði" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_likamlegheilsaurraedi" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_likamlegheilsaurraedi" disabled="false" />
-                              </cell>
-                            </row>
                             <row />
                             <row>
-                              <cell id="{37eec9a2-6b3b-4a8e-9285-117da95689ec}" locklevel="0" colspan="1" rowspan="2">
+                              <cell id="{21798ab7-6bd6-4762-bef9-73266e5a4f8a}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Líkamleg heilsa - Markmið" languagecode="1033" />
+                                  <label description="Síðast breytt" languagecode="1033" />
                                 </labels>
-                                <control id="cr4f8_likamlegheilsamarkmid" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_likamlegheilsamarkmid" disabled="false" />
+                                <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
                               </cell>
                             </row>
-                            <row />
                             <row>
-                              <cell id="{11ff17e6-069f-4eb2-901c-6ba82124b16e}" locklevel="0" colspan="1" rowspan="2">
+                              <cell id="{2e80da70-d455-4136-b9bd-88b7ad295415}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Andleg heilsa - Markmið" languagecode="1033" />
+                                  <label description="Síðast breytt af" languagecode="1033" />
                                 </labels>
-                                <control id="cr4f8_andlegheilsamarkmid" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_andlegheilsamarkmid" disabled="false" />
-                              </cell>
-                              <cell id="{d7e52a6b-66ae-4c2c-95a2-4e79a782b641}" locklevel="0" colspan="1" rowspan="2">
-                                <labels>
-                                  <label description="Andleg heilsa - Úrræði" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_andlegheilsaurraedi" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_andlegheilsaurraedi" disabled="false" />
+                                <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
                               </cell>
                             </row>
-                            <row />
                             <row>
-                              <cell id="{76026907-74bd-4563-8a84-f52a0b065a8b}" locklevel="0" colspan="1" rowspan="2">
+                              <cell id="{63bf67bd-1c5a-4ea0-9b39-1f9fb990dd54}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Virkni og þátttaka - Markmið" languagecode="1033" />
+                                  <label description="Síðast breytt af (Delegate)" languagecode="1033" />
                                 </labels>
-                                <control id="cr4f8_virknithatttakamarkmid" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_virknithatttakamarkmid" disabled="false" />
-                              </cell>
-                              <cell id="{a5679381-c3a8-44d2-82ed-857da2bda866}" locklevel="0" colspan="1" rowspan="2">
-                                <labels>
-                                  <label description="Virkni og þátttaka - Úrræði" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_virknithatttakaurraedi" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4f8_virknithatttakaurraedi" disabled="false" />
+                                <control id="modifiedonbehalfby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedonbehalfby" disabled="false" />
                               </cell>
                             </row>
-                            <row />
                           </rows>
                         </section>
                       </sections>
@@ -7556,59 +7034,19 @@
                               </cell>
                             </row>
                             <row>
-                              <cell id="{edbf729c-57a0-45d5-a167-2ccf141e476f}" locklevel="0" rowspan="1" colspan="1">
+                              <cell id="{296f2ea6-f920-4a4f-89fc-7e32b8455738}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Kennitala" languagecode="1033" />
+                                  <label description="Ráðgjafi" languagecode="1033" />
                                 </labels>
-                                <control id="cr4f8_kennitala" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_kennitala" disabled="false" />
+                                <control id="tre_ragjafi" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tre_ragjafi" disabled="false" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{7d7ebdaf-e2c4-4576-9dca-717defc59d5c}" locklevel="0" rowspan="1" colspan="1">
+                              <cell id="{7868460a-e6aa-476f-83ae-7d786d316459}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Nafn" languagecode="1033" />
+                                  <label description="Einstaklingur" languagecode="1033" />
                                 </labels>
-                                <control id="cr4f8_nafn" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_nafn" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{a2a30ca3-995f-4edf-b9d3-c02cabe7a74b}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Heimilisfang" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_heimilisfang" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_heimilisfang" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{02445085-3bfd-4766-9db1-55d974c8eeb5}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Póstnumer" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_postnumer" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_postnumer" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{f5b3e9a1-6dd6-4972-9c38-b07dbfaad132}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Símanúmer" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_simanumer" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_simanumer" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{306cdc50-c974-4c55-8db2-98ad71b80d93}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Netfang" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_netfang" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cr4f8_netfang" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{3c7ebbb6-e58e-4067-b205-968350cbccc9}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Stofnun" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_stofnun" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_stofnun" disabled="false" />
+                                <control id="tre_einstaklingur" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tre_einstaklingur" disabled="false" />
                               </cell>
                             </row>
                             <row>
@@ -7742,7 +7180,7 @@
                             <row>
                               <cell id="{78e829cc-973a-45c8-a1b8-fa4a3da8c00e}" locklevel="0" rowspan="1" colspan="1">
                                 <labels>
-                                  <label description="Heimilshald" languagecode="1033" />
+                                  <label description="" languagecode="1033" />
                                 </labels>
                                 <control id="cr4f8_heimilshald" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4f8_heimilshald" disabled="false" />
                               </cell>
@@ -7836,54 +7274,6 @@
                               </cell>
                             </row>
                             <row>
-                              <cell id="{fe86f008-a6c8-4403-a589-ce1a781f2bf6}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Radgjafi-Nafn" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_radgjafinafn" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_radgjafinafn" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{da1a31d3-1756-4829-ae57-4211914ad226}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Radgjafi-Kennitala" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_radgjafikennitala" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_radgjafikennitala" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{2991e56d-6856-4a9a-8f5e-cd690d47767b}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Radgjafi-Titill" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_radgjafititill" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_radgjafititill" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{84929ceb-11d5-40e8-a081-0e1813301656}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Radgjafi-Vinnustadur" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_radgjafivinnustadur" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_radgjafivinnustadur" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{70f8649f-a7a8-4ef2-a4a4-2bf62c67666e}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Radgjafi-Simanumer" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_radgjafisimanumer" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_radgjafisimanumer" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{267bf411-582b-4c60-b321-dd16d6044562}" locklevel="0" rowspan="1" colspan="1">
-                                <labels>
-                                  <label description="Radgjafi-Netfang" languagecode="1033" />
-                                </labels>
-                                <control id="cr4f8_radgjafinetfang" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4f8_radgjafinetfang" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
                               <cell id="{2524d72f-8dbd-4dfa-966e-d6f1384578d4}" locklevel="0" rowspan="1" colspan="1">
                                 <labels>
                                   <label description="Stadur" languagecode="1033" />
@@ -7894,7 +7284,7 @@
                             <row>
                               <cell id="{db77446d-216c-4b59-988f-7a32e6584445}" locklevel="0" rowspan="1" colspan="1">
                                 <labels>
-                                  <label description="Ready-To-Send" languagecode="1033" />
+                                  <label description="Sent til TR" languagecode="1033" />
                                 </labels>
                                 <control id="cr4f8_readytosend" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr4f8_readytosend" disabled="false" />
                               </cell>
@@ -7930,42 +7320,12 @@
             <layoutxml>
               <grid name="resultset" jump="cr4f8_id" select="1" icon="1" preview="1">
                 <row name="result" id="cr4f8_endurhaefingaraaetlunid">
-                  <cell name="cr4f8_id" width="55" />
-                  <cell name="cr4f8_kennitala" width="150" />
-                  <cell name="cr4f8_nafn" width="150" />
-                  <cell name="cr4f8_heimilisfang" width="150" />
-                  <cell name="cr4f8_postnumer" width="150" />
-                  <cell name="cr4f8_simanumer" width="150" />
-                  <cell name="cr4f8_netfang" width="150" />
-                  <cell name="cr4f8_stofnun" width="150" />
-                  <cell name="cr4f8_stadavinnumarkadur" width="150" />
-                  <cell name="cr4f8_stadavinnumarkadurlysing" width="150" />
-                  <cell name="cr4f8_vidhorfvinna" width="150" />
-                  <cell name="cr4f8_andlegheilsaurraedi" width="170" />
-                  <cell name="cr4f8_virknithatttakamarkmid" width="191" />
-                  <cell name="cr4f8_virknithatttakaurraedi" width="181" />
-                  <cell name="cr4f8_framvindaendurhaefingar" width="193" />
-                  <cell name="cr4f8_framvindaendurhaefingarlysing" width="235" />
-                  <cell name="cr4f8_astundunendurhaefingar" width="187" />
-                  <cell name="cr4f8_astundunendurhaefingarlysing" width="229" />
-                  <cell name="cr4f8_breytingendurhaefing" width="170" />
-                  <cell name="cr4f8_breytingendurhaefinglysing" width="213" />
-                  <cell name="cr4f8_breytingadstaedur" width="152" />
-                  <cell name="cr4f8_breytingadstaedurlysing" width="194" />
-                  <cell name="cr4f8_nythekking" width="116" />
-                  <cell name="cr4f8_daglegtlif" width="107" />
-                  <cell name="cr4f8_samskipti" width="100" />
-                  <cell name="cr4f8_hreyfifaerni" width="110" />
-                  <cell name="cr4f8_eiginumsja" width="112" />
-                  <cell name="cr4f8_heimilshald" width="109" />
-                  <cell name="cr4f8_starfnam" width="100" />
-                  <cell name="cr4f8_tomstundir" width="105" />
+                  <cell name="tre_einstaklingur" width="178" />
+                  <cell name="tre_ragjafi" width="100" />
                   <cell name="cr4f8_upphafsdagur" width="120" />
-                  <cell name="cr4f8_lokadaguraetlun" width="144" />
-                  <cell name="cr4f8_stefnaendurhaefingar" width="168" />
-                  <cell name="cr4f8_likamlegheilsamarkmid" width="191" />
-                  <cell name="cr4f8_likamlegheilsaurraedi" width="182" />
-                  <cell name="cr4f8_andlegheilsamarkmid" width="179" />
+                  <cell name="createdon" width="105" />
+                  <cell name="cr4f8_readytosend" width="128" />
+                  <cell name="tre_responselysing" width="137" />
                 </row>
               </grid>
             </layoutxml>
@@ -7974,47 +7334,16 @@
               <fetch version="1.0" mapping="logical">
                 <entity name="cr4f8_endurhaefingaraaetlun">
                   <attribute name="cr4f8_endurhaefingaraaetlunid" />
-                  <attribute name="cr4f8_id" />
                   <attribute name="createdon" />
                   <filter type="and">
                     <condition attribute="statecode" operator="eq" value="0" />
                   </filter>
-                  <attribute name="cr4f8_kennitala" />
-                  <attribute name="cr4f8_nafn" />
-                  <attribute name="cr4f8_heimilisfang" />
-                  <attribute name="cr4f8_postnumer" />
-                  <attribute name="cr4f8_simanumer" />
-                  <attribute name="cr4f8_netfang" />
-                  <attribute name="cr4f8_stofnun" />
-                  <attribute name="cr4f8_stadavinnumarkadur" />
-                  <attribute name="cr4f8_stadavinnumarkadurlysing" />
-                  <attribute name="cr4f8_vidhorfvinna" />
-                  <attribute name="cr4f8_andlegheilsaurraedi" />
-                  <attribute name="cr4f8_virknithatttakamarkmid" />
-                  <attribute name="cr4f8_virknithatttakaurraedi" />
-                  <attribute name="cr4f8_framvindaendurhaefingar" />
-                  <attribute name="cr4f8_framvindaendurhaefingarlysing" />
-                  <attribute name="cr4f8_astundunendurhaefingar" />
-                  <attribute name="cr4f8_astundunendurhaefingarlysing" />
-                  <attribute name="cr4f8_breytingendurhaefing" />
-                  <attribute name="cr4f8_breytingendurhaefinglysing" />
-                  <attribute name="cr4f8_breytingadstaedur" />
-                  <attribute name="cr4f8_breytingadstaedurlysing" />
-                  <attribute name="cr4f8_nythekking" />
-                  <attribute name="cr4f8_daglegtlif" />
-                  <attribute name="cr4f8_samskipti" />
-                  <attribute name="cr4f8_hreyfifaerni" />
-                  <attribute name="cr4f8_eiginumsja" />
-                  <attribute name="cr4f8_heimilshald" />
-                  <attribute name="cr4f8_starfnam" />
-                  <attribute name="cr4f8_tomstundir" />
+                  <attribute name="tre_einstaklingur" />
+                  <attribute name="tre_ragjafi" />
                   <attribute name="cr4f8_upphafsdagur" />
-                  <attribute name="cr4f8_lokadaguraetlun" />
-                  <attribute name="cr4f8_stefnaendurhaefingar" />
-                  <attribute name="cr4f8_likamlegheilsamarkmid" />
-                  <attribute name="cr4f8_likamlegheilsaurraedi" />
-                  <attribute name="cr4f8_andlegheilsamarkmid" />
-                  <order attribute="cr4f8_id" descending="true" />
+                  <attribute name="createdon" />
+                  <attribute name="cr4f8_readytosend" />
+                  <attribute name="tre_responselysing" />
                 </entity>
               </fetch>
             </fetchxml>
@@ -8038,13 +7367,6 @@
                   <cell name="cr4f8_andlegheilsaurraedi" width="170" />
                   <cell name="cr4f8_virknithatttakamarkmid" width="191" />
                   <cell name="cr4f8_virknithatttakaurraedi" width="181" />
-                  <cell name="cr4f8_kennitala" width="100" />
-                  <cell name="cr4f8_nafn" width="100" />
-                  <cell name="cr4f8_heimilisfang" width="114" />
-                  <cell name="cr4f8_postnumer" width="100" />
-                  <cell name="cr4f8_simanumer" width="105" />
-                  <cell name="cr4f8_netfang" width="100" />
-                  <cell name="cr4f8_stofnun" width="100" />
                   <cell name="cr4f8_stadavinnumarkadur" width="164" />
                   <cell name="cr4f8_stadavinnumarkadurlysing" width="207" />
                   <cell name="cr4f8_vidhorfvinna" width="122" />
@@ -8070,14 +7392,10 @@
                   <cell name="cr4f8_likamlegheilsamarkmid" width="191" />
                   <cell name="cr4f8_likamlegheilsaurraedi" width="182" />
                   <cell name="cr4f8_andlegheilsamarkmid" width="179" />
-                  <cell name="cr4f8_radgjafinafn" width="121" />
-                  <cell name="cr4f8_radgjafikennitala" width="148" />
-                  <cell name="cr4f8_radgjafititill" width="121" />
-                  <cell name="cr4f8_radgjafivinnustadur" width="162" />
-                  <cell name="cr4f8_radgjafisimanumer" width="158" />
-                  <cell name="cr4f8_radgjafinetfang" width="138" />
                   <cell name="cr4f8_stadur" width="100" />
                   <cell name="cr4f8_readytosend" width="128" />
+                  <cell name="tre_einstaklingur" width="116" />
+                  <cell name="tre_ragjafi" width="100" />
                 </row>
               </grid>
             </layoutxml>
@@ -8092,13 +7410,6 @@
                   <attribute name="cr4f8_andlegheilsaurraedi" />
                   <attribute name="cr4f8_virknithatttakamarkmid" />
                   <attribute name="cr4f8_virknithatttakaurraedi" />
-                  <attribute name="cr4f8_kennitala" />
-                  <attribute name="cr4f8_nafn" />
-                  <attribute name="cr4f8_heimilisfang" />
-                  <attribute name="cr4f8_postnumer" />
-                  <attribute name="cr4f8_simanumer" />
-                  <attribute name="cr4f8_netfang" />
-                  <attribute name="cr4f8_stofnun" />
                   <attribute name="cr4f8_stadavinnumarkadur" />
                   <attribute name="cr4f8_stadavinnumarkadurlysing" />
                   <attribute name="cr4f8_vidhorfvinna" />
@@ -8124,14 +7435,10 @@
                   <attribute name="cr4f8_likamlegheilsamarkmid" />
                   <attribute name="cr4f8_likamlegheilsaurraedi" />
                   <attribute name="cr4f8_andlegheilsamarkmid" />
-                  <attribute name="cr4f8_radgjafinafn" />
-                  <attribute name="cr4f8_radgjafikennitala" />
-                  <attribute name="cr4f8_radgjafititill" />
-                  <attribute name="cr4f8_radgjafivinnustadur" />
-                  <attribute name="cr4f8_radgjafisimanumer" />
-                  <attribute name="cr4f8_radgjafinetfang" />
                   <attribute name="cr4f8_stadur" />
                   <attribute name="cr4f8_readytosend" />
+                  <attribute name="tre_einstaklingur" />
+                  <attribute name="tre_ragjafi" />
                 </entity>
               </fetch>
             </fetchxml>
@@ -8155,13 +7462,6 @@
                   <cell name="cr4f8_andlegheilsaurraedi" width="170" />
                   <cell name="cr4f8_virknithatttakamarkmid" width="191" />
                   <cell name="cr4f8_virknithatttakaurraedi" width="181" />
-                  <cell name="cr4f8_kennitala" width="100" />
-                  <cell name="cr4f8_nafn" width="100" />
-                  <cell name="cr4f8_heimilisfang" width="114" />
-                  <cell name="cr4f8_postnumer" width="100" />
-                  <cell name="cr4f8_simanumer" width="105" />
-                  <cell name="cr4f8_netfang" width="100" />
-                  <cell name="cr4f8_stofnun" width="100" />
                   <cell name="cr4f8_stadavinnumarkadur" width="164" />
                   <cell name="cr4f8_stadavinnumarkadurlysing" width="207" />
                   <cell name="cr4f8_vidhorfvinna" width="122" />
@@ -8187,14 +7487,10 @@
                   <cell name="cr4f8_likamlegheilsamarkmid" width="191" />
                   <cell name="cr4f8_likamlegheilsaurraedi" width="182" />
                   <cell name="cr4f8_andlegheilsamarkmid" width="179" />
-                  <cell name="cr4f8_radgjafinafn" width="121" />
-                  <cell name="cr4f8_radgjafikennitala" width="148" />
-                  <cell name="cr4f8_radgjafititill" width="121" />
-                  <cell name="cr4f8_radgjafivinnustadur" width="162" />
-                  <cell name="cr4f8_radgjafisimanumer" width="158" />
-                  <cell name="cr4f8_radgjafinetfang" width="138" />
                   <cell name="cr4f8_stadur" width="100" />
                   <cell name="cr4f8_readytosend" width="128" />
+                  <cell name="tre_einstaklingur" width="116" />
+                  <cell name="tre_ragjafi" width="100" />
                 </row>
               </grid>
             </layoutxml>
@@ -8212,13 +7508,6 @@
                   <attribute name="cr4f8_andlegheilsaurraedi" />
                   <attribute name="cr4f8_virknithatttakamarkmid" />
                   <attribute name="cr4f8_virknithatttakaurraedi" />
-                  <attribute name="cr4f8_kennitala" />
-                  <attribute name="cr4f8_nafn" />
-                  <attribute name="cr4f8_heimilisfang" />
-                  <attribute name="cr4f8_postnumer" />
-                  <attribute name="cr4f8_simanumer" />
-                  <attribute name="cr4f8_netfang" />
-                  <attribute name="cr4f8_stofnun" />
                   <attribute name="cr4f8_stadavinnumarkadur" />
                   <attribute name="cr4f8_stadavinnumarkadurlysing" />
                   <attribute name="cr4f8_vidhorfvinna" />
@@ -8244,14 +7533,10 @@
                   <attribute name="cr4f8_likamlegheilsamarkmid" />
                   <attribute name="cr4f8_likamlegheilsaurraedi" />
                   <attribute name="cr4f8_andlegheilsamarkmid" />
-                  <attribute name="cr4f8_radgjafinafn" />
-                  <attribute name="cr4f8_radgjafikennitala" />
-                  <attribute name="cr4f8_radgjafititill" />
-                  <attribute name="cr4f8_radgjafivinnustadur" />
-                  <attribute name="cr4f8_radgjafisimanumer" />
-                  <attribute name="cr4f8_radgjafinetfang" />
                   <attribute name="cr4f8_stadur" />
                   <attribute name="cr4f8_readytosend" />
+                  <attribute name="tre_einstaklingur" />
+                  <attribute name="tre_ragjafi" />
                 </entity>
               </fetch>
             </fetchxml>
@@ -8308,13 +7593,6 @@
                   <cell name="cr4f8_andlegheilsaurraedi" width="170" />
                   <cell name="cr4f8_virknithatttakamarkmid" width="191" />
                   <cell name="cr4f8_virknithatttakaurraedi" width="181" />
-                  <cell name="cr4f8_kennitala" width="100" />
-                  <cell name="cr4f8_nafn" width="100" />
-                  <cell name="cr4f8_heimilisfang" width="114" />
-                  <cell name="cr4f8_postnumer" width="100" />
-                  <cell name="cr4f8_simanumer" width="105" />
-                  <cell name="cr4f8_netfang" width="100" />
-                  <cell name="cr4f8_stofnun" width="100" />
                   <cell name="cr4f8_stadavinnumarkadur" width="164" />
                   <cell name="cr4f8_stadavinnumarkadurlysing" width="207" />
                   <cell name="cr4f8_vidhorfvinna" width="122" />
@@ -8331,7 +7609,6 @@
                   <cell name="cr4f8_samskipti" width="100" />
                   <cell name="cr4f8_hreyfifaerni" width="110" />
                   <cell name="cr4f8_eiginumsja" width="112" />
-                  <cell name="cr4f8_heimilshald" width="109" />
                   <cell name="cr4f8_starfnam" width="100" />
                   <cell name="cr4f8_tomstundir" width="105" />
                   <cell name="cr4f8_upphafsdagur" width="120" />
@@ -8340,12 +7617,6 @@
                   <cell name="cr4f8_likamlegheilsamarkmid" width="191" />
                   <cell name="cr4f8_likamlegheilsaurraedi" width="182" />
                   <cell name="cr4f8_andlegheilsamarkmid" width="179" />
-                  <cell name="cr4f8_radgjafinafn" width="121" />
-                  <cell name="cr4f8_radgjafikennitala" width="148" />
-                  <cell name="cr4f8_radgjafititill" width="121" />
-                  <cell name="cr4f8_radgjafivinnustadur" width="162" />
-                  <cell name="cr4f8_radgjafisimanumer" width="158" />
-                  <cell name="cr4f8_radgjafinetfang" width="138" />
                   <cell name="cr4f8_stadur" width="100" />
                   <cell name="cr4f8_readytosend" width="128" />
                 </row>
@@ -8365,13 +7636,6 @@
                   <attribute name="cr4f8_andlegheilsaurraedi" />
                   <attribute name="cr4f8_virknithatttakamarkmid" />
                   <attribute name="cr4f8_virknithatttakaurraedi" />
-                  <attribute name="cr4f8_kennitala" />
-                  <attribute name="cr4f8_nafn" />
-                  <attribute name="cr4f8_heimilisfang" />
-                  <attribute name="cr4f8_postnumer" />
-                  <attribute name="cr4f8_simanumer" />
-                  <attribute name="cr4f8_netfang" />
-                  <attribute name="cr4f8_stofnun" />
                   <attribute name="cr4f8_stadavinnumarkadur" />
                   <attribute name="cr4f8_stadavinnumarkadurlysing" />
                   <attribute name="cr4f8_vidhorfvinna" />
@@ -8388,7 +7652,6 @@
                   <attribute name="cr4f8_samskipti" />
                   <attribute name="cr4f8_hreyfifaerni" />
                   <attribute name="cr4f8_eiginumsja" />
-                  <attribute name="cr4f8_heimilshald" />
                   <attribute name="cr4f8_starfnam" />
                   <attribute name="cr4f8_tomstundir" />
                   <attribute name="cr4f8_upphafsdagur" />
@@ -8397,12 +7660,6 @@
                   <attribute name="cr4f8_likamlegheilsamarkmid" />
                   <attribute name="cr4f8_likamlegheilsaurraedi" />
                   <attribute name="cr4f8_andlegheilsamarkmid" />
-                  <attribute name="cr4f8_radgjafinafn" />
-                  <attribute name="cr4f8_radgjafikennitala" />
-                  <attribute name="cr4f8_radgjafititill" />
-                  <attribute name="cr4f8_radgjafivinnustadur" />
-                  <attribute name="cr4f8_radgjafisimanumer" />
-                  <attribute name="cr4f8_radgjafinetfang" />
                   <attribute name="cr4f8_stadur" />
                   <attribute name="cr4f8_readytosend" />
                 </entity>
@@ -8455,13 +7712,6 @@
                   <cell name="cr4f8_andlegheilsaurraedi" width="170" />
                   <cell name="cr4f8_virknithatttakamarkmid" width="191" />
                   <cell name="cr4f8_virknithatttakaurraedi" width="181" />
-                  <cell name="cr4f8_kennitala" width="100" />
-                  <cell name="cr4f8_nafn" width="100" />
-                  <cell name="cr4f8_heimilisfang" width="114" />
-                  <cell name="cr4f8_postnumer" width="100" />
-                  <cell name="cr4f8_simanumer" width="105" />
-                  <cell name="cr4f8_netfang" width="100" />
-                  <cell name="cr4f8_stofnun" width="100" />
                   <cell name="cr4f8_stadavinnumarkadur" width="164" />
                   <cell name="cr4f8_stadavinnumarkadurlysing" width="207" />
                   <cell name="cr4f8_vidhorfvinna" width="122" />
@@ -8487,14 +7737,10 @@
                   <cell name="cr4f8_likamlegheilsamarkmid" width="191" />
                   <cell name="cr4f8_likamlegheilsaurraedi" width="182" />
                   <cell name="cr4f8_andlegheilsamarkmid" width="179" />
-                  <cell name="cr4f8_radgjafinafn" width="121" />
-                  <cell name="cr4f8_radgjafikennitala" width="148" />
-                  <cell name="cr4f8_radgjafititill" width="121" />
-                  <cell name="cr4f8_radgjafivinnustadur" width="162" />
-                  <cell name="cr4f8_radgjafisimanumer" width="158" />
-                  <cell name="cr4f8_radgjafinetfang" width="138" />
                   <cell name="cr4f8_stadur" width="100" />
                   <cell name="cr4f8_readytosend" width="128" />
+                  <cell name="tre_einstaklingur" width="116" />
+                  <cell name="tre_ragjafi" width="100" />
                 </row>
               </grid>
             </layoutxml>
@@ -8515,13 +7761,6 @@
                   <attribute name="cr4f8_andlegheilsaurraedi" />
                   <attribute name="cr4f8_virknithatttakamarkmid" />
                   <attribute name="cr4f8_virknithatttakaurraedi" />
-                  <attribute name="cr4f8_kennitala" />
-                  <attribute name="cr4f8_nafn" />
-                  <attribute name="cr4f8_heimilisfang" />
-                  <attribute name="cr4f8_postnumer" />
-                  <attribute name="cr4f8_simanumer" />
-                  <attribute name="cr4f8_netfang" />
-                  <attribute name="cr4f8_stofnun" />
                   <attribute name="cr4f8_stadavinnumarkadur" />
                   <attribute name="cr4f8_stadavinnumarkadurlysing" />
                   <attribute name="cr4f8_vidhorfvinna" />
@@ -8547,14 +7786,10 @@
                   <attribute name="cr4f8_likamlegheilsamarkmid" />
                   <attribute name="cr4f8_likamlegheilsaurraedi" />
                   <attribute name="cr4f8_andlegheilsamarkmid" />
-                  <attribute name="cr4f8_radgjafinafn" />
-                  <attribute name="cr4f8_radgjafikennitala" />
-                  <attribute name="cr4f8_radgjafititill" />
-                  <attribute name="cr4f8_radgjafivinnustadur" />
-                  <attribute name="cr4f8_radgjafisimanumer" />
-                  <attribute name="cr4f8_radgjafinetfang" />
                   <attribute name="cr4f8_stadur" />
                   <attribute name="cr4f8_readytosend" />
+                  <attribute name="tre_einstaklingur" />
+                  <attribute name="tre_ragjafi" />
                 </entity>
               </fetch>
             </fetchxml>
@@ -14033,6 +13268,9 @@
               <grid name="resultset" jump="tre_name" select="1" icon="1" preview="1">
                 <row name="result" id="tre_einstaklingurid">
                   <cell name="tre_name" width="300" />
+                  <cell name="tre_kennitala" width="100" />
+                  <cell name="tre_simanumer" width="105" />
+                  <cell name="tre_tolvupostfang" width="122" />
                   <cell name="createdon" width="125" />
                 </row>
               </grid>
@@ -14048,6 +13286,9 @@
                   <filter type="and">
                     <condition attribute="statecode" operator="eq" value="0" />
                   </filter>
+                  <attribute name="tre_kennitala" />
+                  <attribute name="tre_simanumer" />
+                  <attribute name="tre_tolvupostfang" />
                 </entity>
               </fetch>
             </fetchxml>
@@ -14355,7 +13596,7 @@
               <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
               <Behavior>1</Behavior>
               <displaynames>
-                <displayname description="Created On" languagecode="1033" />
+                <displayname description="Stofnað" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="Date and time when the record was created." languagecode="1033" />
@@ -15376,7 +14617,7 @@
                               </cell>
                               <cell id="{9ab9c8c8-9e02-4dca-9502-3d782c09323a}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="Created On" languagecode="1033" />
+                                  <label description="Stofnað" languagecode="1033" />
                                 </labels>
                                 <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
                               </cell>
@@ -15613,6 +14854,8 @@
               <grid name="resultset" jump="tre_name" select="1" icon="1" preview="1">
                 <row name="result" id="tre_radgjafiid">
                   <cell name="tre_name" width="300" />
+                  <cell name="tre_titill" width="100" />
+                  <cell name="tre_tolvupostfang" width="122" />
                   <cell name="createdon" width="125" />
                 </row>
               </grid>
@@ -15628,6 +14871,8 @@
                   <filter type="and">
                     <condition attribute="statecode" operator="eq" value="0" />
                   </filter>
+                  <attribute name="tre_titill" />
+                  <attribute name="tre_tolvupostfang" />
                 </entity>
               </fetch>
             </fetchxml>
@@ -15895,7 +15140,7 @@
               <LookupStyle>single</LookupStyle>
               <LookupTypes />
               <displaynames>
-                <displayname description="Created By" languagecode="1033" />
+                <displayname description="Stofnað af" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="Unique identifier of the user who created the record." languagecode="1033" />
@@ -15935,7 +15180,7 @@
               <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
               <Behavior>1</Behavior>
               <displaynames>
-                <displayname description="Created On" languagecode="1033" />
+                <displayname description="Stofnað" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="Date and time when the record was created." languagecode="1033" />
@@ -16725,7 +15970,7 @@
               <Format>text</Format>
               <MaxLength>2000</MaxLength>
               <displaynames>
-                <displayname description="Response-Text" languagecode="1033" />
+                <displayname description="Lýsing sendingar" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="Lýsing á stöðu sendingar" languagecode="1033" />
@@ -17094,7 +16339,7 @@
                               </cell>
                               <cell id="{6FD168CE-959C-431F-9896-88FE47039265}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="Created On" languagecode="1033" />
+                                  <label description="Stofnað" languagecode="1033" />
                                 </labels>
                                 <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
                               </cell>
@@ -17269,7 +16514,7 @@
                             <row>
                               <cell id="{d2f44d76-27fc-4239-b393-4aaa255c05a3}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Created By" languagecode="1033" />
+                                  <label description="Stofnað af" languagecode="1033" />
                                 </labels>
                                 <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
                               </cell>
@@ -17445,6 +16690,10 @@
                   <cell name="tre_ragjafi" width="100" />
                   <cell name="tre_upphafsdagur" width="120" />
                   <cell name="tre_lokadagur" width="150" />
+                  <cell name="createdon" width="105" />
+                  <cell name="createdby" width="104" />
+                  <cell name="tre_senttiltr" width="102" />
+                  <cell name="tre_responsetext" width="124" />
                 </row>
               </grid>
             </layoutxml>
@@ -17461,6 +16710,10 @@
                   <attribute name="tre_einstaklingur" />
                   <attribute name="tre_ragjafi" />
                   <attribute name="tre_upphafsdagur" />
+                  <attribute name="createdon" />
+                  <attribute name="createdby" />
+                  <attribute name="tre_senttiltr" />
+                  <attribute name="tre_responsetext" />
                 </entity>
               </fetch>
             </fetchxml>
@@ -17728,7 +16981,7 @@
               <LookupStyle>single</LookupStyle>
               <LookupTypes />
               <displaynames>
-                <displayname description="Created By" languagecode="1033" />
+                <displayname description="Stofnað af" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="Unique identifier of the user who created the record." languagecode="1033" />
@@ -17768,7 +17021,7 @@
               <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
               <Behavior>1</Behavior>
               <displaynames>
-                <displayname description="Created On" languagecode="1033" />
+                <displayname description="Stofnað" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="Date and time when the record was created." languagecode="1033" />
@@ -18658,7 +17911,7 @@
               <Format>text</Format>
               <MaxLength>2000</MaxLength>
               <displaynames>
-                <displayname description="Response Texti" languagecode="1033" />
+                <displayname description="Lýsing sendingar" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="Textalýsing frá sendingu til TR" languagecode="1033" />
@@ -19263,7 +18516,7 @@
                               </cell>
                               <cell id="{8934B6C7-F849-46B8-87C7-3A8F5931EFD7}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="Created On" languagecode="1033" />
+                                  <label description="Stofnað" languagecode="1033" />
                                 </labels>
                                 <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
                               </cell>
@@ -19495,7 +18748,7 @@
                             <row>
                               <cell id="{5c7aaa00-b872-4903-82fc-30542fd8b2c5}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Created On" languagecode="1033" />
+                                  <label description="Stofnað" languagecode="1033" />
                                 </labels>
                                 <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
                               </cell>
@@ -19503,7 +18756,7 @@
                             <row>
                               <cell id="{01199ac3-0929-4994-9cd9-6105dc4bc3d7}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Created By" languagecode="1033" />
+                                  <label description="Stofnað af" languagecode="1033" />
                                 </labels>
                                 <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
                               </cell>
@@ -19679,6 +18932,10 @@
                   <cell name="tre_radgjafil" width="100" />
                   <cell name="tre_upphafsdagur" width="150" />
                   <cell name="tre_lokadagur" width="150" />
+                  <cell name="createdon" width="105" />
+                  <cell name="createdby" width="104" />
+                  <cell name="tre_senttiltr" width="102" />
+                  <cell name="tre_responsetexti" width="126" />
                 </row>
               </grid>
             </layoutxml>
@@ -19695,6 +18952,10 @@
                   <attribute name="tre_lokadagur" />
                   <attribute name="tre_radgjafil" />
                   <attribute name="tre_einstaklingur" />
+                  <attribute name="createdon" />
+                  <attribute name="createdby" />
+                  <attribute name="tre_senttiltr" />
+                  <attribute name="tre_responsetexti" />
                 </entity>
               </fetch>
             </fetchxml>
@@ -21879,7 +21140,7 @@
               <LookupStyle>single</LookupStyle>
               <LookupTypes />
               <displaynames>
-                <displayname description="Created By" languagecode="1033" />
+                <displayname description="Stofnað af" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="Unique identifier of the user who created the record." languagecode="1033" />
@@ -21919,7 +21180,7 @@
               <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
               <Behavior>1</Behavior>
               <displaynames>
-                <displayname description="Created On" languagecode="1033" />
+                <displayname description="Stofnað" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="Date and time when the record was created." languagecode="1033" />
@@ -22811,7 +22072,7 @@
               <MaxLength>255</MaxLength>
               <Length>510</Length>
               <displaynames>
-                <displayname description="Response Texti" languagecode="1033" />
+                <displayname description="Lýsing sendingar" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="Lýsing á stöðu sendingar" languagecode="1033" />
@@ -23024,6 +22285,7 @@
               <IsRetrievable>0</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
               <Format>datetime</Format>
+              <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
               <Behavior>1</Behavior>
               <displaynames>
                 <displayname description="Tími sendingar" languagecode="1033" />
@@ -23258,7 +22520,7 @@
                               </cell>
                               <cell id="{D77DE4CF-FE0A-4501-BFFE-09782A40216E}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="Created On" languagecode="1033" />
+                                  <label description="Stofnað" languagecode="1033" />
                                 </labels>
                                 <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
                               </cell>
@@ -23465,7 +22727,7 @@
                             <row>
                               <cell id="{fc6eb3db-8bc3-41f5-96cf-ec352c9bba02}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Created On" languagecode="1033" />
+                                  <label description="Stofnað" languagecode="1033" />
                                 </labels>
                                 <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
                               </cell>
@@ -23473,7 +22735,7 @@
                             <row>
                               <cell id="{4829f122-4281-40aa-8ced-c250ef2db0d8}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Created By" languagecode="1033" />
+                                  <label description="Stofnað af" languagecode="1033" />
                                 </labels>
                                 <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
                               </cell>
@@ -23649,6 +22911,10 @@
                   <cell name="tre_ragjafi" width="100" />
                   <cell name="tre_upphafsdagur" width="150" />
                   <cell name="tre_lokadagur" width="150" />
+                  <cell name="createdon" width="105" />
+                  <cell name="createdby" width="104" />
+                  <cell name="tre_senttiltr" width="102" />
+                  <cell name="tre_responsetexti" width="126" />
                 </row>
               </grid>
             </layoutxml>
@@ -23665,6 +22931,10 @@
                   <attribute name="tre_lokadagur" />
                   <attribute name="tre_einstaklingur" />
                   <attribute name="tre_ragjafi" />
+                  <attribute name="createdon" />
+                  <attribute name="createdby" />
+                  <attribute name="tre_senttiltr" />
+                  <attribute name="tre_responsetexti" />
                 </entity>
               </fetch>
             </fetchxml>
@@ -23966,8 +23236,8 @@
         <LocalizedName languagecode="1033" description="Send-Viðurkennd-Meðferð" />
       </LocalizedNames>
     </Workflow>
-    <Workflow WorkflowId="{bc5ff24b-28a1-f011-bbd2-7ced8d13fee1}" Name="Send-aetlun">
-      <JsonFileName>/Workflows/Send-aetlun-BC5FF24B-28A1-F011-BBD2-7CED8D13FEE1.json</JsonFileName>
+    <Workflow WorkflowId="{bc5ff24b-28a1-f011-bbd2-7ced8d13fee1}" Name="Send-Endurhaefingaraetlun">
+      <JsonFileName>/Workflows/Send-Endurhaefingaraetlun-BC5FF24B-28A1-F011-BBD2-7CED8D13FEE1.json</JsonFileName>
       <Type>1</Type>
       <Subprocess>0</Subprocess>
       <Category>5</Category>
@@ -23989,7 +23259,7 @@
       <ModernFlowType>0</ModernFlowType>
       <PrimaryEntity>none</PrimaryEntity>
       <LocalizedNames>
-        <LocalizedName languagecode="1033" description="Send-aetlun" />
+        <LocalizedName languagecode="1033" description="Send-Endurhaefingaraetlun" />
       </LocalizedNames>
     </Workflow>
   </Workflows>
@@ -24498,41 +23768,6 @@
         </EntityRelationshipRole>
         <EntityRelationshipRole>
           <NavigationPropertyName>cr4f8_endurhaefingaraaetlun_FramvindaEndurhaefingar_cr4f8_framvindaendurhaefingar</NavigationPropertyName>
-          <RelationshipRoleType>0</RelationshipRoleType>
-        </EntityRelationshipRole>
-      </EntityRelationshipRoles>
-    </EntityRelationship>
-    <EntityRelationship Name="cr4f8_endurhaefingaraaetlun_Heimilshald_cr4f8_athafnirdaglegtlif">
-      <EntityRelationshipType>OneToMany</EntityRelationshipType>
-      <IsCustomizable>1</IsCustomizable>
-      <IntroducedVersion>1.0.0.0</IntroducedVersion>
-      <IsHierarchical>0</IsHierarchical>
-      <ReferencingEntityName>cr4f8_Endurhaefingaraaetlun</ReferencingEntityName>
-      <ReferencedEntityName>cr4f8_AthafnirDaglegtLif</ReferencedEntityName>
-      <CascadeAssign>NoCascade</CascadeAssign>
-      <CascadeDelete>RemoveLink</CascadeDelete>
-      <CascadeArchive>RemoveLink</CascadeArchive>
-      <CascadeReparent>NoCascade</CascadeReparent>
-      <CascadeShare>NoCascade</CascadeShare>
-      <CascadeUnshare>NoCascade</CascadeUnshare>
-      <CascadeRollupView>NoCascade</CascadeRollupView>
-      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
-      <ReferencingAttributeName>cr4f8_Heimilshald</ReferencingAttributeName>
-      <RelationshipDescription>
-        <Descriptions>
-          <Description description="Hvernig gengur umsækjanda að sinna heimilislífi t.d. að elda mat og þrífa húsnæði?" languagecode="1033" />
-        </Descriptions>
-      </RelationshipDescription>
-      <EntityRelationshipRoles>
-        <EntityRelationshipRole>
-          <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
-          <NavPaneArea>Details</NavPaneArea>
-          <NavPaneOrder>10000</NavPaneOrder>
-          <NavigationPropertyName>cr4f8_Heimilshald</NavigationPropertyName>
-          <RelationshipRoleType>1</RelationshipRoleType>
-        </EntityRelationshipRole>
-        <EntityRelationshipRole>
-          <NavigationPropertyName>cr4f8_endurhaefingaraaetlun_Heimilshald_cr4f8_athafnirdaglegtlif</NavigationPropertyName>
           <RelationshipRoleType>0</RelationshipRoleType>
         </EntityRelationshipRole>
       </EntityRelationshipRoles>
@@ -25822,6 +25057,41 @@
         </EntityRelationshipRole>
       </EntityRelationshipRoles>
     </EntityRelationship>
+    <EntityRelationship Name="tre_cr4f8_endurhaefingaraaetlun_Heimilishald_cr4f8_athafnirdaglegtlif">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.16</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>cr4f8_Endurhaefingaraaetlun</ReferencingEntityName>
+      <ReferencedEntityName>cr4f8_AthafnirDaglegtLif</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeArchive>RemoveLink</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <CascadeRollupView>NoCascade</CascadeRollupView>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <ReferencingAttributeName>tre_Heimilishald</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="" languagecode="1033" />
+        </Descriptions>
+      </RelationshipDescription>
+      <EntityRelationshipRoles>
+        <EntityRelationshipRole>
+          <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+          <NavPaneArea>Details</NavPaneArea>
+          <NavPaneOrder>10000</NavPaneOrder>
+          <NavigationPropertyName>tre_Heimilishald</NavigationPropertyName>
+          <RelationshipRoleType>1</RelationshipRoleType>
+        </EntityRelationshipRole>
+        <EntityRelationshipRole>
+          <NavigationPropertyName>tre_cr4f8_endurhaefingaraaetlun_Heimilishald_cr4f8_athafnirdaglegtlif</NavigationPropertyName>
+          <RelationshipRoleType>0</RelationshipRoleType>
+        </EntityRelationshipRole>
+      </EntityRelationshipRoles>
+    </EntityRelationship>
     <EntityRelationship Name="tre_cr4f8_endurhaefingaraaetlun_Ragjafi_tre_radgjafi">
       <EntityRelationshipType>OneToMany</EntityRelationshipType>
       <IsCustomizable>1</IsCustomizable>
@@ -26802,18 +26072,14 @@
                 <Title LCID="1033" Title="Bið eftir meðferð - staðfesting" />
               </Titles>
             </SubArea>
-            <SubArea Id="subarea_49136d27" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="tre_stadfestingheilsubrestur" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
-              <Titles>
-                <Title LCID="1033" Title="Heilsubrestur - staðfesting" />
-              </Titles>
-            </SubArea>
-            <SubArea Id="subarea_a3711802" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="tre_stadfestingvidurkenndmedferd" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
-              <Titles>
-                <Title LCID="1033" Title="Viðurkennd meðferð - Staðfesting" />
-              </Titles>
-            </SubArea>
-            <SubArea Id="subarea_069ebb71" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="tre_einstaklingur" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
-            <SubArea Id="subarea_ecc6a90d" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="tre_radgjafi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+            <SubArea Id="subarea_ff977420" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="tre_stadfestingvidurkenndmedferd" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+          </Group>
+          <Group Id="group_1c799403" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+            <Titles>
+              <Title LCID="1033" Title="Annað" />
+            </Titles>
+            <SubArea Id="subarea_f62d95d0" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="tre_einstaklingur" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+            <SubArea Id="subarea_d2796fcd" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="tre_radgjafi" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
           </Group>
         </Area>
       </SiteMap>
