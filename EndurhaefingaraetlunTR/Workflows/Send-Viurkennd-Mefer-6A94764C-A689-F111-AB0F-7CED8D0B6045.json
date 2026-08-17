@@ -336,8 +336,8 @@
             "parameters": {
               "entityName": "tre_stadfestingvidurkenndmedferds",
               "recordId": "@triggerOutputs()?['body/tre_stadfestingvidurkenndmedferdid']",
-              "item/tre_responsestatus": "@outputs('HTTP')?['statusCode']",
               "item/tre_responsetexti": "@if(equals(outputs('HTTP')?['statusCode'], '200'), 'OK', 'Villa við sendingu')",
+              "item/tre_responsestatus": "@outputs('HTTP')?['statusCode']",
               "item/tre_timisendingar": "@utcNow()"
             },
             "host": {

@@ -1,11 +1,11 @@
-<ImportExportXml version="9.2.26072.144" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26072.144" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26073.00154">
+<ImportExportXml version="9.2.26073.158" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26073.158" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26073.00158">
   <SolutionManifest>
     <UniqueName>EndurhaefingartaelunTR</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Endurhæfingaráætlun-TR" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.17</Version>
+    <Version>1.0.0.18</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>Samband</UniqueName>
@@ -86,6 +86,7 @@
       <RootComponent type="1" schemaName="cr4f8_vidhorfvinna" behavior="0" />
       <RootComponent type="1" schemaName="tre_einstaklingur" behavior="0" />
       <RootComponent type="1" schemaName="tre_radgjafi" behavior="0" />
+      <RootComponent type="1" schemaName="tre_rof_a_medferd" behavior="0" />
       <RootComponent type="1" schemaName="tre_stadfestingatvinnuleit" behavior="0" />
       <RootComponent type="1" schemaName="tre_stadfestingbidmedferd" behavior="0" />
       <RootComponent type="1" schemaName="tre_stadfestingheilsubrestur" behavior="0" />
@@ -95,6 +96,7 @@
       <RootComponent type="29" id="{9e9c7b94-9f86-f111-ab0f-70a8a5326318}" behavior="0" />
       <RootComponent type="29" id="{bc5ff24b-28a1-f011-bbd2-7ced8d13fee1}" behavior="0" />
       <RootComponent type="29" id="{d938e045-8186-f111-ab0f-70a8a5326318}" behavior="0" />
+      <RootComponent type="29" id="{f5f04a44-329a-f111-b8db-7ced8d8bca8a}" behavior="0" />
       <RootComponent type="62" schemaName="cr4f8_ETest" behavior="0" />
       <RootComponent type="80" schemaName="cr4f8_ETest" behavior="0" />
     </RootComponents>
@@ -106,8 +108,8 @@
         <Dependent type="80" schemaName="cr4f8_ETest" displayName="Þjónustugátt TR" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2607.2008)">
-          <package appName="Base Custom Controls" version="9.0.2607.2008">BaseCustomControlsCore (9.0.2607.2008)</package>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2607.3003)">
+          <package appName="Base Custom Controls" version="9.0.2607.3003">BaseCustomControlsCore (9.0.2607.3003)</package>
         </Required>
         <Dependent type="60" displayName="Information" parentDisplayName="Endurhæfingaráætlun" id="{f2bf18cd-7460-49cf-80d8-d9becc27875e}" />
       </MissingDependency>

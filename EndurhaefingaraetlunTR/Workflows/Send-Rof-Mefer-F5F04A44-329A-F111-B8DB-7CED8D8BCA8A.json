@@ -23,20 +23,20 @@
           "defaultValue": {},
           "type": "Object"
         },
-        "Client-Id (tre_client-id)": {
-          "defaultValue": "43d0c5d2-3743-4453-935d-3e3a29ce7fab",
-          "type": "String",
-          "metadata": {
-            "schemaName": "tre_client-id",
-            "description": "Client-id sveitarfélags"
-          }
-        },
         "Nafn stofnunar (tre_NafnStofnunar)": {
           "defaultValue": "Samband sveitarfélaga",
           "type": "String",
           "metadata": {
             "schemaName": "tre_NafnStofnunar",
             "description": "Nafn stofnunar eða sveitarfélags"
+          }
+        },
+        "Client-Id (tre_client-id)": {
+          "defaultValue": "43d0c5d2-3743-4453-935d-3e3a29ce7fab",
+          "type": "String",
+          "metadata": {
+            "schemaName": "tre_client-id",
+            "description": "Client-id sveitarfélags"
           }
         },
         "API-Url (tre_APIBaseUrl)": {
@@ -57,17 +57,18 @@
         }
       },
       "triggers": {
-        "Staðfesting_Atvinnuleit": {
+        "When_a_row_is_added,_modified_or_deleted": {
           "metadata": {
-            "operationMetadataId": "0414cded-e1a4-4819-a50f-9c5e326fdacb"
+            "operationMetadataId": "1f00bba8-7856-4bc6-b0c5-4755f3f40f1c"
           },
           "type": "OpenApiConnectionWebhook",
           "inputs": {
             "parameters": {
               "subscriptionRequest/message": 4,
-              "subscriptionRequest/entityname": "tre_stadfestingatvinnuleit",
+              "subscriptionRequest/entityname": "tre_rof_a_medferd",
               "subscriptionRequest/scope": 4,
-              "subscriptionRequest/filteringattributes": "tre_senttiltr"
+              "subscriptionRequest/filteringattributes": "tre_senttiltr",
+              "subscriptionRequest/name": "f5f04a44-329a-f111-b8db-7ced8d8bca8a"
             },
             "host": {
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
@@ -78,10 +79,10 @@
         }
       },
       "actions": {
-        "Einstaklingur": {
+        "Einstaklingar": {
           "runAfter": {},
           "metadata": {
-            "operationMetadataId": "e7f917fb-2ea6-4c83-9202-f0b8695250bd"
+            "operationMetadataId": "db2bc103-f613-4955-8885-34685ba69688"
           },
           "type": "OpenApiConnection",
           "inputs": {
@@ -96,44 +97,13 @@
             }
           }
         },
-        "individual": {
-          "runAfter": {
-            "Einstaklingur": [
-              "Succeeded"
-            ]
-          },
-          "metadata": {
-            "operationMetadataId": "0f4278b5-92fa-46d0-852c-d4687572e5a3"
-          },
-          "type": "InitializeVariable",
-          "inputs": {
-            "variables": [
-              {
-                "name": "individual",
-                "type": "object",
-                "value": {
-                  "name": "@outputs('Einstaklingur')?['body/tre_name']",
-                  "nationalId": "@outputs('Einstaklingur')?['body/tre_kennitala']",
-                  "address": "@outputs('Einstaklingur')?['body/tre_heimilisfang']",
-                  "postalCode": "@string(outputs('Einstaklingur')?['body/tre_postnumer'])",
-                  "city": "@outputs('Einstaklingur')?['body/tre_staur']",
-                  "phoneNumber": "@outputs('Einstaklingur')?['body/tre_simanumer']",
-                  "email": "@outputs('Einstaklingur')?['body/tre_tolvupostfang']"
-                }
-              }
-            ]
-          }
-        },
-        "Ráðgjafi": {
+        "Ráðgjafar": {
           "runAfter": {},
-          "metadata": {
-            "operationMetadataId": "28685981-3b4b-495d-b707-fb8666c68c77"
-          },
           "type": "OpenApiConnection",
           "inputs": {
             "parameters": {
               "entityName": "tre_radgjafis",
-              "recordId": "@triggerOutputs()?['body/_tre_ragjafi_value']"
+              "recordId": "@triggerOutputs()?['body/_tre_radgjafi_value']"
             },
             "host": {
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
@@ -142,14 +112,36 @@
             }
           }
         },
-        "serviceProvider": {
+        "individual": {
           "runAfter": {
-            "Ráðgjafi": [
+            "Einstaklingar": [
               "Succeeded"
             ]
           },
-          "metadata": {
-            "operationMetadataId": "73e3fa9a-9daf-45bc-8509-831c87b07c1a"
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "individual",
+                "type": "object",
+                "value": {
+                  "name": "@outputs('Einstaklingar')?['body/tre_name']",
+                  "nationalId": "@outputs('Einstaklingar')?['body/tre_kennitala']",
+                  "address": "@outputs('Einstaklingar')?['body/tre_heimilisfang']",
+                  "postalCode": "@string(outputs('Einstaklingar')?['body/tre_postnumer'])",
+                  "city": "@outputs('Einstaklingar')?['body/tre_staur']",
+                  "phoneNumber": "@outputs('Einstaklingar')?['body/tre_simanumer']",
+                  "email": "@outputs('Einstaklingar')?['body/tre_tolvupostfang']"
+                }
+              }
+            ]
+          }
+        },
+        "serviceProvider": {
+          "runAfter": {
+            "Ráðgjafar": [
+              "Succeeded"
+            ]
           },
           "type": "InitializeVariable",
           "inputs": {
@@ -159,31 +151,12 @@
                 "type": "object",
                 "value": {
                   "serviceProviderName": "@parameters('Nafn stofnunar (tre_NafnStofnunar)')",
-                  "coordinatorName": "@outputs('Ráðgjafi')?['body/tre_name']",
-                  "coordinatorNationalId": "@outputs('Ráðgjafi')?['body/tre_kennitala']",
-                  "coordinatorTitle": "@outputs('Ráðgjafi')?['body/tre_titill']",
-                  "workplace": "@outputs('Ráðgjafi')?['body/tre_vinnustadur']",
-                  "phoneNumber": "@outputs('Ráðgjafi')?['body/tre_simanumer']",
-                  "email": "@outputs('Ráðgjafi')?['body/tre_tolvupostfang']"
-                }
-              }
-            ]
-          }
-        },
-        "requestedPeriod": {
-          "runAfter": {},
-          "metadata": {
-            "operationMetadataId": "9c82a64d-ac3b-4957-a438-91328a819608"
-          },
-          "type": "InitializeVariable",
-          "inputs": {
-            "variables": [
-              {
-                "name": "requestedPeriod",
-                "type": "object",
-                "value": {
-                  "startDate": "@triggerOutputs()?['body/tre_upphafsdagur']",
-                  "endDate": "@triggerOutputs()?['body/tre_lokadagur']"
+                  "coordinatorName": "@outputs('Ráðgjafar')?['body/tre_name']",
+                  "coordinatorNationalId": "@string(outputs('Ráðgjafar')?['body/tre_kennitala'])",
+                  "coordinatorTitle": "@string(outputs('Ráðgjafar')?['body/tre_titill'])",
+                  "workplace": "@string(outputs('Ráðgjafar')?['body/tre_vinnustadur'])",
+                  "phoneNumber": "@string(outputs('Ráðgjafar')?['body/tre_simanumer'])",
+                  "email": "@string(outputs('Ráðgjafar')?['body/tre_tolvupostfang'])"
                 }
               }
             ]
@@ -191,18 +164,12 @@
         },
         "body": {
           "runAfter": {
-            "serviceProvider": [
-              "Succeeded"
-            ],
             "individual": [
               "Succeeded"
             ],
-            "requestedPeriod": [
+            "serviceProvider": [
               "Succeeded"
             ]
-          },
-          "metadata": {
-            "operationMetadataId": "5a488bbb-2a4c-49a1-a09b-fe570c283189"
           },
           "type": "InitializeVariable",
           "inputs": {
@@ -211,14 +178,15 @@
                 "name": "body",
                 "type": "object",
                 "value": {
-                  "referenceId": "@triggerOutputs()?['body/tre_stadfestingatvinnuleitid']",
+                  "referenceId": "@triggerOutputs()?['body/tre_rof_a_medferdid']",
                   "serviceProviderRegno": "",
                   "serviceProviderName": "@parameters('Nafn stofnunar (tre_NafnStofnunar)')",
                   "created": "@triggerOutputs()?['body/createdon']",
-                  "documentId": "@triggerOutputs()?['body/tre_stadfestingatvinnuleitid']",
+                  "documentId": "@triggerOutputs()?['body/tre_rof_a_medferdid']",
                   "individual": "@variables('individual')",
                   "serviceProvider": "@variables('serviceProvider')",
-                  "requestedPeriod": "@variables('requestedPeriod')"
+                  "reasonForInterruption": "@triggerOutputs()?['body/tre_astaedarofs']",
+                  "dateOfInterruption": "@triggerOutputs()?['body/tre_dagsetningrofs']"
                 }
               }
             ]
@@ -232,7 +200,7 @@
           },
           "type": "Http",
           "inputs": {
-            "uri": "@{parameters('API-Url (tre_APIBaseUrl)')}/JobSearchConfirmation",
+            "uri": "@{parameters('API-Url (tre_APIBaseUrl)')}/InterruptionOfTreatment",
             "method": "POST",
             "headers": {
               "client-id": "@{parameters('Client-Id (tre_client-id)')}",
@@ -246,7 +214,7 @@
             }
           }
         },
-        "Skrá_status": {
+        "skrá_sendingu": {
           "runAfter": {
             "HTTP": [
               "Succeeded",
@@ -257,15 +225,16 @@
           "type": "OpenApiConnection",
           "inputs": {
             "parameters": {
-              "entityName": "tre_stadfestingatvinnuleits",
-              "recordId": "@triggerOutputs()?['body/tre_stadfestingatvinnuleitid']",
-              "item/tre_responsetext": "@if(equals(outputs('HTTP')?['statusCode'], '200'), 'OK', 'Sending mistókst')",
-              "item/tre_responsestatus": "@outputs('HTTP')?['statusCode']",
-              "item/tre_responsetime": "@if(equals(outputs('HTTP')?['statusCode'], '200'), utcNow(), null)"
+              "entityName": "tre_rof_a_medferds",
+              "recordId": "@triggerOutputs()?['body/tre_rof_a_medferdid']",
+              "item/tre_name": "@triggerOutputs()?['body/tre_name']",
+              "item/tre_lysingsendingar": "@if(equals(outputs('HTTP')?['statusCode'], '200'), 'OK', 'Sending mistóskt')",
+              "item/tre_stadasendingar": "@outputs('HTTP')?['statusCode']",
+              "item/tre_timisendingar": "@if(equals(outputs('HTTP')?['statusCode'], '200'), utcNow(), null)"
             },
             "host": {
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
-              "operationId": "UpdateRecord",
+              "operationId": "UpdateOnlyRecord",
               "connectionName": "shared_commondataserviceforapps"
             }
           }
