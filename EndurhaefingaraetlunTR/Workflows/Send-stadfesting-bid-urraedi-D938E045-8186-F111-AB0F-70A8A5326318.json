@@ -24,7 +24,7 @@
           "type": "Object"
         },
         "Client-Id (tre_client-id)": {
-          "defaultValue": "test_client",
+          "defaultValue": "43d0c5d2-3743-4453-935d-3e3a29ce7fab",
           "type": "String",
           "metadata": {
             "schemaName": "tre_client-id",
@@ -289,10 +289,12 @@
             "body": "@variables('body')"
           }
         },
-        "Update_a_row": {
+        "Skrá_sendingu": {
           "runAfter": {
             "HTTP": [
-              "Succeeded"
+              "Succeeded",
+              "TimedOut",
+              "Failed"
             ]
           },
           "metadata": {
