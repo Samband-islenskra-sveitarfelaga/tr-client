@@ -1,11 +1,11 @@
-<ImportExportXml version="9.2.26073.158" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26073.158" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26073.00158">
+<ImportExportXml version="9.2.26073.158" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26073.158" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26074.00152">
   <SolutionManifest>
     <UniqueName>EndurhaefingartaelunTR</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Endurhæfingaráætlun-TR" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.18</Version>
+    <Version>1.0.0.19</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>Samband</UniqueName>
@@ -111,7 +111,31 @@
         <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2607.3003)">
           <package appName="Base Custom Controls" version="9.0.2607.3003">BaseCustomControlsCore (9.0.2607.3003)</package>
         </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="Rof á meðferð" id="{413d3a11-b5d0-4e48-b43d-9928ac7c3dbd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2607.3003)">
+          <package appName="Base Custom Controls" version="9.0.2607.3003">BaseCustomControlsCore (9.0.2607.3003)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="Staðfesting á bið eftir úrræði" id="{876951f5-876c-4103-ba6a-03c10ad42515}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2607.3003)">
+          <package appName="Base Custom Controls" version="9.0.2607.3003">BaseCustomControlsCore (9.0.2607.3003)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="Staðfesting á viðurkenndri meðferð" id="{a713db4d-b33b-4eab-84cc-ff75584a022c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2607.3003)">
+          <package appName="Base Custom Controls" version="9.0.2607.3003">BaseCustomControlsCore (9.0.2607.3003)</package>
+        </Required>
         <Dependent type="60" displayName="Information" parentDisplayName="Endurhæfingaráætlun" id="{f2bf18cd-7460-49cf-80d8-d9becc27875e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2607.3003)">
+          <package appName="Base Custom Controls" version="9.0.2607.3003">BaseCustomControlsCore (9.0.2607.3003)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="Stadfesting-Atvinnuleit" id="{fa6b3e54-5af2-4bdc-87df-140092034681}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.19)" id.uniquename="AppChannel">

@@ -259,9 +259,9 @@
             "parameters": {
               "entityName": "tre_stadfestingatvinnuleits",
               "recordId": "@triggerOutputs()?['body/tre_stadfestingatvinnuleitid']",
-              "item/tre_responsetext": "@if(equals(outputs('HTTP')?['statusCode'], '200'), 'OK', 'Sending mistókst')",
+              "item/tre_responsetext": "@if(equals(string(outputs('HTTP')?['statusCode']),'200'), 'OK', 'Sending mistókst')",
               "item/tre_responsestatus": "@outputs('HTTP')?['statusCode']",
-              "item/tre_responsetime": "@if(equals(outputs('HTTP')?['statusCode'], '200'), utcNow(), null)"
+              "item/tre_responsetime": "@if(equals(string(outputs('HTTP')?['statusCode']),'200'), utcNow(), null)"
             },
             "host": {
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",

@@ -238,7 +238,7 @@
                 "type": "object",
                 "value": {
                   "hasPreviousApproval": "@triggerOutputs()?['body/tre_fyrrisamykktmedferd']",
-                  "additionalDetails": "@triggerOutputs()?['body/tre_fyrrimeferskyringar']"
+                  "additionalDetails": "@string(triggerOutputs()?['body/tre_fyrrimeferskyringar'])"
                 }
               }
             ]
@@ -336,9 +336,9 @@
             "parameters": {
               "entityName": "tre_stadfestingvidurkenndmedferds",
               "recordId": "@triggerOutputs()?['body/tre_stadfestingvidurkenndmedferdid']",
-              "item/tre_responsetexti": "@if(equals(outputs('HTTP')?['statusCode'], '200'), 'OK', 'Villa við sendingu')",
+              "item/tre_responsetexti": "@if(equals(string(outputs('HTTP')?['statusCode']), '200'), 'OK', 'Villa við sendingu')",
               "item/tre_responsestatus": "@outputs('HTTP')?['statusCode']",
-              "item/tre_timisendingar": "@utcNow()"
+              "item/tre_timisendingar": "@if(equals(string(outputs('HTTP')?['statusCode']), '200'), utcNow(),null)"
             },
             "host": {
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",

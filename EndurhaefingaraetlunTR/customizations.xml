@@ -1,4 +1,4 @@
-<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26073.158" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26073.00158">
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26073.158" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26074.00152">
   <Entities>
     <Entity>
       <Name LocalizedName="Astundun-Endurhaefinar" OriginalName="Astundun-Endurhaefinar">cr4f8_AstundunEndurhaefinar</Name>
@@ -16452,7 +16452,7 @@
                                 <labels>
                                   <label description="Sent til TR" languagecode="1033" />
                                 </labels>
-                                <control id="tre_senttiltr" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tre_senttiltr" disabled="false" />
+                                <control id="tre_senttiltr" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="tre_senttiltr" disabled="false" uniqueid="{58d43875-82cd-4c7b-83fe-e749ddaa3546}" />
                               </cell>
                               <cell id="{e0aedaf4-fad8-4330-a355-19c15c06febd}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
@@ -16633,6 +16633,30 @@
               <DisplayConditions Order="0" FallbackForm="true">
                 <Everyone />
               </DisplayConditions>
+              <controlDescriptions>
+                <controlDescription forControl="{58d43875-82cd-4c7b-83fe-e749ddaa3546}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>tre_senttiltr</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">tre_senttiltr</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">tre_senttiltr</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">tre_senttiltr</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+              </controlDescriptions>
             </form>
             <IsCustomizable>1</IsCustomizable>
             <CanBeDeleted>1</CanBeDeleted>
@@ -18306,7 +18330,7 @@
                                 <labels>
                                   <label description="Sent til TR" languagecode="1033" />
                                 </labels>
-                                <control id="tre_senttiltr" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tre_senttiltr" disabled="false" />
+                                <control id="tre_senttiltr" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="tre_senttiltr" disabled="false" uniqueid="{5a910c48-176f-4be2-b63e-201802823ed9}" />
                               </cell>
                               <cell id="{2e06cd9a-ebc1-407d-ae9b-5bf612908059}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
@@ -18472,6 +18496,30 @@
               <DisplayConditions Order="0" FallbackForm="true">
                 <Everyone />
               </DisplayConditions>
+              <controlDescriptions>
+                <controlDescription forControl="{5a910c48-176f-4be2-b63e-201802823ed9}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>tre_senttiltr</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">tre_senttiltr</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">tre_senttiltr</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">tre_senttiltr</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+              </controlDescriptions>
             </form>
             <IsCustomizable>1</IsCustomizable>
             <CanBeDeleted>1</CanBeDeleted>
@@ -20540,7 +20588,7 @@
                                 <labels>
                                   <label description="Sent til TR" languagecode="1033" />
                                 </labels>
-                                <control id="tre_senttiltr" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tre_senttiltr" disabled="false" />
+                                <control id="tre_senttiltr" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="tre_senttiltr" disabled="false" uniqueid="{cd52148d-3fb8-41ce-bdba-34b582500ae4}" />
                               </cell>
                               <cell id="{0674a319-6f77-46b0-9bf1-728b905a44bd}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
@@ -20714,6 +20762,30 @@
               <DisplayConditions Order="0" FallbackForm="true">
                 <Everyone />
               </DisplayConditions>
+              <controlDescriptions>
+                <controlDescription forControl="{cd52148d-3fb8-41ce-bdba-34b582500ae4}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>tre_senttiltr</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">tre_senttiltr</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">tre_senttiltr</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">tre_senttiltr</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+              </controlDescriptions>
             </form>
             <IsCustomizable>1</IsCustomizable>
             <CanBeDeleted>1</CanBeDeleted>
@@ -24519,7 +24591,7 @@
                                 <labels>
                                   <label description="Sent til TR" languagecode="1033" />
                                 </labels>
-                                <control id="tre_senttiltr" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tre_senttiltr" disabled="false" />
+                                <control id="tre_senttiltr" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="tre_senttiltr" disabled="false" uniqueid="{ff806e17-cdd5-4352-93a3-80460cbbe37d}" />
                               </cell>
                               <cell id="{61121889-9100-48b0-9a70-9ef098114198}" locklevel="0" colspan="1" rowspan="1">
                                 <labels>
@@ -24693,6 +24765,30 @@
               <DisplayConditions Order="0" FallbackForm="true">
                 <Everyone />
               </DisplayConditions>
+              <controlDescriptions>
+                <controlDescription forControl="{ff806e17-cdd5-4352-93a3-80460cbbe37d}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>tre_senttiltr</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">tre_senttiltr</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">tre_senttiltr</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">tre_senttiltr</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+              </controlDescriptions>
             </form>
             <IsCustomizable>1</IsCustomizable>
             <CanBeDeleted>1</CanBeDeleted>
@@ -25019,6 +25115,32 @@
   </Entities>
   <Roles></Roles>
   <Workflows>
+    <Workflow WorkflowId="{6a94764c-a689-f111-ab0f-7ced8d0b6045}" Name="Send-Viðurkennd-Meðferð">
+      <JsonFileName>/Workflows/Send-Viurkennd-Mefer-6A94764C-A689-F111-AB0F-7CED8D0B6045.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.15</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Send-Viðurkennd-Meðferð" />
+      </LocalizedNames>
+    </Workflow>
     <Workflow WorkflowId="{bc5ff24b-28a1-f011-bbd2-7ced8d13fee1}" Name="Send-Endurhaefingaraetlun">
       <JsonFileName>/Workflows/Send-Endurhaefingaraetlun-BC5FF24B-28A1-F011-BBD2-7CED8D13FEE1.json</JsonFileName>
       <Type>1</Type>
@@ -25069,32 +25191,6 @@
       <PrimaryEntity>none</PrimaryEntity>
       <LocalizedNames>
         <LocalizedName languagecode="1033" description="Send-Rof-Meðferð" />
-      </LocalizedNames>
-    </Workflow>
-    <Workflow WorkflowId="{6a94764c-a689-f111-ab0f-7ced8d0b6045}" Name="Send-Viðurkennd-Meðferð">
-      <JsonFileName>/Workflows/Send-Viurkennd-Mefer-6A94764C-A689-F111-AB0F-7CED8D0B6045.json</JsonFileName>
-      <Type>1</Type>
-      <Subprocess>0</Subprocess>
-      <Category>5</Category>
-      <Mode>0</Mode>
-      <Scope>4</Scope>
-      <OnDemand>0</OnDemand>
-      <TriggerOnCreate>0</TriggerOnCreate>
-      <TriggerOnDelete>0</TriggerOnDelete>
-      <AsyncAutodelete>0</AsyncAutodelete>
-      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-      <StateCode>1</StateCode>
-      <StatusCode>2</StatusCode>
-      <RunAs>1</RunAs>
-      <IsTransacted>1</IsTransacted>
-      <IntroducedVersion>1.0.0.15</IntroducedVersion>
-      <IsCustomizable>1</IsCustomizable>
-      <BusinessProcessType>0</BusinessProcessType>
-      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
-      <ModernFlowType>0</ModernFlowType>
-      <PrimaryEntity>none</PrimaryEntity>
-      <LocalizedNames>
-        <LocalizedName languagecode="1033" description="Send-Viðurkennd-Meðferð" />
       </LocalizedNames>
     </Workflow>
     <Workflow WorkflowId="{9e9c7b94-9f86-f111-ab0f-70a8a5326318}" Name="Send-Staðfesting-atvinnuleit">

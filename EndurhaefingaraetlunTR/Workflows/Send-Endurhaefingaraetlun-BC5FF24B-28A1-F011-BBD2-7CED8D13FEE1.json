@@ -166,6 +166,7 @@
                 "type": "object",
                 "value": {
                   "referenceId": "@triggerOutputs()?['body/cr4f8_id']",
+                  "documentId": "@triggerOutputs()?['body/cr4f8_endurhaefingaraaetlunid']",
                   "serviceProviderName": "@parameters('Nafn stofnunar (tre_NafnStofnunar)')",
                   "serviceProviderRegno": "",
                   "applicantEmploymentStatus": "@outputs('Stada-Vinnumarkadur')?['body/cr4f8_id']",
@@ -636,8 +637,8 @@
             "parameters": {
               "entityName": "cr4f8_endurhaefingaraaetluns",
               "recordId": "@triggerOutputs()?['body/cr4f8_endurhaefingaraaetlunid']",
-              "item/tre_responsedags": "@utcNow()",
               "item/tre_responselysing": "@if(equals(outputs('HTTP')['statusCode'], 200), 'OK', 'Unsuccessful')",
+              "item/tre_responsedags": "@utcNow()",
               "item/tre_responsestatus": "@outputs('HTTP')['statusCode']"
             },
             "host": {
@@ -681,7 +682,7 @@
                   "nationalId": "@outputs('Einstaklingur')?['body/tre_kennitala']",
                   "name": "@outputs('Einstaklingur')?['body/tre_name']",
                   "address": "@outputs('Einstaklingur')?['body/tre_heimilisfang']",
-                  "postalCode": "@outputs('Einstaklingur')?['body/tre_postnumer']",
+                  "postalCode": "@string(outputs('Einstaklingur')?['body/tre_postnumer'])",
                   "city": "@outputs('Einstaklingur')?['body/tre_staur']",
                   "phoneNumber": "@outputs('Einstaklingur')?['body/tre_simanumer']",
                   "email": "@outputs('Einstaklingur')?['body/tre_tolvupostfang']"
