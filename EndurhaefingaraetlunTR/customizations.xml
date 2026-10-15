@@ -1,4 +1,4 @@
-<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26073.158" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26074.00152">
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26092.157" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26092.00157">
   <Entities>
     <Entity>
       <Name LocalizedName="Astundun-Endurhaefinar" OriginalName="Astundun-Endurhaefinar">cr4f8_AstundunEndurhaefinar</Name>
@@ -6336,40 +6336,20 @@
             <FormActivationState>1</FormActivationState>
             <form>
               <tabs>
-                <tab name="general" verticallayout="true" id="{71341730-d679-416c-89cc-2b1c89765423}" IsUserDefined="0">
+                <tab IsUserDefined="0" id="{71341730-d679-416c-89cc-2b1c89765423}">
                   <labels>
                     <label description="" languagecode="1033" />
                   </labels>
                   <columns>
                     <column width="25%">
                       <sections>
-                        <section name="ColorStrip" showlabel="false" showbar="false" columns="1" IsUserDefined="0" id="{fd623f1f-db54-498f-8962-aa61b84eefea}">
+                        <section name="ColorStrip" showlabel="false" showbar="false" IsUserDefined="0" columns="1" id="{fd623f1f-db54-498f-8962-aa61b84eefea}">
                           <labels>
                             <label description="ColorStrip" languagecode="1033" />
                           </labels>
-                        </section>
-                      </sections>
-                    </column>
-                    <column width="75%">
-                      <sections>
-                        <section name="CardHeader" showlabel="false" showbar="false" columns="111" id="{fd11108e-c7d4-4ad1-ac9f-082b7912a383}" IsUserDefined="0">
-                          <labels>
-                            <label description="Header" languagecode="1033" />
-                          </labels>
                           <rows>
                             <row>
-                              <cell id="{64b8d0ca-3c40-477d-bdfe-c073e4cd8c5e}" showlabel="true" locklevel="0">
-                                <labels>
-                                  <label description="Status Reason" languagecode="1033" />
-                                </labels>
-                                <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
-                              </cell>
-                              <cell id="{fea70396-93e9-4851-9175-9561392c9461}" showlabel="true" locklevel="0">
-                                <labels>
-                                  <label description="" languagecode="1033" />
-                                </labels>
-                              </cell>
-                              <cell id="{90a9df7c-bdf6-4f04-b820-ba2e014cd35e}" showlabel="true" locklevel="0">
+                              <cell id="{44c98086-271f-46db-a9ad-36c945f8d3bf}" showlabel="false">
                                 <labels>
                                   <label description="" languagecode="1033" />
                                 </labels>
@@ -6377,7 +6357,41 @@
                             </row>
                           </rows>
                         </section>
-                        <section name="CardDetails" showlabel="false" showbar="false" columns="1" id="{e90da10a-0946-4262-9e29-96551d8d0091}" IsUserDefined="0">
+                      </sections>
+                    </column>
+                    <column width="75%">
+                      <sections>
+                        <section name="CardHeader" showlabel="false" showbar="false" IsUserDefined="0" columns="1111" id="{fd11108e-c7d4-4ad1-ac9f-082b7912a383}">
+                          <labels>
+                            <label description="Header" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{268d0e6f-9530-43be-b71a-f99a3d40741f}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="Einstaklingur" languagecode="1033" />
+                                </labels>
+                                <control id="tre_einstaklingur" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tre_einstaklingur" disabled="false" />
+                              </cell>
+                              <cell id="{fea70396-93e9-4851-9175-9561392c9461}" showlabel="false">
+                                <labels>
+                                  <label description="" languagecode="1033" />
+                                </labels>
+                              </cell>
+                              <cell id="{90a9df7c-bdf6-4f04-b820-ba2e014cd35e}" showlabel="false">
+                                <labels>
+                                  <label description="" languagecode="1033" />
+                                </labels>
+                              </cell>
+                              <cell id="{3ac54f00-cfbf-4076-ba71-31fea7af25d3}" showlabel="false">
+                                <labels>
+                                  <label description="" languagecode="1033" />
+                                </labels>
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="CardDetails" showlabel="false" showbar="false" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" id="{e90da10a-0946-4262-9e29-96551d8d0091}">
                           <labels>
                             <label description="Details" languagecode="1033" />
                           </labels>
@@ -6392,7 +6406,7 @@
                             </row>
                           </rows>
                         </section>
-                        <section name="CardFooter" showlabel="false" columns="1111" showbar="false" id="{d698c97b-f754-458d-84c7-ddc8d7933828}" IsUserDefined="0">
+                        <section name="CardFooter" showlabel="false" showbar="false" IsUserDefined="0" columns="1111" id="{d698c97b-f754-458d-84c7-ddc8d7933828}">
                           <labels>
                             <label description="Footer" languagecode="1033" />
                           </labels>
@@ -6410,12 +6424,12 @@
                                 </labels>
                                 <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
                               </cell>
-                              <cell id="{d2457fc8-d562-4bd7-89df-3d608f9f7f6c}" showlabel="true" locklevel="0">
+                              <cell id="{d2457fc8-d562-4bd7-89df-3d608f9f7f6c}" showlabel="false">
                                 <labels>
                                   <label description="" languagecode="1033" />
                                 </labels>
                               </cell>
-                              <cell id="{3c12f5d5-622d-414e-a7a6-a80120515dd4}" showlabel="true" locklevel="0">
+                              <cell id="{3c12f5d5-622d-414e-a7a6-a80120515dd4}" showlabel="false">
                                 <labels>
                                   <label description="" languagecode="1033" />
                                 </labels>
@@ -7390,7 +7404,6 @@
                   <cell name="cr4f8_samskipti" width="100" />
                   <cell name="cr4f8_hreyfifaerni" width="110" />
                   <cell name="cr4f8_eiginumsja" width="112" />
-                  <cell name="cr4f8_heimilshald" width="109" />
                   <cell name="cr4f8_starfnam" width="100" />
                   <cell name="cr4f8_tomstundir" width="105" />
                   <cell name="cr4f8_upphafsdagur" width="120" />
@@ -7433,7 +7446,6 @@
                   <attribute name="cr4f8_samskipti" />
                   <attribute name="cr4f8_hreyfifaerni" />
                   <attribute name="cr4f8_eiginumsja" />
-                  <attribute name="cr4f8_heimilshald" />
                   <attribute name="cr4f8_starfnam" />
                   <attribute name="cr4f8_tomstundir" />
                   <attribute name="cr4f8_upphafsdagur" />
@@ -7485,7 +7497,6 @@
                   <cell name="cr4f8_samskipti" width="100" />
                   <cell name="cr4f8_hreyfifaerni" width="110" />
                   <cell name="cr4f8_eiginumsja" width="112" />
-                  <cell name="cr4f8_heimilshald" width="109" />
                   <cell name="cr4f8_starfnam" width="100" />
                   <cell name="cr4f8_tomstundir" width="105" />
                   <cell name="cr4f8_upphafsdagur" width="120" />
@@ -7531,7 +7542,6 @@
                   <attribute name="cr4f8_samskipti" />
                   <attribute name="cr4f8_hreyfifaerni" />
                   <attribute name="cr4f8_eiginumsja" />
-                  <attribute name="cr4f8_heimilshald" />
                   <attribute name="cr4f8_starfnam" />
                   <attribute name="cr4f8_tomstundir" />
                   <attribute name="cr4f8_upphafsdagur" />
@@ -7735,7 +7745,6 @@
                   <cell name="cr4f8_samskipti" width="100" />
                   <cell name="cr4f8_hreyfifaerni" width="110" />
                   <cell name="cr4f8_eiginumsja" width="112" />
-                  <cell name="cr4f8_heimilshald" width="109" />
                   <cell name="cr4f8_starfnam" width="100" />
                   <cell name="cr4f8_tomstundir" width="105" />
                   <cell name="cr4f8_upphafsdagur" width="120" />
@@ -7784,7 +7793,6 @@
                   <attribute name="cr4f8_samskipti" />
                   <attribute name="cr4f8_hreyfifaerni" />
                   <attribute name="cr4f8_eiginumsja" />
-                  <attribute name="cr4f8_heimilshald" />
                   <attribute name="cr4f8_starfnam" />
                   <attribute name="cr4f8_tomstundir" />
                   <attribute name="cr4f8_upphafsdagur" />
@@ -15818,6 +15826,7 @@
               <IsRetrievable>0</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
               <Format>date</Format>
+              <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
               <Behavior>3</Behavior>
               <displaynames>
                 <displayname description="Dagsetning rofs" languagecode="1033" />
@@ -16152,6 +16161,7 @@
               <IsRetrievable>0</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
               <Format>datetime</Format>
+              <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
               <Behavior>1</Behavior>
               <displaynames>
                 <displayname description="Tími sendingar" languagecode="1033" />
@@ -25115,6 +25125,58 @@
   </Entities>
   <Roles></Roles>
   <Workflows>
+    <Workflow WorkflowId="{d938e045-8186-f111-ab0f-70a8a5326318}" Name="Send-stadfesting-bid-urraedi">
+      <JsonFileName>/Workflows/Send-stadfesting-bid-urraedi-D938E045-8186-F111-AB0F-70A8A5326318.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.13</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Send-stadfesting-bid-urraedi" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{9e9c7b94-9f86-f111-ab0f-70a8a5326318}" Name="Send-Staðfesting-atvinnuleit">
+      <JsonFileName>/Workflows/Send-Stafesting-atvinnuleit-9E9C7B94-9F86-F111-AB0F-70A8A5326318.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.14</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ModernFlowType>0</ModernFlowType>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Send-Staðfesting-atvinnuleit" />
+      </LocalizedNames>
+    </Workflow>
     <Workflow WorkflowId="{6a94764c-a689-f111-ab0f-7ced8d0b6045}" Name="Send-Viðurkennd-Meðferð">
       <JsonFileName>/Workflows/Send-Viurkennd-Mefer-6A94764C-A689-F111-AB0F-7CED8D0B6045.json</JsonFileName>
       <Type>1</Type>
@@ -25191,58 +25253,6 @@
       <PrimaryEntity>none</PrimaryEntity>
       <LocalizedNames>
         <LocalizedName languagecode="1033" description="Send-Rof-Meðferð" />
-      </LocalizedNames>
-    </Workflow>
-    <Workflow WorkflowId="{9e9c7b94-9f86-f111-ab0f-70a8a5326318}" Name="Send-Staðfesting-atvinnuleit">
-      <JsonFileName>/Workflows/Send-Stafesting-atvinnuleit-9E9C7B94-9F86-F111-AB0F-70A8A5326318.json</JsonFileName>
-      <Type>1</Type>
-      <Subprocess>0</Subprocess>
-      <Category>5</Category>
-      <Mode>0</Mode>
-      <Scope>4</Scope>
-      <OnDemand>0</OnDemand>
-      <TriggerOnCreate>0</TriggerOnCreate>
-      <TriggerOnDelete>0</TriggerOnDelete>
-      <AsyncAutodelete>0</AsyncAutodelete>
-      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-      <StateCode>1</StateCode>
-      <StatusCode>2</StatusCode>
-      <RunAs>1</RunAs>
-      <IsTransacted>1</IsTransacted>
-      <IntroducedVersion>1.0.0.14</IntroducedVersion>
-      <IsCustomizable>1</IsCustomizable>
-      <BusinessProcessType>0</BusinessProcessType>
-      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
-      <ModernFlowType>0</ModernFlowType>
-      <PrimaryEntity>none</PrimaryEntity>
-      <LocalizedNames>
-        <LocalizedName languagecode="1033" description="Send-Staðfesting-atvinnuleit" />
-      </LocalizedNames>
-    </Workflow>
-    <Workflow WorkflowId="{d938e045-8186-f111-ab0f-70a8a5326318}" Name="Send-stadfesting-bid-urraedi">
-      <JsonFileName>/Workflows/Send-stadfesting-bid-urraedi-D938E045-8186-F111-AB0F-70A8A5326318.json</JsonFileName>
-      <Type>1</Type>
-      <Subprocess>0</Subprocess>
-      <Category>5</Category>
-      <Mode>0</Mode>
-      <Scope>4</Scope>
-      <OnDemand>0</OnDemand>
-      <TriggerOnCreate>0</TriggerOnCreate>
-      <TriggerOnDelete>0</TriggerOnDelete>
-      <AsyncAutodelete>0</AsyncAutodelete>
-      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-      <StateCode>1</StateCode>
-      <StatusCode>2</StatusCode>
-      <RunAs>1</RunAs>
-      <IsTransacted>1</IsTransacted>
-      <IntroducedVersion>1.0.0.13</IntroducedVersion>
-      <IsCustomizable>1</IsCustomizable>
-      <BusinessProcessType>0</BusinessProcessType>
-      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
-      <ModernFlowType>0</ModernFlowType>
-      <PrimaryEntity>none</PrimaryEntity>
-      <LocalizedNames>
-        <LocalizedName languagecode="1033" description="Send-stadfesting-bid-urraedi" />
       </LocalizedNames>
     </Workflow>
   </Workflows>

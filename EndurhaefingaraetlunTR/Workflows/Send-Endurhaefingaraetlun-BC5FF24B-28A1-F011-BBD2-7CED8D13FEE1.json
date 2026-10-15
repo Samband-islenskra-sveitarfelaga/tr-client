@@ -15,13 +15,13 @@
       "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
       "contentVersion": "1.0.0.0",
       "parameters": {
-        "$authentication": {
-          "defaultValue": {},
-          "type": "SecureObject"
-        },
         "$connections": {
           "defaultValue": {},
           "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
         },
         "Client-Id (tre_client-id)": {
           "defaultValue": "43d0c5d2-3743-4453-935d-3e3a29ce7fab",
@@ -67,13 +67,15 @@
               "subscriptionRequest/message": 4,
               "subscriptionRequest/entityname": "cr4f8_endurhaefingaraaetlun",
               "subscriptionRequest/scope": 4,
-              "subscriptionRequest/filteringattributes": "cr4f8_readytosend"
+              "subscriptionRequest/filteringattributes": "cr4f8_readytosend",
+              "subscriptionRequest/name": "bc5ff24b-28a1-f011-bbd2-7ced8d13fee1"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "SubscribeWebhookTrigger",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           },
           "conditions": [
             {
@@ -95,10 +97,11 @@
               "recordId": "@triggerOutputs()?['body/_cr4f8_stadavinnumarkadur_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "Framvinda-Endurhaefingar": {
@@ -113,10 +116,11 @@
               "recordId": "@triggerOutputs()?['body/_cr4f8_framvindaendurhaefingar_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "Ny-Thekking": {
@@ -131,10 +135,11 @@
               "recordId": "@triggerOutputs()?['body/_cr4f8_nythekking_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "main": {
@@ -203,10 +208,11 @@
               "recordId": "@triggerOutputs()?['body/_cr4f8_vidhorfvinna_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "firstEvaluation": {
@@ -250,10 +256,11 @@
               "recordId": "@triggerOutputs()?['body/_cr4f8_breytingendurhaefing_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "Astundun-Endurhaefingar": {
@@ -272,10 +279,11 @@
               "recordId": "@triggerOutputs()?['body/_cr4f8_astundunendurhaefingar_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "Breyting-Adstaedur": {
@@ -294,10 +302,11 @@
               "recordId": "@triggerOutputs()?['body/_cr4f8_breytingadstaedur_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "followUpEvaluation": {
@@ -349,10 +358,11 @@
               "recordId": "@triggerOutputs()?['body/_cr4f8_daglegtlif_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "Samskipti": {
@@ -371,10 +381,11 @@
               "recordId": "@triggerOutputs()?['body/_cr4f8_samskipti_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "Hreyfifaerni": {
@@ -393,10 +404,11 @@
               "recordId": "@triggerOutputs()?['body/_cr4f8_hreyfifaerni_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "Eigin-Umsja": {
@@ -415,10 +427,11 @@
               "recordId": "@triggerOutputs()?['body/_cr4f8_eiginumsja_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "Heimilishald": {
@@ -437,10 +450,11 @@
               "recordId": "@triggerOutputs()?['body/_tre_heimilishald_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "Starf-Nam": {
@@ -459,10 +473,11 @@
               "recordId": "@triggerOutputs()?['body/_cr4f8_starfnam_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "Tomstundir": {
@@ -481,10 +496,11 @@
               "recordId": "@triggerOutputs()?['body/_cr4f8_tomstundir_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "comprehensiveEvaluation": {
@@ -604,8 +620,8 @@
           },
           "type": "Http",
           "inputs": {
-            "uri": "@{parameters('API-Url (tre_APIBaseUrl)')}/RehabilitationDocument?document-id=@{triggerOutputs()?['body/cr4f8_id']}",
             "method": "POST",
+            "uri": "@{parameters('API-Url (tre_APIBaseUrl)')}/RehabilitationDocument?document-id=@{triggerOutputs()?['body/cr4f8_id']}",
             "headers": {
               "client-id": "@{parameters('Client-Id (tre_client-id)')}",
               "X-API-key": "@{parameters('API-Key (tre_APIKey)')}"
@@ -642,14 +658,18 @@
               "item/tre_responsestatus": "@outputs('HTTP')['statusCode']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "UpdateOnlyRecord",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "Einstaklingur": {
           "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "aee378f7-bf1e-43d2-8ed5-14ea9679de2c"
+          },
           "type": "OpenApiConnection",
           "inputs": {
             "parameters": {
@@ -657,10 +677,11 @@
               "recordId": "@triggerOutputs()?['body/_tre_einstaklingur_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "person": {
@@ -693,6 +714,9 @@
         },
         "Ráðgjafi": {
           "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "90c1a704-d42b-47fc-97f6-19d72efc68ac"
+          },
           "type": "OpenApiConnection",
           "inputs": {
             "parameters": {
@@ -700,10 +724,11 @@
               "recordId": "@triggerOutputs()?['body/_tre_ragjafi_value']"
             },
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
               "operationId": "GetItem",
-              "connectionName": "shared_commondataserviceforapps"
-            }
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         },
         "serviceProvider": {
@@ -736,7 +761,7 @@
         }
       }
     },
-    "templateName": null
+    "templateName": ""
   },
   "schemaVersion": "1.0.0.0"
 }
